@@ -130,6 +130,13 @@
     font-size: 24px;
   }
   // header start
+  .header {
+    &__inner {
+      &-logo {
+        width: 90px;
+      }
+    }
+  }
   // header end
   // nav start
   .nav {
