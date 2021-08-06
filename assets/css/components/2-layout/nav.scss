@@ -1,0 +1,27 @@
+.nav {
+  &__inner {
+    display: flex;
+    align-items: center;
+    .btn__primary {
+      display: none;
+    }
+    .btn__secondary {
+      display: none;
+    }
+    &-link {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 120%;
+      color: $black-2;
+      @include transition;
+      padding: 0 20px;
+      &.active {
+        color: $main;
+      }
+      &:hover {
+        color: $main;
+      }
+    }
+  }
+}

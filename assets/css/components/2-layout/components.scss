@@ -1,0 +1,143 @@
+.btn {
+  &__primary {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    color: $main;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    background: $white;
+    border: 1px solid $main;
+    border-radius: 4px;
+    cursor: pointer;
+    @include transition;
+    svg {
+      stroke: $main;
+    }
+    &:hover {
+      color: $main-2;
+      background: $main-6;
+      box-shadow: 4px 4px 10px rgba(34, 67, 152, 0.14);
+      svg {
+        stroke: $main-2;
+      }
+    }
+    &:disabled {
+      background: $white-2;
+      border: 1px solid $grey-1;
+      color: $grey-2;
+      svg {
+        stroke: $grey-2;
+      }
+    }
+  }
+  &__secondary {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 120%;
+    color: $white;
+    padding: 10px 12px;
+    background: $main;
+    border: 1px solid $main;
+    border-radius: 4px;
+    cursor: pointer;
+    @include transition;
+    svg {
+      stroke: $white;
+    }
+    &:hover {
+      background: $main-3;
+      border: 1px solid $main-3;
+      box-shadow: 4px 4px 10px rgba(34, 67, 152, 0.14);
+    }
+    &:disabled {
+      background: $grey-2;
+      border: 1px solid $grey-2;
+    }
+  }
+}
+.row__2 {
+  display: flex;
+  margin: 0 -10px;
+  &-column {
+    width: calc(50% - 20px);
+    margin: 0 10px;
+  }
+}
+.row__3 {
+  display: flex;
+  margin: 0 -15px;
+  &-column {
+    width: calc(33.3% - 30px);
+    margin: 0 15px;
+  }
+  .card {
+    &__inner {
+      &-image {
+        height: 220px;
+      }
+      &-body {
+        padding: 3em 3em 2em 3em;
+        &-location {
+          margin-bottom: 1em;
+          span {
+            font-size: 1.2em;
+          }
+        }
+        &-info {
+          &-name {
+            font-size: 1.2em;
+            span {
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+      &-footer {
+        padding: 16px 0 30px 0;
+      }
+    }
+  }
+}
+.row__4 {
+  display: flex; 
+  margin: 0 -15px;
+  &-column {
+    width: calc(25% - 30px);
+    margin: 0 15px;
+  }
+  .card {
+    &__inner {
+      &-image {
+        height: 220px;
+      }
+      &-body {
+        padding: 2em 2em 1em 2em;
+        &-location {
+          margin-bottom: 1em;
+          span {
+            font-size: 1.2em;
+          }
+        }
+        &-info {
+          &-name {
+            font-size: 1.2em;
+            span {
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+      &-footer {
+        margin: 0 20px;
+        padding: 10px 0 20px 0;
+      }
+    }
+  }
+}
