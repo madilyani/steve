@@ -18,6 +18,9 @@
         background: $white;
         color: $main;
       }
+      span {
+        pointer-events: none;
+      }
     }
   }
   &__body {

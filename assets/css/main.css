@@ -587,6 +587,9 @@ li {
   background: #ffffff;
   color: #34C0E3;
 }
+.book__header-btn span {
+  pointer-events: none;
+}
 .book__body {
   background: #ffffff;
   padding: 50px;

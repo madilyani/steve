@@ -50,6 +50,7 @@ function onTopTabClick(tabBtns, tabItems, item) {
     let tabId = currentBtn.getAttribute("data-tab");
     let currentTab = document.querySelector(tabId);
     if (!currentBtn.classList.contains("active")) {
+      console.log(e.target);
       tabBtns.forEach(function (item) {
         item.classList.remove("active");
       });
