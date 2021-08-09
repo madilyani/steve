@@ -59,12 +59,12 @@ function onTopTabClick(tabBtns, tabItems, item) {
       });
       if(eId == '#book-1' || eId == '#book-2')
       {
-        document.querySelector('#mapStart').classList.add('active');
-        document.querySelector('#cardStart').classList.remove('active');
-      }
-      else {
         document.querySelector('#mapStart').classList.remove('active');
         document.querySelector('#cardStart').classList.add('active');
+      }
+      else {
+        document.querySelector('#mapStart').classList.add('active');
+        document.querySelector('#cardStart').classList.remove('active');
       }
       currentBtn.classList.add("active");
       currentTab.classList.add("active");
