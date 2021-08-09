@@ -41,10 +41,11 @@ $(".card__inner-slider").slick({
 const tabsBtn = document.querySelectorAll(".tabBtn");
 const tabsItems = document.querySelectorAll(".tabEvent");
 tabsBtn.forEach((e) => {
-  onTabClick(tabsBtn, tabsItems, e);
+  onTopTabClick(tabsBtn, tabsItems, e);
 });
-function onTabClick(tabBtns, tabItems, item) {
+function onTopTabClick(tabBtns, tabItems, item) {
   item.addEventListener("click", function (e) {
+    let eId = e.target.getAttribute('data-tab');
     let currentBtn = item;
     let tabId = currentBtn.getAttribute("data-tab");
     let currentTab = document.querySelector(tabId);
@@ -55,18 +56,29 @@ function onTabClick(tabBtns, tabItems, item) {
       tabItems.forEach(function (item) {
         item.classList.remove("active");
       });
+      if(eId == '#book-1' || eId == '#book-2')
+      {
+        document.querySelector('#mapStart').classList.add('active');
+        document.querySelector('#cardStart').classList.remove('active');
+      }
+      else {
+        document.querySelector('#mapStart').classList.remove('active');
+        document.querySelector('#cardStart').classList.add('active');
+      }
       currentBtn.classList.add("active");
       currentTab.classList.add("active");
     }
   });
 }
-const agentBtn = document.querySelectorAll(".agentBtn");
-const agentItem = document.querySelectorAll(".agentItem");
-agentBtn.forEach((e) => {
-  onTabClick(agentBtn, agentItem, e);
-});
+// const agentBtn = document.querySelectorAll(".agentBtn");
+// const agentItem = document.querySelectorAll(".agentItem");
+// agentBtn.forEach((e) => {
+//   onTabClick(agentBtn, agentItem, e);
+// });
 function onTabClick(agentBtns, agentItems, itemAgent) {
   itemAgent.addEventListener("click", function (e) {
+    console.log("hello");
+    console.log(e);
     let currentAgentBtn = itemAgent;
     let tabIdAgent = currentAgentBtn.getAttribute("data-tab");
     let currentAgentItem = document.querySelector(tabIdAgent);
@@ -87,17 +99,18 @@ const buyRentItem = document.querySelectorAll(".buyRentItem");
 buyRentBtn.forEach((e) => {
   onTabClick(buyRentBtn, buyRentItem, e);
 });
-function onTabClick(buyRentBtns, buyRentItems, itemBuyRent) {
-  itemBuyRent.addEventListener("click", function (e) {
-    let currentbuyRentBtn = itemBuyRent;
+function onTabClick(asdfasdf, asdfasdf, dafsdfasdf) {
+  dafsdfasdf.addEventListener("click", function (e) {
+    
+    let currentbuyRentBtn = dafsdfasdf;
     let tabIdButRent = currentbuyRentBtn.getAttribute("data-tab");
     let currentbuyRentItem = document.querySelector(tabIdButRent);
     if (!currentbuyRentBtn.classList.contains("active")) {
-      buyRentBtns.forEach(function (itemBuyRent) {
-        itemBuyRent.classList.remove("active");
+      asdfasdf.forEach(function (dafsdfasdf) {
+        dafsdfasdf.classList.remove("active");
       });
-      buyRentItems.forEach(function (itemBuyRent) {
-        itemBuyRent.classList.remove("active");
+      asdfasdf.forEach(function (dafsdfasdf) {
+        dafsdfasdf.classList.remove("active");
       });
       currentbuyRentBtn.classList.add("active");
       currentbuyRentItem.classList.add("active");
@@ -110,7 +123,9 @@ interestBtn.forEach((e) => {
   onTabClick(interestBtn, interestItem, e);
 });
 function onTabClick(interestBtns, interestItems, itemInterest) {
+  
   itemInterest.addEventListener("click", function (e) {
+    
     let currentinterestBtn = itemInterest;
     let tabIdButRent = currentinterestBtn.getAttribute("data-tab");
     let currentinterestItem = document.querySelector(tabIdButRent);
