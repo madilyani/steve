@@ -70,15 +70,23 @@ function onTopTabClick(tabBtns, tabItems, item) {
     }
   });
 }
-// const agentBtn = document.querySelectorAll(".agentBtn");
-// const agentItem = document.querySelectorAll(".agentItem");
-// agentBtn.forEach((e) => {
-//   onTabClick(agentBtn, agentItem, e);
-// });
+const agentBtn = document.querySelectorAll(".agentBtn");
+const agentItem = document.querySelectorAll(".agentItem");
+agentBtn.forEach((e) => {
+  onTabClick(agentBtn, agentItem, e);
+});
+const buyRentBtn = document.querySelectorAll(".buyRentBtn");
+const buyRentItem = document.querySelectorAll(".buyRentItem");
+buyRentBtn.forEach((e) => {
+  onTabClick(buyRentBtn, buyRentItem, e);
+});
+const interestBtn = document.querySelectorAll(".interestBtn");
+const interestItem = document.querySelectorAll(".interestItem");
+interestBtn.forEach((e) => {
+  onTabClick(interestBtn, interestItem, e);
+});
 function onTabClick(agentBtns, agentItems, itemAgent) {
   itemAgent.addEventListener("click", function (e) {
-    console.log("hello");
-    console.log(e);
     let currentAgentBtn = itemAgent;
     let tabIdAgent = currentAgentBtn.getAttribute("data-tab");
     let currentAgentItem = document.querySelector(tabIdAgent);
@@ -94,53 +102,45 @@ function onTabClick(agentBtns, agentItems, itemAgent) {
     }
   });
 }
-const buyRentBtn = document.querySelectorAll(".buyRentBtn");
-const buyRentItem = document.querySelectorAll(".buyRentItem");
-buyRentBtn.forEach((e) => {
-  onTabClick(buyRentBtn, buyRentItem, e);
-});
-function onTabClick(asdfasdf, asdfasdf, dafsdfasdf) {
-  dafsdfasdf.addEventListener("click", function (e) {
+
+// function onTabClick(asdfasdf, asdfasdf, dafsdfasdf) {
+//   dafsdfasdf.addEventListener("click", function (e) {
     
-    let currentbuyRentBtn = dafsdfasdf;
-    let tabIdButRent = currentbuyRentBtn.getAttribute("data-tab");
-    let currentbuyRentItem = document.querySelector(tabIdButRent);
-    if (!currentbuyRentBtn.classList.contains("active")) {
-      asdfasdf.forEach(function (dafsdfasdf) {
-        dafsdfasdf.classList.remove("active");
-      });
-      asdfasdf.forEach(function (dafsdfasdf) {
-        dafsdfasdf.classList.remove("active");
-      });
-      currentbuyRentBtn.classList.add("active");
-      currentbuyRentItem.classList.add("active");
-    }
-  });
-}
-const interestBtn = document.querySelectorAll(".interestBtn");
-const interestItem = document.querySelectorAll(".interestItem");
-interestBtn.forEach((e) => {
-  onTabClick(interestBtn, interestItem, e);
-});
-function onTabClick(interestBtns, interestItems, itemInterest) {
+//     let currentbuyRentBtn = dafsdfasdf;
+//     let tabIdButRent = currentbuyRentBtn.getAttribute("data-tab");
+//     let currentbuyRentItem = document.querySelector(tabIdButRent);
+//     if (!currentbuyRentBtn.classList.contains("active")) {
+//       asdfasdf.forEach(function (dafsdfasdf) {
+//         dafsdfasdf.classList.remove("active");
+//       });
+//       asdfasdf.forEach(function (dafsdfasdf) {
+//         dafsdfasdf.classList.remove("active");
+//       });
+//       currentbuyRentBtn.classList.add("active");
+//       currentbuyRentItem.classList.add("active");
+//     }
+//   });
+// }
+
+// function onTabClick(interestBtns, interestItems, itemInterest) {
   
-  itemInterest.addEventListener("click", function (e) {
+//   itemInterest.addEventListener("click", function (e) {
     
-    let currentinterestBtn = itemInterest;
-    let tabIdButRent = currentinterestBtn.getAttribute("data-tab");
-    let currentinterestItem = document.querySelector(tabIdButRent);
-    if (!currentinterestBtn.classList.contains("active")) {
-      interestBtns.forEach(function (itemInterest) {
-        itemInterest.classList.remove("active");
-      });
-      interestItems.forEach(function (itemInterest) {
-        itemInterest.classList.remove("active");
-      });
-      currentinterestBtn.classList.add("active");
-      currentinterestItem.classList.add("active");
-    }
-  });
-}
+//     let currentinterestBtn = itemInterest;
+//     let tabIdButRent = currentinterestBtn.getAttribute("data-tab");
+//     let currentinterestItem = document.querySelector(tabIdButRent);
+//     if (!currentinterestBtn.classList.contains("active")) {
+//       interestBtns.forEach(function (itemInterest) {
+//         itemInterest.classList.remove("active");
+//       });
+//       interestItems.forEach(function (itemInterest) {
+//         itemInterest.classList.remove("active");
+//       });
+//       currentinterestBtn.classList.add("active");
+//       currentinterestItem.classList.add("active");
+//     }
+//   });
+// }
 var wow = new WOW({
   boxClass: "wow",
   animateClass: "animated",

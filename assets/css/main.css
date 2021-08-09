@@ -2329,6 +2329,16 @@ li {
     opacity: 1;
   }
 }
+.sectionStart {
+  -webkit-animation: book 0.2s linear;
+          animation: book 0.2s linear;
+  position: relative;
+  display: none;
+}
+.sectionStart.active {
+  display: block;
+}
+
 .intro {
   margin-top: 97px;
   padding: 90px 0;
