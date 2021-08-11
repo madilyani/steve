@@ -48,6 +48,7 @@
     border-radius: 4px;
     cursor: pointer;
     @include transition;
+
     svg {
       stroke: $white;
     }
@@ -60,6 +61,7 @@
       background: $grey-2;
       border: 1px solid $grey-2;
     }
+
   }
 }
 .row__2 {
@@ -106,7 +108,7 @@
   }
 }
 .row__4 {
-  display: flex; 
+  display: flex;
   margin: 0 -15px;
   &-column {
     width: calc(25% - 30px);

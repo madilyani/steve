@@ -584,6 +584,14 @@
         }
         .para {
           text-align: center;
+          margin-bottom: 10px;
+        }
+        ul {
+          margin-left: 0;
+          li {
+            list-style: none;
+            text-align: center;
+          }
         }
         &-link {
           justify-content: center;
@@ -593,6 +601,7 @@
         }
       }
     }
+
     h5 {
       margin-bottom: 10px;
       br {
@@ -806,9 +815,12 @@
     }
     h5 {
       text-align: center;
+      color: $white;
     }
     p {
       text-align: center;
+      color: $white;
+
     }
   }
   // app end
