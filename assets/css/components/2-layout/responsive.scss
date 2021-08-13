@@ -396,6 +396,66 @@
     }
   }
   // result page end
+  // login pages start
+  .loginPages {
+    &__content {
+      padding: 80px 20px 80px 30px;
+      width: calc(50% - 50px);
+    }
+    &__image {
+      &-card {
+        width: 50%;
+        &-md {
+          width: 35%;
+          left: 5%;
+        }
+        &-sm {
+          width: 35%;
+          right: 5%;
+        }
+      }
+    }
+  }
+  .loginForm {
+    max-width: unset;
+    &__type {
+      &-radio {
+        label {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .login {
+    &__inner {
+      &-footer {
+        max-width: unset;
+      }
+    }
+  }
+  .upload {
+    &__image {
+      width: 128px;
+      height: 128px;
+      &-id {
+        width: 168px;
+        height: 110px;
+      }
+    }
+    &__content {
+      width: calc(100% - 170px);
+    }
+  }
+  .input {
+    &__row {
+      margin: 0;
+    }
+    &__column {
+      width: 100%;
+      margin: 2.5px 0;
+    }
+  }
+  // login pages end
 }
 @include xlg-xxlg {
   // map start
@@ -820,7 +880,6 @@
     p {
       text-align: center;
       color: $white;
-
     }
   }
   // app end
@@ -1063,6 +1122,34 @@
     }
   }
   // result page end
+  // login pages start
+  .loginPages {
+    &__image {
+      display: none;
+    }
+    &__content {
+      padding: 40px 0;
+      width: 80%;
+      max-width: 400px;
+      height: unset;
+      margin: 0 auto;
+      position: unset;
+      overflow: unset;
+    }
+  }
+  .loginForm {
+    &.w-secondary {
+      max-width: unset;
+    }
+  }
+  .login {
+    &__success {
+      position: fixed;
+      left: 50%;
+      @include transform;
+    }
+  }
+  // login pages end
 }
 @include md-lg {
   .auto__container {
@@ -1296,4 +1383,14 @@
     }
   }
   // // valuation end
+  // login pages start
+  .loginPages {
+    &__content {
+      width: calc(100% - 40px);
+      max-width: unset;
+      padding: 40px 20px;
+      margin: unset;
+    }
+  }
+  // login pages end
 }

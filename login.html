@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Log in</title>
+</head>
+
+<body>
+    <!-- loginPages section start
+    =============================================================== -->
+    <section class="loginPages">
+        <div class="loginPages__image">
+            <div class="loginPages__image-bg">
+                <img src="assets/images/loginPages/loginBg.png" alt="">
+            </div>
+            <div class="loginPages__image-map">
+                <img src="assets/images/loginPages/loginMap.png" alt="">
+            </div>
+            <div class="loginPages__image-card">
+                <img src="assets/images/loginPages/loginCard.png" alt="">
+            </div>
+            <div class="loginPages__image-card-md">
+                <img src="assets/images/loginPages/loginCardMd.png" alt="">
+            </div>
+            <div class="loginPages__image-card-sm">
+                <img src="assets/images/loginPages/loginCardSm.png" alt="">
+            </div>
+        </div>
+        <div class="loginPages__content">
+            <section class="login loginItem active" id="login">
+                <div class="login__inner">
+                    <div class="login__inner-body">
+                        <h4 class="bold">
+                            Welcome Back
+                        </h4>
+                        <p>
+                            Please Login to continue
+                        </p>
+                        <form action="#" class="loginForm m-t-40">
+                            <div class="loginForm__type">
+                                <div class="loginForm__type-label">
+                                    I am an :
+                                </div>
+                                <div class="loginForm__type-row">
+                                    <div class="loginForm__type-radio">
+                                        <input checked type="radio" name="type">
+                                        <label for="">Home Owner</label>
+                                    </div>
+                                    <div class="loginForm__type-radio">
+                                        <input type="radio" name="type">
+                                        <label for="">Agent</label>
+                                    </div>
+                                    <div class="loginForm__type-radio">
+                                        <input type="radio" name="type">
+                                        <label for="">Buyer</label>
+                                    </div>
+                                    <div class="loginForm__type-radio">
+                                        <input type="radio" name="type">
+                                        <label for="">Renter</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input__outer">
+                                <label for="">
+                                    Email Address
+                                </label>
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="input__outer">
+                                <label for="">
+                                    Password
+                                </label>
+                                <input type="password" placeholder="Password">
+                            </div>
+                            <div class="loginForm__row">
+                                <div class="loginForm__check">
+                                    <input type="checkbox" id="">
+                                    <label for="">Remember me</label>
+                                </div>
+                                <div class="loginForm__forget loginBtn" data-tab="#forget">
+                                    Forgot Password
+                                </div>
+                            </div>
+                            <button type="submit" class="btn__secondary">
+                                Login
+                            </button>
+                            <div class="loginForm__or">
+                                <span>or</span>
+                            </div>
+                            <a href="#" class="loginForm__social facebook">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.1169 0.5H0.883111C0.648896 0.5 0.424273 0.593042 0.258657 0.758657C0.0930418 0.924273 0 1.1489 0 1.38311V15.6171C5.89273e-05 15.8513 0.0931268 16.0759 0.258736 16.2414C0.424345 16.407 0.648934 16.5 0.883111 16.5H8.546V10.304H6.46089V7.88933H8.546V6.10844C8.546 4.04178 9.80822 2.91667 11.6518 2.91667C12.5349 2.91667 13.2938 2.98222 13.5151 3.01178V5.17156L12.2364 5.17222C11.2338 5.17222 11.0398 5.64867 11.0398 6.34778V7.88956H13.4309L13.1196 10.3042H11.0398V16.5H15.1171C15.3513 16.4999 15.5759 16.4069 15.7414 16.2413C15.907 16.0757 16 15.8511 16 15.6169V1.38311C16 1.1489 15.907 0.924273 15.7413 0.758657C15.5757 0.593042 15.3511 0.5 15.1169 0.5Z"
+                                        fill="white" />
+                                </svg>
+                                Sign In With Facebook
+                            </a>
+                            <a href="#" class="loginForm__social linked">
+                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.4 0.5H1.6C0.72 0.5 0 1.22 0 2.1V14.9C0 15.78 0.72 16.5 1.6 16.5H14.4C15.28 16.5 16 15.78 16 14.9V2.1C16 1.22 15.28 0.5 14.4 0.5ZM4.8 14.1H2.4V6.9H4.8V14.1ZM3.6 5.54C2.8 5.54 2.16 4.9 2.16 4.1C2.16 3.3 2.8 2.66 3.6 2.66C4.4 2.66 5.04 3.3 5.04 4.1C5.04 4.9 4.4 5.54 3.6 5.54ZM13.6 14.1H11.2V9.86C11.2 9.22003 10.64 8.66 10 8.66C9.36 8.66 8.8 9.22003 8.8 9.86V14.1H6.4V6.9H8.8V7.86C9.2 7.22 10.08 6.74 10.8 6.74C12.32 6.74 13.6 8.02 13.6 9.54V14.1Z"
+                                        fill="white" />
+                                </svg>
+                                Sign In With LinkedIn
+                            </a>
+                            <p>
+                                Don’t have account? <a href="register.html">Register here</a>
+                            </p>
+                            <div class="loginForm__btns wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".3s">
+                                <button>
+                                    <img src="assets/images/appBtns/apple.svg" alt="">
+                                </button>
+                                <button>
+                                    <img src="assets/images/appBtns/google.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="loginForm__copyright">
+                                ©2021 ByThehomeOwner
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="login loginItem" id="forget">
+                <div class="login__inner">
+                    <div class="login__inner-body">
+                        <div class="login__inner-back loginBtn" data-tab="#login">
+                            <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.66683 1.5L1.3335 4.83333L4.66683 8.16667" stroke="#34C0E3"
+                                    stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            Back
+                        </div>
+                        <h4 class="bold">
+                            Forgot password
+                        </h4>
+                        <form action="#" class="loginForm">
+                            <div class="input__outer">
+                                <label for="">
+                                    Email Address
+                                </label>
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <button type="submit" class="btn__secondary">
+                                Get Code
+                            </button>
+                            <p class="m-t-20">
+                                Don’t have account? <a href="register.html">Register here</a>
+                            </p>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- loginPages section end
+    =============================================================== -->
+    <script src="assets/js/login.js"></script>
+</body>
+
+</html>

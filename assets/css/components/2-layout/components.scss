@@ -16,6 +16,7 @@
     border-radius: 4px;
     cursor: pointer;
     @include transition;
+    font-family: "Lato", sans-serif;
     svg {
       stroke: $main;
     }
@@ -48,7 +49,7 @@
     border-radius: 4px;
     cursor: pointer;
     @include transition;
-
+    font-family: "Lato", sans-serif;
     svg {
       stroke: $white;
     }
@@ -61,7 +62,6 @@
       background: $grey-2;
       border: 1px solid $grey-2;
     }
-
   }
 }
 .row__2 {
