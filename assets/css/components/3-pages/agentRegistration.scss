@@ -1,0 +1,239 @@
+.introAgent {
+  margin-top: 97px;
+  overflow: hidden;
+  &__inner {
+    display: flex;
+    &-image {
+      width: calc(50% + 165px);
+      margin-right: -165px;
+      position: relative;
+      height: 765px;
+      z-index: 1;
+      &-bg {
+        width: 100%;
+        height: 80%;
+        img {
+          @include fullImage;
+        }
+      }
+      &-map {
+        position: absolute;
+        bottom: 0;
+        right: -50px;
+        width: 90%;
+        height: 90%;
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+      &-card {
+        position: absolute;
+        bottom: 15%;
+        left: -40px;
+        width: 252px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 30px 50px rgba(85, 108, 130, 0.1);
+        img {
+          width: 100%;
+        }
+      }
+    }
+    &-content {
+      width: calc(50% - 40px);
+      padding-right: 40px;
+      padding-top: 85px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: $primary;
+        top: -12px;
+        right: 20px;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 15%;
+        right: 30%;
+        background: $main;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  p {
+    margin: 20px 0 40px 0;
+  }
+  .btn__secondary {
+    display: inline-block;
+  }
+}
+.aboutAgent {
+  padding: 80px 0;
+  &.white {
+    background: $white;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    &-image {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    &-content {
+      &.p-left {
+        padding-left: 50px;
+        width: calc(50% - 50px);
+      }
+      &.p-right {
+        padding-right: 50px;
+        width: calc(50% - 50px);
+      }
+      .subtitle-2 {
+        &.pink {
+          color: $primary;
+          margin-top: 20px;
+        }
+      }
+      p {
+        margin-top: 20px;
+        color: $black-2;
+        line-height: 180%;
+      }
+    }
+  }
+}
+
+.whyAgent {
+  background: $main-6;
+  padding: 40px 0;
+  .center {
+    text-align: center;
+  }
+  p {
+    color: $black-2;
+  }
+  &__inner {
+    max-width: 765px;
+    margin: 0 auto;
+  }
+  .subtitle-2 {
+    margin-top: 60px;
+    color: $black-1;
+  }
+  ul {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+      width: calc(50% - 60px);
+      padding: 0 30px;
+      position: relative;
+      margin-bottom: 15px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 160%;
+      color: #5f5f5f;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: $primary;
+        border-radius: 50%;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        top: 6px;
+        @include transformY;
+        transform: rotate(45deg);
+        height: 8px;
+        width: 3px;
+        left: 8px;
+        border-bottom: 2px solid $white;
+        border-right: 2px solid $white;
+        @include transition;
+      }
+    }
+  }
+}
+.testimonialAgent {
+  padding: 80px 0;
+  background: $white;
+}
+.businessAgent {
+  padding: 80px 0;
+  background: $main-6;
+  &__inner {
+    position: relative;
+    &-content {
+      background: #ffffff;
+      box-shadow: 0px 30px 50px rgba(85, 108, 130, 0.1);
+      border-radius: 20px;
+      padding: 40px 60px;
+      p {
+        color: #5f5f5f;
+        margin: 20px 0 40px 0;
+      }
+      h4 {
+        span {
+          display: block;
+          color: $primary;
+        }
+      }
+    }
+    &-image {
+      width: calc(45% - 40px);
+      padding-left: 40px;
+      position: absolute;
+      top: 50%;
+      @include transformY;
+      right: 0;
+      height: 415px;
+      &-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 65%;
+        max-width: 315px;
+        box-shadow: 0px 30px 50px rgba(85, 108, 130, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-2 {
+        position: absolute;
+        bottom: 10%;
+        right: 0;
+        width: 65%;
+        max-width: 390px;
+        box-shadow: 0px 30px 50px rgba(85, 108, 130, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

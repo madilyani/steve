@@ -1392,5 +1392,14 @@
       margin: unset;
     }
   }
+  .loginForm {
+    &__type {
+      &-radio {
+        label {
+          padding: 6px 10px;
+        }
+      }
+    }
+  }
   // login pages end
 }
