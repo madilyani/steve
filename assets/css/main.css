@@ -3541,8 +3541,9 @@ li {
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
-  width: 100%;
+  width: calc(100% - 24px);
   max-width: 350px;
+  padding: 0 12px;
 }
 .login__success h4 {
   text-align: center;
@@ -5498,6 +5499,41 @@ li {
 
   .loginForm__type-radio label {
     padding: 6px 10px;
+  }
+}
+@media (max-width: 360px) {
+  .loginPages__content {
+    padding: 20px 12px;
+    width: calc(100% - 24px);
+  }
+
+  .login__inner-footer {
+    padding: 20px 0;
+  }
+  .login__inner-footer .btn__primary {
+    width: 100px !important;
+  }
+  .login__inner-footer .btn__secondary {
+    width: 100px !important;
+  }
+  .login h4 {
+    font-size: 28px;
+  }
+  .login p {
+    font-size: 14px;
+  }
+
+  .upload__image {
+    width: 100px;
+    height: 100px;
+  }
+  .upload__image-id {
+    width: 100px;
+    height: 100px;
+  }
+  .upload__content {
+    width: calc(100% - 120px);
+    padding-left: 20px;
   }
 }
 /* Slider */

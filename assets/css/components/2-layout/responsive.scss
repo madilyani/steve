@@ -1403,3 +1403,44 @@
   }
   // login pages end
 }
+@include xsm-sm {
+  .loginPages {
+    &__content {
+      padding: 20px 12px;
+      width: calc(100% - 24px);
+    }
+  }
+  .login {
+    &__inner {
+      &-footer {
+        padding: 20px 0;
+        .btn__primary {
+          width: 100px !important;
+        }
+        .btn__secondary {
+          width: 100px !important;
+        }
+      }
+    }
+    h4 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .upload {
+    &__image {
+      width: 100px;
+      height: 100px;
+      &-id {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    &__content {
+      width: calc(100% - 120px);
+      padding-left: 20px;
+    }
+  }
+}
