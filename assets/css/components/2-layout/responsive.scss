@@ -1322,6 +1322,32 @@
     }
   }
   // agentRegistration page end
+  // agentRegistrationForm page start
+  .agentForm {
+    &__form {
+      &-content {
+        &-row {
+          margin: 0 -12px 20px -12px;
+          &:last-child {
+            margin: 0 -12px;
+          }
+        }
+        &-column-1 {
+          width: calc(100% - 24px);
+          margin: 0 12px;
+        }
+        &-column-2 {
+          width: calc(50% - 24px);
+          margin: 0 12px;
+        }
+        &-column-3 {
+          width: calc(33.3% - 24px);
+          margin: 0 12px;
+        }
+      }
+    }
+  }
+  // agentRegistrationForm page end
 }
 @include md-lg {
   .auto__container {
@@ -1562,6 +1588,31 @@
     padding: 20px 0;
   }
   // agentRegistration page end
+  // agentRegistrationForm page start
+  .agentForm {
+    &__form {
+      &-content {
+        &-header {
+          margin-bottom: 20px;
+        }
+        &-column-2 {
+          width: calc(100% - 24px);
+          margin: 0 12px;
+        }
+      }
+    }
+    .upload {
+      &__image {
+        width: 250px;
+        height: 250px;
+      }
+      &__content {
+        width: calc(100% - 280px);
+      }
+    }
+  }
+
+  // agentRegistrationForm page end
 }
 @include sm-md {
   // // valuation start
@@ -1627,6 +1678,41 @@
     font-size: 32px;
   }
   // agentRegistration page end
+  // agentRegistrationForm page start
+  .agentHeader {
+    padding: 20px 0;
+  }
+  .agentForm {
+    padding: 20px 0;
+    &__form {
+      &-content {
+        &-header {
+          margin-bottom: 20px;
+        }
+        &-column-3 {
+          width: calc(100% - 24px);
+          margin: 0 12px 8px 12px;
+          &:last-child {
+            margin: 0 12px;
+          }
+        }
+      }
+    }
+    .upload {
+      flex-direction: column;
+      -ms-flex-direction: column;
+      &__image {
+        width: 100%;
+        max-width: 350px;
+        height: 350px;
+      }
+      &__content {
+        width: 100%;
+        padding: 20px 0;
+      }
+    }
+  }
+  // agentRegistrationForm page end
 }
 @include xsm-sm {
   .loginPages {
