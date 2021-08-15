@@ -75,6 +75,8 @@
   }
   p {
     margin: 20px 0 40px 0;
+    line-height: 170%;
+    width: 90%;
   }
   .btn__secondary {
     display: inline-block;
@@ -121,6 +123,9 @@
 .whyAgent {
   background: $main-6;
   padding: 40px 0;
+  h3 {
+    margin-bottom: 30px;
+  }
   .center {
     text-align: center;
   }
@@ -178,7 +183,120 @@
 }
 .testimonialAgent {
   padding: 80px 0;
-  background: $white;
+  &__slider {
+    &-outer {
+      position: relative;
+      .testPrev {
+        background: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: -30px;
+        @include transformY;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+      }
+      .testNext {
+        background: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        @include transformY;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 48px;
+        height: 48px;
+      }
+    }
+    &-icon {
+      position: absolute;
+      svg {
+        width: 135px;
+        height: 115px;
+      }
+      &:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &:nth-child(2) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    &-item {
+      margin: 40px;
+      padding: 30px;
+      border-radius: 10px;
+      background: $white;
+      box-shadow: 0px 15px 25px rgba(85, 108, 130, 0.1);
+      &-row {
+        display: flex;
+        align-items: center;
+      }
+      &-image {
+        width: 175px;
+        height: 175px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-right: 40px;
+        img {
+          @include fullImage;
+        }
+      }
+      &-content {
+        width: calc(100% - 115px);
+        &-para {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 160%;
+          color: #5f5f5f;
+          a {
+            color: $primary;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 180%;
+          }
+        }
+        &-prof {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 120%;
+          color: #5f5f5f;
+          margin-top: 20px;
+        }
+      }
+    }
+    .slick-dots {
+      bottom: -10px;
+      li {
+        button:before {
+          background: $grey-2;
+        }
+      }
+    }
+  }
+  h3 {
+    text-align: center;
+    color: $black;
+    margin-bottom: 20px;
+  }
+  .subtitle-2 {
+    color: $primary;
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto;
+  }
 }
 .businessAgent {
   padding: 80px 0;

@@ -109,6 +109,67 @@
     }
   }
   // feature end
+  // agentRegistartion page start
+  .introAgent {
+    &__inner {
+      &-image {
+        width: calc(50% + 100px);
+        margin-right: -100px;
+        height: 650px;
+        &-card {
+          width: 200px;
+        }
+      }
+    }
+  }
+  .aboutAgent {
+    padding: 40px 0;
+  }
+  .testimonialAgent {
+    padding: 40px 0;
+    &__slider {
+      &-outer {
+        .testPrev {
+          left: 0;
+          z-index: 1;
+        }
+        .testNext {
+          right: 0;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  .businessAgent {
+    margin: 0 -20px;
+    width: calc(100% + 40px);
+    &__inner {
+      &-image {
+        &-1 {
+          width: 80%;
+        }
+        &-2 {
+          width: 80%;
+        }
+      }
+      &-content {
+        border-radius: 0;
+        p {
+          width: 50%;
+          br {
+            display: none;
+          }
+        }
+        h4 {
+          width: 50%;
+          br {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  // agentRegistartion page end
 }
 @include xxlg-xxxlg {
   h1 {
@@ -1150,6 +1211,117 @@
     }
   }
   // login pages end
+  // agentRegistration page start
+  .introAgent {
+    &__inner {
+      margin: 0 auto;
+      max-width: 560px;
+      &-content {
+        padding: 0;
+        width: 100%;
+      }
+      &-image {
+        display: none;
+      }
+    }
+  }
+  .aboutAgent {
+    &__inner {
+      max-width: 560px;
+      margin: 0 auto;
+      &-image {
+        display: none;
+      }
+      &-content {
+        &.p-left {
+          width: 100%;
+          padding: 0;
+        }
+        &.p-right {
+          width: 100%;
+          padding: 0;
+        }
+      }
+    }
+    h3 {
+      text-align: center;
+      br {
+        display: none;
+      }
+    }
+    p {
+      text-align: center;
+    }
+    .subtitle-2 {
+      text-align: center;
+    }
+  }
+  .whyAgent {
+    &__inner {
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    ul {
+      margin-left: 40px;
+      li {
+        width: calc(100% - 30px);
+        padding: 0 0 0 30px;
+      }
+    }
+  }
+  .testimonialAgent {
+    &__inner {
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    &__slider {
+      &-outer {
+        .testNext {
+          display: none !important;
+        }
+        .testPrev {
+          display: none !important;
+        }
+      }
+      &-item {
+        margin: 0;
+        padding: 10px 20px;
+        &-row {
+          flex-direction: column;
+          -ms-flex-direction: column;
+        }
+        &-image {
+          margin: 20px 0;
+        }
+        &-content {
+          width: 100%;
+        }
+      }
+      .slick-dots {
+        margin-bottom: -30px;
+      }
+    }
+  }
+  .businessAgent {
+    max-width: 560px;
+    margin: 0 auto;
+    width: unset;
+    &__inner {
+      &-image {
+        display: none;
+      }
+      &-content {
+        padding: 20px;
+        h4 {
+          width: unset;
+        }
+        p {
+          width: unset;
+        }
+      }
+    }
+  }
+  // agentRegistration page end
 }
 @include md-lg {
   .auto__container {
@@ -1359,6 +1531,37 @@
     }
   }
   // row section end
+  // agentRegistration page start
+  .introAgent {
+    padding-bottom: 20px;
+    h2 {
+      font-size: 52px;
+    }
+  }
+  .aboutAgent {
+    padding: 15px 0;
+    h3 {
+      font-size: 40px;
+    }
+  }
+  .whyAgent {
+    h3 {
+      font-size: 40px;
+    }
+    ul {
+      margin: 20px 0 20px 20px;
+    }
+    .subtitle-2 {
+      margin-top: 20px;
+    }
+  }
+  .testimonialAgent {
+    padding: 20px 0;
+  }
+  .businessAgent {
+    padding: 20px 0;
+  }
+  // agentRegistration page end
 }
 @include sm-md {
   // // valuation start
@@ -1402,6 +1605,28 @@
     }
   }
   // login pages end
+  // agentRegistration page start
+  .businessAgent {
+    h4 {
+      font-size: 28px;
+    }
+  }
+  .testimonialAgent__slider-item-content-para {
+    font-size: 20px;
+  }
+  .introAgent h2 {
+    font-size: 44px;
+  }
+  .aboutAgent h3 {
+    font-size: 32px;
+  }
+  .whyAgent h3 {
+    font-size: 32px;
+  }
+  .testimonialAgent h3 {
+    font-size: 32px;
+  }
+  // agentRegistration page end
 }
 @include xsm-sm {
   .loginPages {
