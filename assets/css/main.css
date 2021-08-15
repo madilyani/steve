@@ -2595,6 +2595,10 @@ li {
   width: 100%;
   border-radius: 13px;
 }
+.intro p {
+  color: #222222;
+  padding-left: 12px;
+}
 
 .feature {
   padding: 75px 0;
