@@ -184,6 +184,21 @@
     }
   }
   // agentRegistartion page end
+  // agentProfile page start
+  .agentProfile {
+    &__tab {
+      &-body {
+        .row__3 {
+          margin: 0 -5px;
+          &-column {
+            width: calc(33.3% - 10px);
+            margin: 5px;
+          }
+        }
+      }
+    }
+  }
+  // agentProfile page end
 }
 @include xxlg-xxxlg {
   h1 {
@@ -572,6 +587,34 @@
     }
   }
   // realEstate page end
+  // agentProfile page start
+  .agentProfile {
+    &__inner {
+      &-card {
+        display: none;
+      }
+      &-content {
+        width: 100%;
+      }
+    }
+    &__tab {
+      &-header {
+        &-btn {
+          br {
+            display: block;
+          }
+        }
+      }
+      &-body {
+        .row__3 {
+          &-column {
+            min-width: unset;
+          }
+        }
+      }
+    }
+  }
+  // agentProfile page end
 }
 @include xlg-xxlg {
   // map start
@@ -1447,6 +1490,24 @@
     }
   }
   // realEstate page end
+  // agentProfile page start
+  .agentProfile {
+    &__header {
+      flex-wrap: wrap;
+    }
+    &__tab {
+      &-body {
+        .row__3 {
+          margin: 0 -10px;
+          &-column {
+            width: calc(50% - 20px);
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+  // agentProfile page end
 }
 @include md-lg {
   .auto__container {
@@ -1740,6 +1801,62 @@
     }
   }
   // realEstate page end
+  // agentProfile page start
+  .agentProfile {
+    &__inner {
+      &-content {
+        &-about {
+          &-header {
+            flex-direction: column;
+            -ms-flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            &-language {
+              margin-top: 10px;
+            }
+          }
+          &-footer {
+            &-socials {
+              flex-wrap: wrap;
+              a {
+                width: calc(50% - 10px);
+                margin: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__tab {
+      &-header {
+        flex-wrap: wrap;
+        &-btn {
+          margin: 5px;
+          width: calc(50% - 20px);
+        }
+      }
+      &-body {
+        .row__3 {
+          flex-direction: row;
+          -ms-flex-direction: row;
+        }
+      }
+      &-pagination {
+        margin-top: 40px;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        &-row {
+          margin-top: 15px;
+        }
+        &-number {
+          &:nth-child(n + 7) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  // agentProfile page end
 }
 @include sm-md {
   // // valuation start
@@ -1885,6 +2002,33 @@
     }
   }
   // realEstate page end
+  // agentProfile page start
+  .agentProfile {
+    &__tab {
+      &-body {
+        .row__3 {
+          margin: 0 -5px;
+          &-column {
+            width: calc(50% - 10px);
+            margin: 5px;
+          }
+        }
+      }
+    }
+    .card {
+      &__inner {
+        &-slider {
+          &-item {
+            height: 150px !important;
+          }
+        }
+      }
+    }
+  }
+  .card__inner-body-price.agentProfileCard {
+    font-size: 18px;
+  }
+  // agentProfile page end
 }
 @include xsm-sm {
   .loginPages {
@@ -1930,5 +2074,22 @@
   .realEstate__table-row {
     padding: 10px;
   }
-  // realEstate page end
+  // realEstate page end\
+  // agentProfile page start
+  .agentProfile {
+    &__tab {
+      &-body {
+        .row__3 {
+          margin: 0;
+          flex-direction: column;
+          -ms-flex-direction: column;
+          &-column {
+            width: 100%;
+            margin: 5px 0;
+          }
+        }
+      }
+    }
+  }
+  // agentProfile page end
 }

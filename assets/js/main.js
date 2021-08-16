@@ -82,6 +82,11 @@ const realEstateEvent = document.querySelectorAll(".realEstateEvent");
 realEstateBtn.forEach((e) => {
   onTabClick(realEstateBtn, realEstateEvent, e);
 });
+const agentProfileBtn = document.querySelectorAll(".agentProfileBtn");
+const agentProfileEvent = document.querySelectorAll(".agentProfileEvent");
+agentProfileBtn.forEach((e) => {
+  onTabClick(agentProfileBtn, agentProfileEvent, e);
+});
 function onTabClick(agentBtns, agentItems, itemAgent) {
   itemAgent.addEventListener("click", function (e) {
     let currentAgentBtn = itemAgent;
@@ -97,5 +102,6 @@ function onTabClick(agentBtns, agentItems, itemAgent) {
       currentAgentBtn.classList.add("active");
       currentAgentItem.classList.add("active");
     }
+    $(".card__inner-slider").slick("setPosition");
   });
 }

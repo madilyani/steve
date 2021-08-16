@@ -20,6 +20,9 @@
       svg {
         margin-right: 5px;
       }
+      &.sold {
+        background: $error;
+      }
     }
     &-slider {
       &-item {
@@ -29,6 +32,21 @@
         overflow: hidden;
         img {
           @include fullImage;
+        }
+      }
+      &.rented {
+        .slick-dots li.slick-active button::before {
+          background: $primary;
+        }
+      }
+      &.sold {
+        .slick-dots li.slick-active button::before {
+          background: $error;
+        }
+      }
+      &.active {
+        .slick-dots li.slick-active button::before {
+          background: $primary;
         }
       }
     }
@@ -122,6 +140,9 @@
     }
     &-body {
       padding: 3em;
+      &.agentProfileCard {
+        padding: 2em;
+      }
       &-uniq {
         font-style: normal;
         font-weight: bold;
@@ -144,7 +165,10 @@
         font-size: 12px;
         line-height: 150%;
         color: #444444;
-        margin-bottom: 10px;
+        &.agentProfileCard {
+          font-size: 14px;
+          color: $primary;
+        }
       }
       &-price {
         font-style: normal;
@@ -153,6 +177,9 @@
         line-height: 150%;
         color: #2097ee;
         margin-bottom: 10px;
+        &.agentProfileCard {
+          font-size: 28px;
+        }
       }
       &-title {
         display: flex;
@@ -257,6 +284,9 @@
       padding: 20px 0;
       margin: 0 30px;
       border-top: 1px solid #eeeeee;
+      &.agentProfileCard {
+        margin: 0 2em;
+      }
       &-row {
         display: flex;
         align-items: center;
@@ -419,7 +449,6 @@
     border-radius: 10px;
     position: relative;
     display: block;
-
     &-avatar {
       width: 50px;
       height: 50px;
@@ -675,6 +704,125 @@
         justify-content: center;
         text-align: center;
       }
+    }
+  }
+  &__profile {
+    padding: 20px;
+    background: $white;
+    box-shadow: 0px 15px 25px rgba(85, 108, 130, 0.1);
+    border-radius: 10px;
+    &-avatar {
+      margin: 0 auto 10px auto;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      img {
+        @include fullImage;
+      }
+    }
+    &-body {
+      &-name {
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 120%;
+        color: $black-1;
+        margin-bottom: 10px;
+        justify-content: center;
+        svg {
+          margin-left: 5px;
+        }
+      }
+      &-mail {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        color: $main;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-prof {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        color: $black-2;
+      }
+      &-star {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 120%;
+        color: $black-2;
+        svg {
+          margin-right: 5px;
+          fill: $warning;
+        }
+      }
+      .btn__secondary {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 130px;
+        padding: 8px 0;
+        margin: 10px auto;
+      }
+      .btn__primary {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 130px;
+        padding: 8px 0;
+        margin: 10px auto;
+      }
+    }
+  }
+  &__general {
+    padding: 15px 20px;
+    background: $white;
+    box-shadow: 0px 15px 25px rgba(85, 108, 130, 0.1);
+    border-radius: 10px;
+    &-avatar {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      img {
+        @include fullImage;
+      }
+    }
+    &-name {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 120%;
+      color: $black-1;
+      margin-bottom: 10px;
+    }
+    &-para {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 180%;
+      color: $grey;
+    }
+    &-footer {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
     }
   }
 }
