@@ -1,0 +1,253 @@
+.realEstate {
+  &__header {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid $grey-2;
+    margin-bottom: 20px;
+    &-sort {
+      width: 50%;
+      &-title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $black-2;
+        margin-bottom: 10px;
+      }
+      &-row {
+        display: flex;
+        align-items: center;
+      }
+      &-btn {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 120%;
+        color: $grey;
+        margin-right: 20px;
+        cursor: pointer;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.active {
+          color: $main;
+        }
+      }
+    }
+    &-search {
+      width: 50%;
+      .input {
+        &__outer {
+          &.search {
+            input {
+              padding: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__table {
+    &-tab {
+      display: none;
+      position: relative;
+      animation: book 0.4s linear;
+      &.active {
+        display: block;
+      }
+    }
+    &-header {
+      background: #ffffff;
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      &-column {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 120%;
+        color: #19b8df;
+        width: 22%;
+        &:first-child {
+          width: calc(40% - 80px);
+          padding-left: 80px;
+        }
+        &:last-child {
+          width: 16%;
+        }
+      }
+    }
+    &-body {
+      &-map {
+        position: relative;
+        margin-top: 20px;
+        &-frame {
+          width: 100%;
+          height: 720px;
+          img {
+            @include fullImage;
+          }
+        }
+        &-card {
+          position: absolute;
+          bottom: 70px;
+          left: 15%;
+          background: $white;
+          padding: 20px;
+          &-row {
+            display: flex;
+            align-items: center;
+          }
+          &-avatar {
+            width: 66px;
+            height: 66px;
+            border-radius: 50%;
+            border: 2px solid $main;
+            position: relative;
+            margin-right: 7px;
+            img {
+              @include fullImage;
+            }
+            svg {
+              position: absolute;
+              bottom: 0;
+              right: 0;
+            }
+          }
+          &-info {
+            width: calc(100% - 75px);
+            &-name {
+              font-style: normal;
+              font-weight: bold;
+              font-size: 16px;
+              line-height: 19px;
+              color: #606060;
+            }
+            &-location {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 12px;
+              line-height: 14px;
+              color: #606060;
+            }
+            .star__group {
+              flex-direction: column;
+              -ms-flex-direction: column;
+              align-items: flex-start;
+            }
+          }
+          .btn__secondary {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    &-row {
+      display: flex;
+      align-items: center;
+      padding: 28px 30px;
+      border-radius: 10px;
+      background: $white;
+      margin-top: 20px;
+    }
+    &-column {
+      width: 22%;
+      &:first-child {
+        width: 40%;
+      }
+      &:last-child {
+        width: 16%;
+        flex-direction: column;
+        -ms-flex-direction: column;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+      &-company {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: $black-2;
+        span {
+          display: block;
+          margin-top: 4px;
+          font-style: italic;
+          font-weight: normal;
+          font-size: 10px;
+          line-height: 12px;
+          color: #b7b7b7;
+        }
+      }
+      &-language {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: $black-2;
+      }
+      .btn__primary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 120px;
+        width: 100%;
+      }
+      .btn__secondary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 120px;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    }
+    &-info {
+      display: flex;
+      align-items: center;
+      &-avatar {
+        width: 58px;
+        height: 58px;
+        border-radius: 2px solid $main;
+        position: relative;
+        border-radius: 50%;
+        margin-right: 20px;
+        img {
+          @include fullImage;
+        }
+        svg {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+      &-about {
+        width: calc(100% - 80px);
+        &-name {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+          color: $black-2;
+        }
+        &-mail {
+          margin: 8px 0;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+          color: $grey-1;
+        }
+      }
+    }
+  }
+  p {
+    color: $black-2;
+    margin: 10px 0 14px 0;
+    max-width: 720px;
+  }
+}

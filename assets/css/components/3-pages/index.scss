@@ -153,7 +153,7 @@
 
     &-column {
       margin: 0 25px;
-      width: calc(33.3% - 50px);
+      width: calc(25% - 50px);
 
       &-icon {
         background: #d7f6d2;
@@ -208,7 +208,18 @@
           &__inner {
             &-column {
               &-icon {
-                background: #d5f6fe;
+                background: $main-5;
+              }
+            }
+          }
+        }
+      }
+      &:nth-child(4) {
+        .feature {
+          &__inner {
+            &-column {
+              &-icon {
+                background: $main-6;
               }
             }
           }

@@ -30,14 +30,7 @@ window.onscroll = function () {
 };
 
 // sticky
-$(".card__inner-slider").slick({
-  dots: true,
-  infinite: true,
-  arrows: false,
-  speed: 500,
-  fade: true,
-  cssEase: "linear",
-});
+
 const tabsBtn = document.querySelectorAll(".tabBtn");
 const tabsItems = document.querySelectorAll(".tabEvent");
 tabsBtn.forEach((e) => {
@@ -45,7 +38,7 @@ tabsBtn.forEach((e) => {
 });
 function onTopTabClick(tabBtns, tabItems, item) {
   item.addEventListener("click", function (e) {
-    let eId = e.target.getAttribute('data-tab');
+    let eId = e.target.getAttribute("data-tab");
     let currentBtn = item;
     let tabId = currentBtn.getAttribute("data-tab");
     let currentTab = document.querySelector(tabId);
@@ -57,14 +50,12 @@ function onTopTabClick(tabBtns, tabItems, item) {
       tabItems.forEach(function (item) {
         item.classList.remove("active");
       });
-      if(eId == '#book-1' || eId == '#book-2')
-      {
-        document.querySelector('#mapStart').classList.remove('active');
-        document.querySelector('#cardStart').classList.add('active');
-      }
-      else {
-        document.querySelector('#mapStart').classList.add('active');
-        document.querySelector('#cardStart').classList.remove('active');
+      if (eId == "#book-1" || eId == "#book-2") {
+        document.querySelector("#mapStart").classList.remove("active");
+        document.querySelector("#cardStart").classList.add("active");
+      } else {
+        document.querySelector("#mapStart").classList.add("active");
+        document.querySelector("#cardStart").classList.remove("active");
       }
       currentBtn.classList.add("active");
       currentTab.classList.add("active");
@@ -86,6 +77,11 @@ const interestItem = document.querySelectorAll(".interestItem");
 interestBtn.forEach((e) => {
   onTabClick(interestBtn, interestItem, e);
 });
+const realEstateBtn = document.querySelectorAll(".realEstateBtn");
+const realEstateEvent = document.querySelectorAll(".realEstateEvent");
+realEstateBtn.forEach((e) => {
+  onTabClick(realEstateBtn, realEstateEvent, e);
+});
 function onTabClick(agentBtns, agentItems, itemAgent) {
   itemAgent.addEventListener("click", function (e) {
     let currentAgentBtn = itemAgent;
@@ -103,53 +99,3 @@ function onTabClick(agentBtns, agentItems, itemAgent) {
     }
   });
 }
-
-// function onTabClick(asdfasdf, asdfasdf, dafsdfasdf) {
-//   dafsdfasdf.addEventListener("click", function (e) {
-    
-//     let currentbuyRentBtn = dafsdfasdf;
-//     let tabIdButRent = currentbuyRentBtn.getAttribute("data-tab");
-//     let currentbuyRentItem = document.querySelector(tabIdButRent);
-//     if (!currentbuyRentBtn.classList.contains("active")) {
-//       asdfasdf.forEach(function (dafsdfasdf) {
-//         dafsdfasdf.classList.remove("active");
-//       });
-//       asdfasdf.forEach(function (dafsdfasdf) {
-//         dafsdfasdf.classList.remove("active");
-//       });
-//       currentbuyRentBtn.classList.add("active");
-//       currentbuyRentItem.classList.add("active");
-//     }
-//   });
-// }
-
-// function onTabClick(interestBtns, interestItems, itemInterest) {
-  
-//   itemInterest.addEventListener("click", function (e) {
-    
-//     let currentinterestBtn = itemInterest;
-//     let tabIdButRent = currentinterestBtn.getAttribute("data-tab");
-//     let currentinterestItem = document.querySelector(tabIdButRent);
-//     if (!currentinterestBtn.classList.contains("active")) {
-//       interestBtns.forEach(function (itemInterest) {
-//         itemInterest.classList.remove("active");
-//       });
-//       interestItems.forEach(function (itemInterest) {
-//         itemInterest.classList.remove("active");
-//       });
-//       currentinterestBtn.classList.add("active");
-//       currentinterestItem.classList.add("active");
-//     }
-//   });
-// }
-var wow = new WOW({
-  boxClass: "wow",
-  animateClass: "animated",
-  offset: 0,
-  mobile: true,
-  live: true,
-  scrollContainer: null,
-  resetAnimation: true,
-});
-wow.init();
-// Utility function

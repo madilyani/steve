@@ -51,6 +51,20 @@
   .map {
     padding: 120px 0;
   }
+  // feature  start
+  .feature {
+    &__inner {
+      &-row {
+        margin: 0 -7.5px;
+      }
+      &-column {
+        width: calc(25% - 15px);
+        margin: 0 7.5px;
+      }
+    }
+  }
+
+  // feature  end
   // index page end
   // result page start
   .result {
@@ -246,6 +260,20 @@
   }
   // book end
   // intro end
+  // feature  start
+  .feature {
+    &__inner {
+      &-row {
+        flex-wrap: wrap;
+        margin: 0;
+      }
+      &-column {
+        width: calc(50% - 40px);
+        margin: 20px;
+      }
+    }
+  }
+  // feature  end
   // contact start
   .contact {
     padding: 50px 0;
@@ -517,6 +545,33 @@
     }
   }
   // login pages end
+  // realEstate page start
+  .realEstate {
+    &__header {
+      margin-bottom: 5px;
+      &-sort {
+        width: calc(100% - 275px);
+      }
+      &-search {
+        width: 275px;
+      }
+    }
+    &__table {
+      &-column {
+        width: 20%;
+        &:last-child {
+          width: 20%;
+        }
+        .btn__primary {
+          max-width: 100px;
+        }
+        .btn__secondary {
+          max-width: 100px;
+        }
+      }
+    }
+  }
+  // realEstate page end
 }
 @include xlg-xxlg {
   // map start
@@ -1348,6 +1403,50 @@
     }
   }
   // agentRegistrationForm page end
+  // realEstate page start
+  .realEstate {
+    &__header {
+      flex-direction: column;
+      -ms-flex-direction: column;
+      &-sort {
+        width: 100%;
+      }
+      &-search {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+    &__table {
+      &-header {
+        display: none;
+      }
+      &-row {
+        flex-wrap: wrap;
+        align-items: unset;
+      }
+      &-column {
+        width: 25%;
+        &:first-child {
+          width: 50%;
+        }
+        &:last-child {
+          width: 100%;
+          margin-top: 20px;
+          justify-content: center;
+          align-items: center;
+          flex-direction: row;
+          -ms-flex-direction: row;
+        }
+        .btn__primary {
+          margin: 0 15px;
+        }
+        .btn__secondary {
+          margin: 0 15px;
+        }
+      }
+    }
+  }
+  // realEstate page end
 }
 @include md-lg {
   .auto__container {
@@ -1613,6 +1712,34 @@
   }
 
   // agentRegistrationForm page end
+  // realEstate page start
+  .realEstate {
+    &__table {
+      &-row {
+        padding: 20px 60px 30px 60px;
+      }
+      &-info {
+        justify-content: center;
+        &-about {
+          width: unset;
+        }
+      }
+      &-column {
+        &-company {
+          text-align: center;
+        }
+        &-language {
+          text-align: center;
+        }
+        width: 100%;
+        margin: 10px 0 0 0;
+        &:first-child {
+          width: 100%;
+        }
+      }
+    }
+  }
+  // realEstate page end
 }
 @include sm-md {
   // // valuation start
@@ -1713,6 +1840,51 @@
     }
   }
   // agentRegistrationForm page end
+  // realEstate page start
+  .realEstate {
+    &__header {
+      &-sort {
+        &-btn {
+          white-space: nowrap;
+        }
+        &-row {
+          width: 100%;
+          overflow-x: scroll;
+          /* Hide scrollbar for Chrome, Safari and Opera */
+          &::-webkit-scrollbar {
+            display: none;
+          }
+
+          /* Hide scrollbar for IE, Edge and Firefox */
+          & {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+          }
+        }
+      }
+    }
+    &__table {
+      &-row {
+        padding: 10px 30px 20px 30px;
+      }
+      &-column {
+        &:last-child {
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          -ms-flex-direction: column;
+          margin: 10px 0 0 0;
+        }
+        .btn__primary {
+          margin: 5px 0;
+        }
+        .btn__secondary {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+  // realEstate page end
 }
 @include xsm-sm {
   .loginPages {
@@ -1754,4 +1926,9 @@
       padding-left: 20px;
     }
   }
+  // realEstate page start
+  .realEstate__table-row {
+    padding: 10px;
+  }
+  // realEstate page end
 }

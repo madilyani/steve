@@ -1756,7 +1756,7 @@
     <!-- feature start
     =========================================== -->
     <section class="feature">
-        <div class="auto__container">
+        <div class="extra__container">
             <div class="feature__inner">
                 <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
                     ByTheHomeOwner is changing the <br> Home buying, selling, renting and letting process
@@ -1844,6 +1844,44 @@
                         </div>
                         <div class="subtitle-1 bold">
                             Home Owners & Agents
+                        </div>
+                        <p class="para">
+                            With BTHO you can:
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Find</strong> ipsum dolor sit amet consectetur adipisicing elit. Quas, laborum
+                                ab? Iure,
+                            </li>
+                            <li>
+                                <strong>Get Mortgage</strong> ipsum dolor sit amet consectetur adipisicing elit. Quas,
+                                laborum ab? Iure,
+                            </li>
+                            <li>
+                                <strong>
+                                    Communicate
+                                </strong>
+                                dolor sit amet consectetur adipisicing elit. Quas,
+                                laborum ab? Iure,
+                            </li>
+                        </ul>
+                        <p class="para regular">
+                            all in one place
+                        </p>
+                        <a href="#" class="feature__inner-column-link">
+                            Advertise a Property
+                            <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.666667 7.33203L4 3.9987L0.666667 0.665365" stroke="" stroke-width="1.33333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="feature__inner-column">
+                        <div class="feature__inner-column-icon">
+                            <img src="assets/images/index/feature/Bill.svg" alt="">
+                        </div>
+                        <div class="subtitle-1 bold">
+                            Agents and Developers
                         </div>
                         <p class="para">
                             With BTHO you can:
@@ -3253,6 +3291,24 @@
     <script src="assets/js/main.js"></script>
 
     <script>
+        var wow = new WOW({
+            boxClass: "wow",
+            animateClass: "animated",
+            offset: 0,
+            mobile: true,
+            live: true,
+            scrollContainer: null,
+            resetAnimation: true,
+        });
+        wow.init();
+        $(".card__inner-slider").slick({
+            dots: true,
+            infinite: true,
+            arrows: false,
+            speed: 500,
+            fade: true,
+            cssEase: "linear",
+        });
         var picker = new Lightpick({
             field: document.getElementById("demo-1"),
             inline: true,
