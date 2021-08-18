@@ -1840,6 +1840,17 @@
           flex-direction: row;
           -ms-flex-direction: row;
         }
+        .card {
+          &__inner {
+            &-footer {
+              &-row {
+                &-info {
+                  margin-right: 1em;
+                }
+              }
+            }
+          }
+        }
       }
       &-pagination {
         margin-top: 40px;

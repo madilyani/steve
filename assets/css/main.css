@@ -7071,6 +7071,9 @@ li {
             flex-direction: row;
     -ms-flex-direction: row;
   }
+  .agentProfile__tab-body .card__inner-footer-row-info {
+    margin-right: 1em;
+  }
   .agentProfile__tab-pagination {
     margin-top: 40px;
     -webkit-box-orient: vertical;

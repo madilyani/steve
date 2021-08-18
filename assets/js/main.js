@@ -105,3 +105,13 @@ function onTabClick(agentBtns, agentItems, itemAgent) {
     $(".card__inner-slider").slick("setPosition");
   });
 }
+var wow = new WOW({
+  boxClass: "wow",
+  animateClass: "animated",
+  offset: 0,
+  mobile: true,
+  live: true,
+  scrollContainer: null,
+  resetAnimation: true,
+});
+wow.init();
