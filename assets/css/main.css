@@ -2876,6 +2876,9 @@ li {
           justify-content: center;
   margin-bottom: 30px;
 }
+.feature__inner-column-icon img {
+  width: 70%;
+}
 .feature__inner-column .subtitle-1 {
   margin-bottom: 20px;
 }
