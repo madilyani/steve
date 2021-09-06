@@ -18,15 +18,19 @@
 @import "./components/2-layout/lazy.scss";
 @import "./components/2-layout/upload.scss";
 @import "./components/2-layout/star.scss";
+@import "./components/2-layout/rangeSlider.scss";
+@import "./components/2-layout/modal.scss";
+@import "./components/2-layout/revealForm.scss";
 
 // 3-pages components
 @import "./components/3-pages/index.scss";
-@import "./components/3-pages/result.scss"; 
+@import "./components/3-pages/result.scss";
 @import "./components/3-pages/loginPages.scss";
 @import "./components/3-pages/agentRegistration.scss";
 @import "./components/3-pages/agentRegistrationForm.scss";
 @import "./components/3-pages/realEstate.scss";
 @import "./components/3-pages/agentProfile.scss";
+@import "./components/3-pages/listing.scss";
 
 // responsive
 @import "./components/2-layout/responsive.scss";

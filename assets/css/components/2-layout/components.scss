@@ -71,6 +71,22 @@
     width: calc(50% - 20px);
     margin: 0 10px;
   }
+  .card {
+    &__inner {
+      &-image {
+        height: 24em;
+      }
+      &-footer {
+        &-row {
+          &-info {
+            &-icon {
+              margin-right: .5em;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 .row__3 {
   display: flex;

@@ -82,6 +82,13 @@
           width: calc(50% - 20px);
           height: 500px;
         }
+        &.listingResult {
+          .row__3 {
+            &-column {
+              width: calc(50% - 12px);
+            }
+          }
+        }
       }
     }
   }
@@ -109,7 +116,6 @@
     }
   }
   // find end
-
   // feature start
   .feature {
     p {
@@ -199,6 +205,61 @@
     }
   }
   // agentProfile page end
+  // lisitngResult page start
+  .result {
+    &__body {
+      &-inner {
+        &.listingResult {
+          .row__2 {
+            flex-direction: column;
+            -ms-flex-direction: column;
+            margin: 0;
+            &-column {
+              width: 100%;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .card {
+    &__wanted {
+      &-footer {
+        a {
+          br {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  // lisitngResult page end
+  // listing page start
+  .listingPage {
+    &__inner {
+      &-header {
+        flex-wrap: wrap;
+        margin: 0;
+        &-side {
+          width: 100%;
+          margin: 5px 0;
+          justify-content: center;
+        }
+      }
+    }
+    &__date {
+      &-column {
+        &-request {
+          padding: 20px 10px 10px 10px;
+        }
+        &-label {
+          padding: 20px 10px 10px 10px;
+        }
+      }
+    }
+  }
+  // listing page end
 }
 @include xxlg-xxxlg {
   h1 {
@@ -496,6 +557,13 @@
             }
           }
         }
+        &.listingResult {
+          .row__3 {
+            &-column {
+              min-width: unset;
+            }
+          }
+        }
       }
     }
   }
@@ -615,6 +683,112 @@
     }
   }
   // agentProfile page end
+  // listing page start
+  .hero {
+    margin-top: 72px;
+  }
+  .listingPage {
+    &__inner {
+      &-body {
+        flex-direction: column;
+        -ms-flex-direction: column;
+        &-content {
+          width: 100%;
+          order: 2;
+          margin: 15px 0;
+          &-inner {
+            margin-bottom: 20px;
+          }
+        }
+        &-side {
+          width: 100%;
+          order: 1;
+          margin: 15px 0;
+          .propertyAgent {
+            &__inner {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              padding: 30px;
+              &-header {
+                width: calc(33.3% - 10px);
+                margin: 0 5px;
+              }
+              &-footer {
+                width: calc(33.3% - 10px);
+                margin: 0 5px;
+              }
+              &-body {
+                width: calc(33.3% - 10px);
+                margin: 0 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__date {
+      &-form {
+        max-width: 500px;
+      }
+    }
+  }
+  .modal {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &__inner {
+      &-close {
+        top: 20px;
+        right: 20px;
+      }
+    }
+    & {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+    &.revealForm {
+      .modal {
+        &__inner {
+          max-width: 570px;
+          padding: 20px;
+        }
+      }
+    }
+  }
+  .revealForm {
+    &__body {
+      &-row {
+        flex-wrap: wrap;
+      }
+      &-column {
+        &-3 {
+          margin: 10px;
+          width: calc(50% - 20px);
+          &:nth-child(1) {
+            order: 1;
+          }
+          &:nth-child(2) {
+            order: 3;
+            width: calc(100% - 20px);
+          }
+          &:nth-child(3) {
+            order: 2;
+          }
+        }
+        &-2 {
+          width: calc(100% - 20px);
+        }
+      }
+    }
+    &__footer {
+      margin-top: 20px;
+    }
+  }
+  // listing page end
 }
 @include xlg-xxlg {
   // map start
@@ -711,6 +885,9 @@
               &-tag {
                 top: 10px;
                 left: 10px;
+                &.sale {
+                  top: unset;
+                }
               }
             }
           }
@@ -719,6 +896,36 @@
     }
   }
   // row sections end
+  // lisitngResult page start
+  .result {
+    &__body {
+      &-inner {
+        &.listingResult {
+          flex-direction: column;
+          -ms-flex-direction: column;
+          margin: 0;
+
+          .result__body-inner-map {
+            width: 100%;
+            margin: 10px 0;
+          }
+          .result__body-inner-cards {
+            width: 100%;
+            margin: 10px 0;
+          }
+          .row__2 {
+            flex-direction: row;
+            max-width: unset;
+            &-column {
+              width: calc(50% - 10px);
+              margin: 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // lisitngResult page end
 }
 @include lg-xlg {
   // index page start
@@ -1747,6 +1954,77 @@
   .businessAgent {
     padding: 20px 0;
   }
+  .result {
+    &__body {
+      &-inner {
+        &.listingResult {
+          .column {
+            .card {
+              &__inner {
+                &-body {
+                  padding: 15px 10px;
+                  &-title {
+                    flex-direction: column;
+                    -ms-flex-direction: column;
+                    align-items: flex-start;
+                    margin-bottom: 1em;
+                    &-text {
+                      font-size: 1.8em;
+                      width: 100%;
+                      order: 2;
+                    }
+                    &-type {
+                      order: 1;
+                      margin-bottom: 10px;
+                    }
+                  }
+                  &-location {
+                    margin-bottom: 1.5em;
+                    span {
+                      font-size: 12px;
+                    }
+                    svg {
+                      margin-top: 0.2em;
+                    }
+                  }
+                  &-info {
+                    &-title {
+                      margin-bottom: 0.8em;
+                    }
+                  }
+                }
+                &-footer {
+                  padding: 10px 0;
+                  margin: 0 10px;
+                  &-row {
+                    &-info {
+                      margin-right: 0.6em;
+                      &-number {
+                        font-size: 1.2em;
+                      }
+                    }
+                  }
+                }
+                &-image {
+                  height: 185px;
+                  &-tag {
+                    top: 10px;
+                    left: 10px;
+                    &.sale {
+                      top: unset;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .row__3 {
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
   // agentRegistration page end
   // agentRegistrationForm page start
   .agentForm {
@@ -1868,6 +2146,246 @@
     }
   }
   // agentProfile page end
+  // lisitngResult page start
+  .result {
+    &__body {
+      &-inner {
+        &.listingResult {
+          .row__2 {
+            flex-direction: column;
+            -ms-flex-direction: column;
+            &-column {
+              width: 100%;
+              margin: 10px 0;
+              max-width: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+  // lisitngResult page end
+  // listing page start
+  .hero {
+    height: 200px;
+    margin-bottom: 65px;
+    &__inner {
+      padding: 9px;
+      &-info {
+        &-tag {
+          position: absolute;
+          top: 9px;
+          right: 9px;
+          margin: 0;
+        }
+        &-more {
+          &-icon {
+            padding: 5px;
+            margin: 0 0 7px 0;
+            &:nth-child(3) {
+              margin-bottom: 0;
+            }
+            &:last-child {
+              position: absolute;
+              bottom: 9px;
+              left: 80px;
+            }
+          }
+        }
+        &-window {
+          display: none;
+        }
+        &-address {
+          position: absolute;
+          top: calc(100% + 20px);
+          width: calc(100% - 30px);
+          left: 15px;
+          box-sizing: border-box;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .listingPage {
+    &Next {
+      right: 0;
+    }
+    &Prev {
+      left: 0;
+    }
+    &__slider {
+      &-outer {
+        margin: 10px 0;
+        padding: 0 15px;
+      }
+    }
+    &__inner {
+      &-header {
+        &-side {
+          flex-direction: column;
+          -ms-flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+        &-btn {
+          &.more {
+            margin-bottom: 5px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      &-body {
+        &-side {
+          .propertyAgent {
+            &__inner {
+              flex-direction: column;
+              -ms-flex-direction: column;
+              padding: 40px 0;
+              &-header {
+                margin: 0;
+                width: 100%;
+              }
+              &-footer {
+                margin: 0;
+                width: 100%;
+              }
+              &-body {
+                margin: 0;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__prefer {
+      flex-wrap: wrap;
+      &-icon {
+        width: calc(50% - 20px);
+        padding: 30px 10px;
+        &:nth-of-type(even) {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+    &__facility {
+      &-icon {
+        width: calc(33.3% - 30px);
+      }
+    }
+    &__date {
+      padding: 10px;
+      .listingPage__title {
+        text-align: center;
+      }
+      .listingPage__subtitle {
+        text-align: center;
+      }
+      .listingPage__para {
+        text-align: center;
+      }
+      &-row {
+        flex-direction: column;
+        -ms-flex-direction: column;
+      }
+      &-column {
+        width: 100%;
+        max-width: 190px;
+        margin: 5px auto;
+      }
+      &-form {
+        &-row {
+          &-4 {
+            flex-wrap: wrap;
+            justify-content: center;
+            span {
+              display: none;
+            }
+          }
+        }
+        &-column {
+          &-4 {
+            width: calc(50% - 5px);
+            margin: 2.5px;
+          }
+        }
+      }
+    }
+    &__map {
+      &-footer {
+        flex-direction: column;
+        -ms-flex-direction: column;
+        align-items: flex-start;
+
+        &-info {
+          margin: 10px 0 0 0;
+        }
+      }
+    }
+    &__energy {
+      overflow: hidden;
+      .listingPage__title {
+        text-align: center;
+      }
+      .listingPage__para {
+        text-align: center;
+      }
+    }
+  }
+  .modal {
+    &__inner {
+      padding: 20px;
+      .login {
+        h4 {
+          font-size: 24px;
+        }
+      }
+    }
+    &.revealForm {
+      .modal {
+        &__inner {
+          max-width: 570px;
+          padding: 20px;
+          width: calc(100% - 70px);
+        }
+      }
+    }
+  }
+  .revealForm {
+    &__body {
+      &-row {
+        margin: 0;
+      }
+      &-column {
+        &-3 {
+          margin: 10px 0;
+          width: 100%;
+          &:nth-child(2) {
+            width: 100%;
+          }
+        }
+        &-2 {
+          width: 100%;
+          margin: 10px 0;
+        }
+      }
+    }
+    &__footer {
+      .btn__primary {
+        max-width: 90px;
+        min-width: unset;
+      }
+      .btn__secondary {
+        max-width: 135px;
+        min-width: unset;
+      }
+    }
+  }
+  // listing page end
 }
 @include sm-md {
   // // valuation start
@@ -2103,4 +2621,37 @@
     }
   }
   // agentProfile page end
+  .result {
+    &__body {
+      &-inner {
+        &.listingResult {
+          .row__3 {
+            flex-direction: column;
+            -ms-flex-direction: column;
+            &-column {
+              margin: 5px 0;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .modal {
+    &__inner {
+      width: calc(100% - 30px);
+      padding: 20px 10px;
+      &-title {
+        font-size: 20px;
+      }
+    }
+    &.revealForm {
+      .modal {
+        &__inner {
+          width: calc(100% - 30px);
+          padding: 20px 10px;
+        }
+      }
+    }
+  }
 }

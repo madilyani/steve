@@ -1,0 +1,125 @@
+.range {
+  background: linear-gradient(
+    90deg,
+    #0cb97f 0%,
+    #ffe31a 41.02%,
+    #ffe818 49.37%,
+    #ffe31a 57.74%,
+    #ff4962 100%
+  );
+  border-radius: 10px;
+  height: 80px;
+  position: relative;
+  .highlight {
+    position: absolute;
+    height: 100%;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    span {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      &:first-child {
+        color: #12ba7d;
+      }
+      &:last-child {
+        color: #ff4e5f;
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    &-flag {
+      width: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      img {
+        width: 100%;
+      }
+    }
+    &-text {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 120%;
+      color: #606060;
+      span {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 140%;
+        color: #606060;
+        display: block;
+        margin-top: 6px;
+      }
+    }
+  }
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    @include transformY;
+  }
+  .handle {
+    width: calc(var(--range-size) * var(--handle-size));
+    background: #fff;
+    position: absolute;
+    border-radius: 3px;
+    top: 100%;
+    z-index: 2;
+    cursor: grab;
+    padding: 16px 13px 3px 13px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #555555;
+    &:active {
+      cursor: grabbing;
+    }
+    &.left {
+      left: var(--x-1);
+    }
+
+    &.right {
+      left: var(--x-2);
+    }
+    &::before {
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #fff;
+      position: absolute;
+      content: "";
+      bottom: 100%;
+      left: 50%;
+      @include transformX;
+    }
+    &::after {
+      content: attr(data-value);
+      position: absolute;
+      top: 3px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      text-align: center;
+      color: #555555;
+    }
+  }
+}

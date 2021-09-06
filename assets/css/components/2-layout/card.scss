@@ -58,41 +58,7 @@
         @include fullImage;
         border-radius: 10px 10px 0 0;
       }
-      &-like {
-        width: 40px;
-        height: 40px;
-        background: $white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        right: 30px;
-        bottom: -20px;
-        border-radius: 50%;
-        z-index: 1;
-        label {
-          display: block;
-        }
-        svg {
-          stroke: #707070;
-          @include transition;
-        }
-        input {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          cursor: pointer;
-        }
-        input:checked ~ label {
-          svg {
-            stroke: #fe53c4;
-            fill: #fe53c4;
-          }
-        }
-      }
+
       &-tick {
         position: absolute;
         top: 23px;
@@ -139,6 +105,46 @@
       }
     }
     &-body {
+      position: relative;
+      &-like {
+        width: 40px;
+        height: 40px;
+        background: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 30px;
+        top: -20px;
+        border-radius: 50%;
+        z-index: 1;
+        label {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        svg {
+          stroke: #707070;
+          @include transition;
+          pointer-events: none;
+        }
+        input {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          cursor: pointer;
+          z-index: 2;
+        }
+        input:checked + label {
+          svg {
+            stroke: #fe53c4;
+            fill: #fe53c4;
+          }
+        }
+      }
       padding: 3em;
       &.agentProfileCard {
         padding: 2em;
@@ -294,6 +300,9 @@
           display: flex;
           align-items: center;
           margin-right: 2em;
+          &:last-child {
+            margin-right: 0;
+          }
           &-icon {
             margin-right: 1em;
             display: flex;
@@ -703,6 +712,11 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        font-size: 14px;
+
+        br {
+          display: none;
+        }
       }
     }
   }
@@ -823,6 +837,159 @@
       margin-top: 20px;
       display: flex;
       justify-content: flex-end;
+    }
+  }
+}
+.propertyAgent {
+  background: #fff;
+  box-shadow: 4px 4px 20px rgba(3, 11, 32, 0.1);
+  border-radius: 5px 0px 0px 5px;
+  @include transition;
+  &__inner {
+    padding: 40px 0;
+    &-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 120%;
+      color: #444444;
+      text-align: center;
+    }
+    &-price {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 160%;
+      text-align: center;
+      margin: 5px 0 10px 0;
+      color: #444444;
+      span {
+        font-size: 14px;
+      }
+    }
+    &-availability {
+      padding: 10px 0;
+      text-align: center;
+      background: #e5faff;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 160%;
+      /* or 22px */
+      text-align: center;
+      color: #19b8df;
+    }
+    &-agent {
+      margin: 24px 0;
+      &-type {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #606060;
+      }
+      &-avatar {
+        margin: 10px auto;
+        width: 90px;
+        height: 90px;
+        position: relative;
+        border-radius: 50%;
+        border: 2px solid #34c0e3;
+        img {
+          @include fullImage;
+        }
+        svg {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+      }
+      &-name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 140%;
+        color: #606060;
+        text-align: center;
+      }
+      &-number {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 10px;
+        color: #ababab;
+        text-align: center;
+      }
+    }
+    &-btns {
+      &-btn {
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+        color: #ffffff;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 220px;
+        padding: 12px 0;
+        margin: 10px auto;
+        cursor: pointer;
+        @include transition;
+        &:hover {
+          opacity: 0.8;
+        }
+        &:nth-child(1) {
+          background: #34c0e3;
+        }
+        &:nth-child(2) {
+          background: #5f5f5f;
+        }
+        &:nth-child(3) {
+          background: #eb3e91;
+        }
+      }
+    }
+    &-form {
+      width: 100%;
+      max-width: 220px;
+      margin: 0 auto;
+      padding: 24px 0;
+      display: none;
+      position: relative;
+      animation: book 0.2s linear;
+      &.active {
+        display: block;
+      }
+      &-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        &-title {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 120%;
+          color: #222222;
+        }
+        &-close {
+          cursor: pointer;
+          svg {
+            pointer-events: none;
+          }
+        }
+      }
+      .input__outer {
+        margin-bottom: 10px;
+      }
+      .textarea__outer {
+        margin-bottom: 24px;
+      }
     }
   }
 }
