@@ -280,6 +280,17 @@
     }
   }
 }
+.forSaleRemove {
+  &.forSaleRemove-hide {
+    display: none;
+  }
+}
+.forSaleShow {
+  display: none;
+  &.forSaleRemove-show {
+    display: block;
+  }
+}
 .listingGeneral {
   &__header {
     &-address {

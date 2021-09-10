@@ -35,4 +35,14 @@ $(document).ready(function () {
     $(".payment").not(targetBox).hide();
     $(targetBox).show();
   });
+  $(".forSale").click(function () {
+    var inputValue = $(this).attr("checked");
+    if (inputValue) {
+      $(".forSaleRemove").removeClass("forSaleRemove-hide");
+      $(".forSaleShow").removeClass("forSaleRemove-show");
+    } else {
+      $(".forSaleRemove").addClass("forSaleRemove-hide");
+      $(".forSaleShow").addClass("forSaleRemove-show");
+    }
+  });
 });
