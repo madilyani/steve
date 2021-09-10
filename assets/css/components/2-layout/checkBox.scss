@@ -1,0 +1,253 @@
+.checkBox {
+  position: relative;
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    &:checked ~ label:after {
+      opacity: 1;
+    }
+    &:checked ~ label::before {
+      border: 1px solid $main;
+      background: $main;
+    }
+    &:checked ~ .tenant {
+      color: $main;
+    }
+  }
+  label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: $grey;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    svg {
+      width: 36px;
+      height: 36px;
+      margin: 0 10px;
+      @include transition;
+    }
+    &::before {
+      position: absolute;
+      left: 5px;
+      top: 0px;
+      content: "";
+      width: 14px;
+      height: 14px;
+      border-radius: 3.75px;
+      @include transition;
+      border: 1px solid $grey;
+      background: $white;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: 11px;
+      transform: rotate(45deg);
+      height: 7px;
+      width: 3px;
+      border-bottom: 2px solid $white;
+      border-right: 2px solid $white;
+      opacity: 0;
+      @include transition;
+    }
+    &.tenant::before {
+      top: 50%;
+      @include transformY;
+    }
+    &.tenant::after {
+      top: 12px;
+    }
+    &.tenant {
+      margin: 20px 0;
+    }
+    a {
+      position: relative;
+      z-index: 3;
+      font-weight: 600;
+      color: $main;
+      margin-left: 5px;
+    }
+  }
+  &.centerIt {
+    margin-top: 35px;
+    label {
+      &::after {
+        top: 2px;
+      }
+    }
+  }
+}
+.radioBox {
+  position: relative;
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    &:checked ~ label:after {
+      opacity: 1;
+    }
+    &:checked ~ label::before {
+      border: 1px solid $main;
+    }
+    &:checked ~ .tenant {
+      color: $main;
+    }
+  }
+  label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    color: $grey;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    svg {
+      width: 36px;
+      height: 36px;
+      margin: 0 10px;
+      @include transition;
+    }
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      @include transformY;
+      content: "";
+      width: 16px;
+      height: 16px;
+      @include transition;
+      border: 1px solid $grey;
+      background: $white;
+      border-radius: 50%;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      @include transformY;
+      left: 9px;
+      height: 10px;
+      width: 10px;
+      background: $main;
+      opacity: 0;
+      @include transition;
+      border-radius: 50%;
+    }
+    &.tenant::after {
+      top: 12px;
+    }
+    &.tenant {
+      margin: 20px 0;
+    }
+  }
+}
+.paymentBox {
+  position: relative;
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+    &:checked ~ label {
+      box-shadow: 0px 30px 50px rgba(85, 108, 130, 0.1);
+      background: $white;
+      opacity: 1;
+    }
+  }
+  label {
+    padding: 5px 10px;
+    background: $white-2;
+    display: inline-block;
+    opacity: 0.7;
+    @include transition;
+    img {
+      height: 28px;
+    }
+  }
+}
+.amenitiBox {
+  position: relative;
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer;
+    &:checked ~ label {
+      border: 1px solid $main;
+    }
+    &:checked ~ label:after {
+      opacity: 1;
+    }
+    &:checked ~ label::before {
+      border: 1px solid $main;
+      background: $main;
+    }
+  }
+  label {
+    padding: 8px 35px 8px 10px;
+    position: relative;
+    background: $white;
+    border: 1px solid $grey;
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5f5f5f;
+    display: flex;
+    align-items: center;
+    img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      @include transformY;
+      content: "";
+      width: 14px;
+      height: 14px;
+      border-radius: 3.75px;
+      @include transition;
+      border: 1px solid $grey;
+      background: $white;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: calc(50% - 6px);
+      right: 17px;
+      transform: rotate(45deg);
+      height: 7px;
+      width: 3px;
+      border-bottom: 2px solid $white;
+      border-right: 2px solid $white;
+      opacity: 0;
+      @include transition;
+    }
+  }
+}

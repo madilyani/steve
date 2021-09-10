@@ -1,3 +1,4 @@
+
 const formBtn = document.querySelectorAll(".formBtn");
 const formItem = document.querySelectorAll(".formItem");
 formBtn.forEach((e) => {
@@ -20,5 +21,3 @@ function onTabClick(formBtns, formItems, itemForm) {
     }
   });
 }
-
-

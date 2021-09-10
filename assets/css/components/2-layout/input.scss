@@ -2,6 +2,48 @@
   &__outer {
     position: relative;
     width: 100%;
+    &.icon__left {
+      input {
+        padding: 10px 10px 10px 36px;
+      }
+      span {
+        position: absolute;
+        bottom: 6px;
+        left: 10px;
+        display: block;
+        z-index: 1;
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      .icon__date {
+        position: absolute;
+        top: 35px;
+        left: 10px;
+        display: block;
+        z-index: 1;
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+    &.icon__right {
+      input {
+        padding: 10px 36px 10px 10px;
+      }
+      span {
+        position: absolute;
+        bottom: 6px;
+        right: 10px;
+        display: block;
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
     label {
       font-style: normal;
       font-weight: 500;
@@ -91,5 +133,6 @@
       font-family: "Lato", sans-serif;
       resize: none;
     }
+
   }
 }

@@ -24,6 +24,13 @@
       max-width: 350px;
     }
   }
+  &.aminities {
+    .modal__inner {
+      max-width: 770px;
+      width: calc(100% - 120px);
+      padding: 60px;
+    }
+  }
   &__inner {
     position: absolute;
     top: 50px;
@@ -52,6 +59,9 @@
       text-align: center;
       color: #222222;
       margin-bottom: 20px;
+      &.t-l {
+        text-align: left;
+      }
     }
     &-subtitle {
       font-style: normal;
@@ -68,6 +78,40 @@
       line-height: 140%;
       text-align: center;
       color: #868686;
+      &.t-l {
+        text-align: left;
+      }
+    }
+    &-amenities {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -7.5px;
+      .amenitiBox {
+        margin: 7.5px;
+        width: calc(33.3% - 15px);
+        label {
+          max-height: 42px;
+          box-sizing: border-box;
+        }
+      }
+    }
+    &-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      .btn__secondary {
+        padding: 12px 0;
+        width: 250px;
+      }
+      .uncheck {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $grey;
+        cursor: pointer;
+      }
     }
   }
 }

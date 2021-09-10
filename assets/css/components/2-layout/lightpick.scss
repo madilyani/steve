@@ -107,7 +107,18 @@ $lightpick-action-font-size: 12px !default;
 $lightpick-action-close-font-size: 18px !default;
 
 // Styles
+.input__outer {
+  &.indexHtml {
+    .lightpick {
+      width: unset;
+      width: 100%;
 
+      &__month {
+        width: 100%;
+      }
+    }
+  }
+}
 .lightpick {
   position: absolute;
   border-radius: 15px;
@@ -118,7 +129,6 @@ $lightpick-action-close-font-size: 18px !default;
   color: $lightpick-color;
   font-family: $lightpick-font;
   line-height: $lightpick-line-height;
-  width: 100%;
   box-shadow: 0px 30px 50px rgba(85, 108, 130, 0.1);
 
   &--inlined {
@@ -162,7 +172,7 @@ $lightpick-action-close-font-size: 18px !default;
 
   &__month {
     padding: $lightpick-padding;
-    width: 100%;
+    width: ($lightpick-day-size * 7) + ($lightpick-padding * 2);
     background-color: $lightpick-background-color;
 
     &-title-bar {

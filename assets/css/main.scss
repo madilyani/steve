@@ -20,7 +20,11 @@
 @import "./components/2-layout/star.scss";
 @import "./components/2-layout/rangeSlider.scss";
 @import "./components/2-layout/modal.scss";
-@import "./components/2-layout/revealForm.scss";
+@import "./components/2-layout/revealForm.scss"; 
+@import "./components/2-layout/checkBox.scss";
+@import "./components/2-layout/gallery.scss"; 
+@import "./components/2-layout/advert.scss";
+@import "./components/2-layout/paymentOption.scss";
 
 // 3-pages components
 @import "./components/3-pages/index.scss";
@@ -31,6 +35,7 @@
 @import "./components/3-pages/realEstate.scss";
 @import "./components/3-pages/agentProfile.scss";
 @import "./components/3-pages/listing.scss";
+@import "./components/3-pages/listingForm.scss";
 
 // responsive
 @import "./components/2-layout/responsive.scss";

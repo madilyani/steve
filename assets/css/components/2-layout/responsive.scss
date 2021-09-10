@@ -260,6 +260,19 @@
     }
   }
   // listing page end
+  // listingForm page start
+  .paymentOption {
+    &__inner {
+      &-header {
+        &-row {
+          .paymentBox label img {
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+  // listingForm page end
 }
 @include xxlg-xxxlg {
   h1 {
@@ -789,6 +802,80 @@
     }
   }
   // listing page end
+  // listingForm page start
+  .listingForm {
+    &__tab {
+      &-header {
+        &-pagination {
+          justify-content: space-around;
+        }
+      }
+      &-body {
+        max-width: unset;
+      }
+      &-footer {
+        &.single {
+          .btn__secondary {
+            max-width: 250px;
+          }
+        }
+      }
+    }
+  }
+  .listingGeneral {
+    width: 70%;
+    margin: 0 auto;
+    &__row {
+      flex-direction: column;
+      -ms-flex-direction: column;
+      &-secondary {
+        flex-direction: column;
+        -ms-flex-direction: column;
+      }
+      &-third {
+        flex-direction: column;
+        -ms-flex-direction: column;
+      }
+    }
+    &__column {
+      width: 100%;
+      margin: 10px 0;
+      &-secondary {
+        &:first-child {
+          width: 100%;
+          margin: 10px 0;
+        }
+        width: 100%;
+        margin: 10px 0;
+      }
+      &-third {
+        &:last-child {
+          width: 100%;
+          margin: 10px 0;
+        }
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  }
+  // listingForm page end
+  // listingForm page start
+  .modal {
+    &.aminities {
+      .modal__inner {
+        max-width: 560px;
+        padding: 40px;
+      }
+    }
+    &__inner {
+      &-amenities {
+        .amenitiBox {
+          width: calc(50% - 15px);
+        }
+      }
+    }
+  }
+  // listingForm page end
 }
 @include xlg-xxlg {
   // map start
@@ -1715,6 +1802,11 @@
     }
   }
   // agentProfile page end
+  // listingForm page end
+  .listingForm {
+    margin-top: 72px;
+  }
+  // listingForm page end
 }
 @include md-lg {
   .auto__container {
@@ -2386,6 +2478,182 @@
     }
   }
   // listing page end
+  // listingForm page start
+  .paymentOption {
+    padding: 10px;
+    &__inner {
+      &-header {
+        &-row {
+          flex-wrap: wrap;
+          margin: 0 -5px;
+          justify-content: unset;
+          .paymentBox {
+            margin: 5px;
+          }
+        }
+      }
+    }
+  }
+  .listingGeneral {
+    width: 100%;
+    &__row {
+      margin: 0;
+    }
+    &__header {
+      &-address {
+        .btn__secondary {
+          white-space: nowrap;
+        }
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .listingForm {
+    &__tab {
+      padding-bottom: 60px;
+      &-header {
+        &-pagination {
+          overflow-y: auto;
+        }
+      }
+      &-body {
+        &-content {
+          &-row {
+            margin: 0;
+            &.energy {
+              &::before {
+                display: none;
+              }
+            }
+          }
+          &-column {
+            &-2 {
+              width: 100%;
+              margin: 10px 0;
+            }
+            &-4 {
+              width: calc(50% - 24px);
+            }
+          }
+        }
+      }
+      &-footer {
+        margin-top: 40px;
+        .btn__primary {
+          width: 90px;
+        }
+        .btn__secondary {
+          width: 90px;
+        }
+      }
+    }
+  }
+  .gallery {
+    &__inner {
+      &-row {
+        margin: 0 -3.5px;
+      }
+      &-column {
+        margin: 16px 3.5px;
+        width: calc(33.3% - 7px);
+        &:first-child {
+          width: calc(100% - 7px);
+        }
+      }
+      &-footer {
+        padding: 15px 20px 60px 55px;
+        &.secondary {
+          padding: 15px 20px 15px 55px;
+        }
+        img {
+          left: 14px;
+        }
+        &-row {
+          flex-direction: column;
+          -ms-flex-direction: column;
+        }
+        &-column {
+          width: 100%;
+        }
+        &-btn {
+          margin: 15px 0 0 0;
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+          @include transformX;
+        }
+      }
+    }
+  }
+  .advert {
+    &__inner {
+      &-body {
+        &-box {
+          flex-direction: column;
+          -ms-flex-direction: column;
+          padding: 20px;
+          &-content {
+            padding: 0;
+            width: 100%;
+            margin: 0 0 20px 0;
+            &-body {
+              &-para {
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      &-footer {
+        margin-top: 20px;
+        &-box {
+          &-link {
+            position: unset;
+            margin-top: 20px;
+            text-align: center;
+            display: block;
+          }
+        }
+      }
+    }
+    &Payment {
+      &__inner {
+        &-box.top {
+          .advertPayment__inner-box-link {
+            position: unset;
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+  // listingForm page end
+  // listingForm page start
+  .modal {
+    &.aminities {
+      .modal__inner {
+        top: 20px;
+        width: calc(100% - 40px);
+        max-width: 300px;
+        padding: 20px;
+      }
+    }
+    &__inner {
+      .btn__secondary {
+        width: 130px;
+      }
+      &-amenities {
+        .amenitiBox {
+          width: calc(100% - 15px);
+        }
+      }
+    }
+  }
+  // listingForm page end
 }
 @include sm-md {
   // // valuation start
@@ -2558,6 +2826,9 @@
     font-size: 18px;
   }
   // agentProfile page end
+  .gallery__inner-column:first-child {
+    height: 300px;
+  }
 }
 @include xsm-sm {
   .loginPages {

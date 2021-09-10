@@ -44,8 +44,12 @@
   }
 }
 .form {
+  &.listingForm {
+    margin-top: 110px;
+  }
   &__inner {
     @include transition;
+
     &-tab {
       display: none;
       position: relative;
@@ -73,7 +77,6 @@
           align-items: center;
           justify-content: space-between;
           margin: 40px 0;
-          overflow: hidden;
           li {
             width: 36px;
             height: 36px;
@@ -103,6 +106,9 @@
               width: 140%;
               z-index: -1;
             }
+            &:last-child::after {
+              display: none;
+            }
             &.blue {
               background: $main;
             }
@@ -112,6 +118,13 @@
                 border-top: #fe53c4 1px dashed;
               }
             }
+            span {
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              @include transformX;
+              z-index: 3;
+            }
           }
         }
         &-body {
@@ -120,48 +133,7 @@
             &__outer {
               position: relative;
 
-              &.icon__left {
-                input {
-                  padding: 10px 10px 10px 36px;
-                }
-                span {
-                  position: absolute;
-                  bottom: 6px;
-                  left: 10px;
-                  display: block;
-                  z-index: 1;
-                  svg {
-                    width: 16px;
-                    height: 16px;
-                  }
-                }
-                .icon__date {
-                  position: absolute;
-                  top: 35px;
-                  left: 10px;
-                  display: block;
-                  z-index: 1;
-                  svg {
-                    width: 16px;
-                    height: 16px;
-                  }
-                }
-              }
-              &.icon__right {
-                input {
-                  padding: 10px 36px 10px 10px;
-                }
-                span {
-                  position: absolute;
-                  bottom: 6px;
-                  right: 10px;
-                  display: block;
-                  svg {
-                    width: 16px;
-                    height: 16px;
-                  }
-                }
-              }
+
             }
           }
           .select__outer {

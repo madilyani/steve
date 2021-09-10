@@ -23,4 +23,16 @@ $(document).ready(function () {
     $(".revealForm__info-box-4").not(targetBox).hide();
     $(targetBox).show();
   });
+  $(".agreeInput").click(function () {
+    var inputValue = $(this).attr("value");
+    var targetBox = $("." + inputValue);
+    $(".agree").not(targetBox).hide();
+    $(targetBox).show();
+  });
+  $(".paymentInput").click(function () {
+    var inputValue = $(this).attr("value");
+    var targetBox = $("." + inputValue);
+    $(".payment").not(targetBox).hide();
+    $(targetBox).show();
+  });
 });

@@ -1,0 +1,291 @@
+.advert {
+  &__inner {
+    &-header {
+      padding: 15px 20px;
+      background: $white;
+      border-radius: 6px;
+      &-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        img {
+          width: 24px;
+          height: 24px;
+          margin-right: 10px;
+        }
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 120%;
+        color: $black-2;
+      }
+      &-para {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 180%;
+        color: $grey;
+      }
+    }
+    &-body {
+      margin: 20px 0;
+      &-box {
+        margin-bottom: 10px;
+        padding: 30px 40px;
+        background: $white;
+        border-radius: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        display: flex;
+        align-items: center;
+        &.premium {
+          .advert__inner-body-box-content-package {
+            background: #fe53c4;
+          }
+          .advert__inner-body-box-content-link {
+            color: #fe53c4;
+          }
+        }
+        &.platinum {
+          .advert__inner-body-box-content-package {
+            background: $main;
+          }
+          .advert__inner-body-box-content-link {
+            color: $main;
+          }
+        }
+        &-btn {
+          background: $main;
+          border-radius: 4px;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 120%;
+          color: $white;
+          padding: 12px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 135px;
+          border-radius: 4px;
+          margin-left: 15px;
+          @include transition;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        &-content {
+          width: calc(100% - 150px);
+          padding: 10px;
+          display: inline-block;
+          border-radius: 4px;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 20px;
+          line-height: 24px;
+          color: $white;
+          &-package {
+            display: inline-block;
+            padding: 10px;
+            border-radius: 4px;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 24px;
+            color: $white;
+          }
+          &-body {
+            margin: 20px 0;
+            &-para {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 120%;
+              color: $black-2;
+            }
+            .radioBox {
+              margin: 18px 0;
+            }
+          }
+          &-link {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 160%;
+            text-align: center;
+            color: $black;
+          }
+        }
+      }
+    }
+    &-footer {
+      margin-top: 60px;
+      &-title {
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: $black-2;
+      }
+      &-box {
+        border: 1px solid $grey-2;
+        border-radius: 6px;
+        padding: 15px 20px;
+        position: relative;
+        .radioBox {
+          label {
+            padding-left: 45px;
+            line-height: 140%;
+          }
+        }
+        &-link {
+          position: absolute;
+          top: 15px;
+          right: 20px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 160%;
+          color: $main;
+        }
+      }
+    }
+  }
+  &Payment {
+    &__inner {
+      &-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: $black-1;
+        margin-bottom: 20px;
+      }
+      &-box {
+        border: 1px solid $grey-2;
+        border-radius: 6px;
+        padding: 15px 20px;
+        position: relative;
+        margin-bottom: 40px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &.top {
+          background: $white;
+          border: 1px solid transparent;
+          .radioBox {
+            label {
+              line-height: 140%;
+              padding-left: 45px;
+            }
+          }
+          .advertPayment__inner-box-link {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 160%;
+            color: #34c0e3;
+          }
+        }
+        &.premium {
+          .advertPayment__inner-box-package {
+            background: #fe53c4;
+
+            .advertPayment__inner-box-link {
+              color: #fe53c4;
+            }
+          }
+        }
+        &.verify {
+          .advertPayment__inner-box-package {
+            background: $main;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            max-width: 85px;
+            box-sizing: border-box;
+            .advertPayment__inner-box-link {
+              color: $main;
+            }
+          }
+        }
+        &.platinum {
+          .advertPayment__inner-box-package {
+            background: $main;
+          }
+          .advertPayment__inner-box-link {
+            color: $main;
+          }
+        }
+        &.verify {
+          svg {
+            margin-right: 5px;
+          }
+        }
+        &-btn {
+          background: $main;
+          border-radius: 4px;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 120%;
+          color: $white;
+          padding: 12px 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 135px;
+          border-radius: 4px;
+          margin-left: 15px;
+          @include transition;
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+        &-package {
+          display: inline-block;
+          padding: 10px;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 17px;
+          color: #ffffff;
+        }
+        &-body {
+          margin: 20px 0;
+          &-title {
+            margin-bottom: 15px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 120%;
+            color: $black-2;
+          }
+          &-para {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 140%;
+            color: $black-2;
+          }
+          .radioBox {
+            margin: 18px 0;
+          }
+        }
+        &-link {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 160%;
+          text-align: center;
+          color: $black;
+        }
+      }
+    }
+  }
+}

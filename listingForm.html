@@ -1,0 +1,2041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Listing Form</title>
+</head>
+
+<body>
+    <!-- header start
+    =========================================== -->
+    <header class="header" id="header">
+        <div class="auto__container">
+            <div class="header__inner">
+                <a href="index.html" class="header__inner-logo">
+                    <img src="assets/images/logo.svg" alt="">
+                </a>
+                <nav class="nav" id="menu">
+                    <div class="nav__inner">
+                        <a href="#" class="nav__inner-link active">
+                            Buy
+                        </a>
+                        <a href="#" class="nav__inner-link">
+                            Rent
+                        </a>
+                        <a href="#" class="nav__inner-link">
+                            Mortgage
+                        </a>
+                        <a href="#" class="nav__inner-link">
+                            Book Valuation
+                        </a>
+                        <a href="login.html" class="btn__primary">
+                            Sign Up or Login
+                        </a>
+                        <a href="#" class="btn__secondary">
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.00049 6.4987L8.00049 1.83203L14.0005 6.4987V13.832C14.0005 14.1857 13.86 14.5248 13.61 14.7748C13.3599 15.0249 13.0208 15.1654 12.6672 15.1654H3.33382C2.9802 15.1654 2.64106 15.0249 2.39101 14.7748C2.14096 14.5248 2.00049 14.1857 2.00049 13.832V6.4987Z"
+                                    stroke="currentColor" stroke-width="1.17977" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M6 15.1667V8.5H10V15.1667" stroke="" stroke-width="1.17977"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            LIST A PROPERTY
+                        </a>
+                    </div>
+                </nav>
+                <div class="burger" id="menuBtn"></div>
+                <div class="header__inner-btns">
+                    <a href="login.html" class="btn__primary">
+                        Sign Up or Login
+                    </a>
+                    <a href="#" class="btn__secondary">
+                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2.00049 6.4987L8.00049 1.83203L14.0005 6.4987V13.832C14.0005 14.1857 13.86 14.5248 13.61 14.7748C13.3599 15.0249 13.0208 15.1654 12.6672 15.1654H3.33382C2.9802 15.1654 2.64106 15.0249 2.39101 14.7748C2.14096 14.5248 2.00049 14.1857 2.00049 13.832V6.4987Z"
+                                stroke="" stroke-width="1.17977" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6 15.1667V8.5H10V15.1667" stroke="" stroke-width="1.17977" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        LIST A PROPERTY
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end
+    =========================================== -->
+    <!-- listingForm start
+    =-========================================= -->
+    <div class="listingForm" action="">
+        <div class="auto__container">
+            <div class="listingForm__inner">
+                <div class="listingForm__tab formItem active" id="step-1">
+                    <div class="listingForm__tab-header">
+                        <ul class="listingForm__tab-header-pagination">
+                            <li class="done">
+                                1 <span>Your Details</span>
+                            </li>
+                            <li class="blue">
+                                2 <span>Property Details</span>
+                            </li>
+                            <li>
+                                3 <span>Agent Assists</span>
+                            </li>
+                            <li>
+                                4 <span>SEO Information</span>
+                            </li>
+                            <li>
+                                5 <span>Payment</span>
+                            </li>
+                            <li>
+                                6 <span>Ownership Confirmation</span>
+                            </li>
+                            <li>
+                                7 <span>Authority to Market</span>
+                            </li>
+                        </ul>
+                        <div class="listingForm__tab-header">
+                            <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                                Property Details
+                            </h4>
+                            <p class="medium wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".4s">
+                                This property Listed For:
+                            </p>
+                            <div class="listingForm__tab-header-row">
+                                <div class="listingForm__tab-header-btn">
+                                    <input checked type="radio" name="rentSale">
+                                    <label for="">For Rent</label>
+                                </div>
+                                <div class="listingForm__tab-header-btn">
+                                    <input type="radio" name="rentSale">
+                                    <label for=""> For Sale</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listingForm__tab-body">
+                        <div class="listingForm__tab-body-content">
+                            <div class="listingForm__tab-body-content-row">
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="select__outer">
+                                        <label>Rental Type</label>
+                                        <div class="custom-select">
+                                            <select>
+                                                <option value="1">Room Only</option>
+                                                <option value="2">2 room</option>
+                                                <option value="3">3 room</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-body-content">
+                            <h6 class="bold">
+                                Property Data
+                            </h6>
+                            <div class="listingForm__tab-body-content-row">
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="select__outer">
+                                        <label>Property Type</label>
+                                        <div class="custom-select">
+                                            <select>
+                                                <option value="1">Units/Apartement</option>
+                                                <option value="2">Units</option>
+                                                <option value="3">Appartment</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="input__outer">
+                                        <label>Add Property Headline</label>
+                                        <input type="text" placeholder="Headline">
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="input__outer">
+                                        <label>Add Property Headline</label>
+                                        <input type="text" placeholder="Headline">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listingForm__tab-body-content-map">
+                                <div class="listingForm__tab-body-content-map-title">
+                                    Pin Your Address on Map
+                                </div>
+                                <div class="listingForm__tab-body-content-map-image">
+                                    <img src="assets/images/index/map.png" alt="">
+                                </div>
+                                <div class="listingForm__tab-body-content-map-footer">
+                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14 7.16675C14 11.8334 8 15.8334 8 15.8334C8 15.8334 2 11.8334 2 7.16675C2 5.57545 2.63214 4.04933 3.75736 2.92411C4.88258 1.79889 6.4087 1.16675 8 1.16675C9.5913 1.16675 11.1174 1.79889 12.2426 2.92411C13.3679 4.04933 14 5.57545 14 7.16675Z"
+                                            fill="#19B8DF" />
+                                        <path
+                                            d="M8 9.16675C9.10457 9.16675 10 8.27132 10 7.16675C10 6.06218 9.10457 5.16675 8 5.16675C6.89543 5.16675 6 6.06218 6 7.16675C6 8.27132 6.89543 9.16675 8 9.16675Z"
+                                            fill="white" />
+                                    </svg>
+                                    Your Neightbourhood, Hyde park, London 22291
+                                </div>
+                            </div>
+                            <div class="textarea__outer">
+                                <label for="">Provide Property Description</label>
+                                <textarea placeholder="Description" name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-body-content">
+                            <h6 class="bold">
+                                Rooms and Car Accomodation
+                            </h6>
+                            <div class="listingForm__tab-body-content-row-4">
+                                <div class="listingForm__tab-body-content-column-4">
+                                    <div class="select__outer">
+                                        <label>Receptions</label>
+                                        <div class="custom-select">
+                                            <span>
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8 3.48511V12.8184" stroke="#888888" stroke-width="1.33333"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M3.33301 8.15173H12.6663" stroke="#888888"
+                                                        stroke-width="1.33333" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                            <select>
+                                                <option value="1">2</option>
+                                                <option value="2">3</option>
+                                                <option value="3">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-4">
+                                    <div class="select__outer">
+                                        <label>Bedrooms</label>
+                                        <div class="custom-select">
+                                            <span>
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M14.7922 8.79357C14.8386 8.66256 14.8642 8.52172 14.8642 8.37499C14.8642 7.94158 14.6435 7.5588 14.3086 7.33304V4.29812C14.3086 3.60569 13.7452 3.04236 13.0528 3.04236H2.94589C2.25347 3.04236 1.69013 3.60569 1.69013 4.29812V7.33304C1.35523 7.5588 1.13453 7.94158 1.13453 8.37499C1.13453 8.52172 1.16006 8.66256 1.20652 8.79357H0.855469V14.1515H1.69264V12.8704H14.3061V14.1515H15.1432V8.79357H14.7922ZM2.94589 3.87953H13.0528C13.2836 3.87953 13.4714 4.06731 13.4714 4.29812V7.11923H12.6354V6.70064C12.6354 6.00821 12.0721 5.44488 11.3797 5.44488H8.83652C8.51513 5.44488 8.22168 5.56638 7.99935 5.76566C7.777 5.56635 7.48357 5.44488 7.16218 5.44488H4.61904C3.92661 5.44488 3.36328 6.00821 3.36328 6.70064V7.11923H2.5273V4.29812C2.5273 4.06731 2.71508 3.87953 2.94589 3.87953ZM7.58076 7.11923H4.20045V6.70064C4.20045 6.46983 4.38823 6.28205 4.61904 6.28205H7.16218C7.39299 6.28205 7.58076 6.46983 7.58076 6.70064V7.11923ZM8.41794 6.70064C8.41794 6.46983 8.60572 6.28205 8.83652 6.28205H11.3797C11.6105 6.28205 11.7983 6.46983 11.7983 6.70064V7.11923H8.41794V6.70064ZM1.9717 8.37499C1.9717 8.14418 2.15948 7.9564 2.39029 7.9564H13.6084C13.8392 7.9564 14.027 8.14418 14.027 8.37499C14.027 8.6058 13.8392 8.79357 13.6084 8.79357H2.39029C2.15948 8.79357 1.9717 8.6058 1.9717 8.37499ZM1.69264 9.63075H14.3061V12.0333H1.69264V9.63075Z"
+                                                        fill="#898989" />
+                                                </svg>
+                                            </span>
+                                            <select>
+                                                <option value="1">2</option>
+                                                <option value="2">3</option>
+                                                <option value="3">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-4">
+                                    <div class="select__outer">
+                                        <label>Bathroom</label>
+                                        <div class="custom-select">
+                                            <span>
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M14.8986 9.32021C14.8986 9.09027 14.7122 8.90384 14.4822 8.90384H13.6489V3.22683C13.6489 2.1117 12.7416 1.20447 11.6265 1.20447C10.5114 1.20447 9.60413 2.1117 9.60413 3.22683V3.98587C9.60413 4.21581 9.79057 4.40225 10.0205 4.40225C10.2505 4.40225 10.4369 4.21581 10.4369 3.98587V3.22683C10.4369 2.57087 10.9705 2.03722 11.6265 2.03722C12.2825 2.03722 12.8161 2.57087 12.8161 3.22683V8.90381H1.71716C1.48722 8.90381 1.30078 9.09025 1.30078 9.32019C1.30078 11.1994 2.48933 12.806 4.1541 13.4283C3.83386 13.765 3.63579 14.2266 3.63579 14.7354C3.63579 14.9653 3.82223 15.1518 4.05217 15.1518C4.28211 15.1518 4.46854 14.9653 4.46854 14.7354C4.46854 14.1669 4.90236 13.7043 5.43562 13.7043C5.45521 13.7043 10.7442 13.7043 10.7638 13.7043C11.297 13.7043 11.7309 14.1669 11.7309 14.7354C11.7309 14.9653 11.9173 15.1518 12.1473 15.1518C12.3772 15.1518 12.5636 14.9653 12.5636 14.7354C12.5636 14.2266 12.3655 13.765 12.0453 13.4283C13.7101 12.806 14.8986 11.1994 14.8986 9.32021ZM10.5145 12.8716H5.68493C3.86747 12.8716 2.36454 11.4994 2.15781 9.73659H14.0416C13.8349 11.4994 12.3319 12.8716 10.5145 12.8716Z"
+                                                        fill="#898989" />
+                                                    <path
+                                                        d="M10.0218 5.12585C9.79191 5.12585 9.60547 5.31229 9.60547 5.54223V5.90309C9.60547 6.13303 9.79191 6.31947 10.0218 6.31947C10.2518 6.31947 10.4382 6.13303 10.4382 5.90309V5.54223C10.4382 5.31226 10.2518 5.12585 10.0218 5.12585Z"
+                                                        fill="#898989" />
+                                                    <path
+                                                        d="M10.0218 7.12439C9.79191 7.12439 9.60547 7.31083 9.60547 7.54077V7.90163C9.60547 8.13157 9.79191 8.318 10.0218 8.318C10.2518 8.318 10.4382 8.13157 10.4382 7.90163V7.54077C10.4382 7.3108 10.2518 7.12439 10.0218 7.12439Z"
+                                                        fill="#898989" />
+                                                </svg>
+
+                                            </span>
+                                            <select>
+                                                <option value="1">2</option>
+                                                <option value="2">3</option>
+                                                <option value="3">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-4">
+                                    <div class="select__outer">
+                                        <label>Car Accomodation</label>
+                                        <div class="custom-select">
+                                            <span>
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                        <path
+                                                            d="M15.8739 7.48628L12.6634 4.69992V0.564272C12.6634 0.363157 12.4988 0.198608 12.2977 0.198608H9.84777C9.64666 0.198608 9.48211 0.363157 9.48211 0.564272V1.7929L8.36684 0.853146C8.23154 0.73979 8.03043 0.73979 7.89513 0.853146L0.128448 7.48262C-0.0178167 7.60695 -0.0434131 7.82634 0.073599 7.97992L0.768359 8.90871C0.889027 9.0696 1.1194 9.10251 1.28029 8.98184C1.29126 8.97453 1.30223 8.96356 1.3132 8.95259L1.507 8.7661V15.7393C1.507 15.9404 1.67155 16.105 1.87266 16.105H14.0127C14.2138 16.105 14.3783 15.9404 14.3783 15.7393V8.72588L14.627 8.95259C14.7769 9.08788 15.0073 9.08057 15.1426 8.93065C15.1462 8.92699 15.1535 8.91968 15.1572 8.91602L15.9178 7.99455C16.0421 7.84463 16.0238 7.61792 15.8739 7.48628ZM14.8391 8.15179L14.265 7.62157C14.1151 7.48628 13.8847 7.49359 13.7494 7.64351C13.6872 7.70933 13.6543 7.80075 13.6543 7.89216V15.3736H2.24198V7.90679C2.24198 7.70568 2.07743 7.54113 1.87632 7.54113C1.78125 7.54113 1.68983 7.57769 1.62401 7.64351L1.10843 8.13716L0.867088 7.81537L8.13281 1.61373L9.61375 2.86064C9.76732 2.99228 9.99769 2.97034 10.1293 2.81676C10.1842 2.75094 10.2134 2.66684 10.2134 2.58273V0.929935H11.932V4.86447C11.932 4.97051 11.9796 5.06924 12.0564 5.13872L15.1243 7.80441L14.8391 8.15179Z"
+                                                            fill="#888888" />
+                                                        <path
+                                                            d="M12.4879 10.1444L11.7273 9.79701L11.0471 8.70368C10.8095 8.32339 10.3963 8.09668 9.95382 8.09668H6.92978C6.52755 8.09668 6.14726 8.28682 5.90592 8.60495L5.02102 9.7641L3.53643 10.17C3.07569 10.298 2.75756 10.7148 2.75391 11.1902V11.7753C2.75391 12.3603 3.23293 12.8503 3.81433 12.8503H3.82896C4.01179 13.3257 4.49081 13.706 5.05027 13.706C5.60974 13.706 6.08875 13.3257 6.27159 12.8503H9.48577C9.6686 13.3257 10.1476 13.706 10.7071 13.706C11.2665 13.706 11.7456 13.3257 11.9284 12.8503H12.0564C12.6414 12.8503 13.1022 12.3603 13.1022 11.7753V11.1061C13.1058 10.6929 12.8645 10.3163 12.4879 10.1444ZM5.05027 12.9563C4.7358 12.9563 4.47984 12.7004 4.47984 12.3859C4.47984 12.0714 4.7358 11.8155 5.05027 11.8155C5.36474 11.8155 5.62071 12.0714 5.62071 12.3859C5.62071 12.704 5.36474 12.9563 5.05027 12.9563ZM10.7071 12.9563C10.3926 12.9563 10.1366 12.7004 10.1366 12.3859C10.1366 12.0714 10.3926 11.8155 10.7071 11.8155C11.0216 11.8155 11.2775 12.0714 11.2775 12.3859C11.2739 12.704 11.0216 12.9563 10.7071 12.9563ZM12.3708 11.7789C12.3708 11.9581 12.2356 12.1226 12.0564 12.1226H11.9759C11.8187 11.4206 11.1239 10.9818 10.4219 11.139C9.93188 11.2487 9.54793 11.6326 9.43823 12.1226H6.31912C6.16554 11.4206 5.47444 10.9744 4.77237 11.128C4.27872 11.2341 3.89478 11.618 3.78142 12.108C3.61321 12.0897 3.48523 11.9471 3.48523 11.7789V11.1938C3.48523 11.0476 3.58396 10.9159 3.72657 10.8794L5.32818 10.4406C5.40496 10.4186 5.47444 10.3748 5.52198 10.3089L6.48367 9.0474C6.58971 8.90845 6.75426 8.82801 6.92612 8.82801H9.95016C10.144 8.82801 10.3231 8.92674 10.4219 9.09128L11.1678 10.2797C11.2044 10.3419 11.2592 10.3894 11.3251 10.4186L12.1807 10.8099C12.3014 10.8647 12.3745 10.9818 12.3708 11.1097V11.7789Z"
+                                                            fill="#888888" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0">
+                                                            <rect width="16" height="16" fill="white"
+                                                                transform="translate(0 0.151733)" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+                                            <select>
+                                                <option value="1">2</option>
+                                                <option value="2">3</option>
+                                                <option value="3">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-body-content">
+                            <h6 class="bold">
+                                Energy Performance Certicicate Rating
+                            </h6>
+                            <div class="listingForm__tab-body-content-row">
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="input__outer">
+                                        <input type="text" placeholder="Current">
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="input__outer">
+                                        <input type="text" placeholder="Potential">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listingPage__energy">
+                                <div class="range__outer">
+                                    <div class="range__header">
+                                        <span>
+                                            Lower running cost
+                                        </span>
+                                        <span>
+                                            Higher running cost
+                                        </span>
+                                    </div>
+                                    <div class="range">
+                                        <svg width="728" height="20" viewBox="0 0 728 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <line x1="-8.74228e-07" y1="10" x2="728" y2="9.99994" stroke="white"
+                                                stroke-opacity="0.78" stroke-width="20" stroke-dasharray="1 10" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="listingForm__tab-body-content-row energy">
+                                <div class="listingForm__tab-body-content-column-2 ">
+                                    <div class="textarea__outer ">
+                                        <textarea placeholder="Current :" name="" id="" cols="30" rows="6"></textarea>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="textarea__outer">
+                                        <textarea placeholder="Potential : " name="" id="" cols="30"
+                                            rows="6"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-body-content">
+                            <h6 class="bold">
+                                Feature and Aminities
+                            </h6>
+                            <div class="listingForm__tab-body-content-row">
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="checkBox">
+                                        <input type="checkbox">
+                                        <label for="">Is The Property Furnished?</label>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="checkBox">
+                                        <input type="checkbox">
+                                        <label for="">Does this Property Have a Garden/Terrace?</label>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="checkBox">
+                                        <input type="checkbox">
+                                        <label for="">Is The Parking Available?</label>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="checkBox">
+                                        <input type="checkbox">
+                                        <label for="">Does this Property Have a Garden/Patio?</label>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="checkBox">
+                                        <input type="checkbox">
+                                        <label for="">Does the Property have a garage?</label>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="checkBox">
+                                        <input type="checkbox">
+                                        <label for="">is this Property Disable Accesible?</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-body-content">
+                            <h6 class="bold">
+                                Other Features and Aminities
+                            </h6>
+                            <div class="listingForm__tab-body-content-row-4">
+                                <div class="listingForm__tab-body-content-column-4">
+                                    <div class="listingPage__facility-icon">
+                                        <img src="assets/images/listing/icons/Security.svg" alt="">
+                                        <span>
+                                            Security
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-4">
+                                    <div class="listingPage__facility-icon">
+                                        <img src="assets/images/listing/icons/Pool.svg" alt="">
+                                        <span>
+                                            Pool
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-4">
+                                    <div class="listingPage__facility-icon">
+                                        <img src="assets/images/listing/icons/Pavilion.svg" alt="">
+                                        <span>
+                                            SPA Pavilion
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-4">
+                                    <div class="listingPage__facility-icon">
+                                        <img src="assets/images/listing/icons/Playground.svg" alt="">
+                                        <span>
+                                            Playground
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-4">
+                                    <div class="listingPage__facility-icon">
+                                        <img src="assets/images/listing/icons/Jacuzzi.svg" alt="">
+                                        <span>
+                                            Jacuzzi
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-4">
+                                    <div class="listingPage__facility-icon">
+                                        <img src="assets/images/listing/icons/Car Port.svg" alt="">
+                                        <span>
+                                            Car Port
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-4">
+                                    <div class="listingPage__facility-icon btn modBtn" data-tab="#aminities">
+                                        <img src="assets/images/listing/icons/Plus.svg" alt="">
+                                        <span>
+                                            Add More
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-body-content">
+
+                            <div class="listingForm__tab-body-content-row">
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <h6 class="bold">
+                                        Availability
+                                    </h6>
+                                    <div class="subtitle-2">
+                                        When Available For Rent
+                                    </div>
+                                    <div class="radioBox">
+                                        <input type="radio" name="availability">
+                                        <label for="">
+                                            Available Now
+                                        </label>
+                                    </div>
+                                    <div class="radioBox">
+                                        <input type="radio" name="availability">
+                                        <label for="">
+                                            Available From a Particular Time
+                                        </label>
+                                    </div>
+                                    <div class="input__outer icon__left">
+                                        <label for="">&nbsp;</label>
+                                        <input type="text" id="demo-2" value="29/08/2021">
+                                        <span class="icon__date">
+                                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.6667 3.16699H3.33333C2.59695 3.16699 2 3.76395 2 4.50033V13.8337C2 14.57 2.59695 15.167 3.33333 15.167H12.6667C13.403 15.167 14 14.57 14 13.8337V4.50033C14 3.76395 13.403 3.16699 12.6667 3.16699Z"
+                                                    stroke="#898989" stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M10.667 1.83301V4.49967" stroke="#898989"
+                                                    stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M5.33301 1.83301V4.49967" stroke="#898989"
+                                                    stroke-width="1.33333" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M2 7.16699H14" stroke="#898989" stroke-width="1.33333"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="select__outer m-t-20">
+                                        <label>Maximum Number Of Tenant</label>
+                                        <div class="custom-select">
+                                            <select>
+                                                <option value="1">-</option>
+                                                <option value="2">1</option>
+                                                <option value="3">2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <h6 class="bold">
+                                        Furnishing Status
+                                    </h6>
+                                    <div class="subtitle-2">
+                                        Property Will Delivered :
+                                    </div>
+                                    <div class="radioBox">
+                                        <input type="radio" name="status">
+                                        <label for="">
+                                            Unfurnished
+                                        </label>
+                                    </div>
+                                    <div class="radioBox">
+                                        <input type="radio" name="status">
+                                        <label for="">
+                                            Furnished
+                                        </label>
+                                    </div>
+                                    <div class="radioBox">
+                                        <input type="radio" name="status">
+                                        <label for="">
+                                            Partial Furnished
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-body-content">
+                            <h6 class="bold">
+                                Tenant Preference
+                            </h6>
+                            <div class="listingForm__tab-body-content-row">
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="checkBox">
+                                        <input type="checkbox">
+                                        <label class="tenant" for="">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M24.0739 19.0796C22.454 16.5524 19.695 15.0435 16.6936 15.0435C13.6924 15.0435 10.9332 16.5524 9.31352 19.0796L5.41008 25.169C4.76243 26.1795 4.4636 27.3465 4.54573 28.5437C4.62785 29.7412 5.08351 30.8564 5.86326 31.769C6.64357 32.6815 7.67463 33.3049 8.84495 33.5724C10.0153 33.8397 11.215 33.7257 12.3142 33.2426L12.3858 33.2107C15.1519 32.0184 18.3135 32.0291 21.0727 33.2426C21.7844 33.5554 22.5383 33.7136 23.2991 33.7136C23.7127 33.7136 24.1289 33.6667 24.5411 33.5727C25.7114 33.3055 26.7425 32.682 27.5231 31.7696C28.3031 30.8572 28.759 29.7418 28.8414 28.5443C28.9238 27.3465 28.625 26.1795 27.9774 25.1687L24.0739 19.0796ZM25.9194 30.3979C24.9265 31.5587 23.3203 31.9256 21.9223 31.3109C20.2606 30.58 18.4769 30.2148 16.6928 30.2148C14.9102 30.2148 13.1269 30.5798 11.4663 31.3098L11.419 31.3307C10.0318 31.9174 8.44917 31.5457 7.46727 30.3979C6.47548 29.237 6.36259 27.5934 7.18657 26.3077L11.0903 20.2183C12.3202 18.2995 14.4147 17.1539 16.6936 17.1539C18.9724 17.1539 21.0672 18.2995 22.2974 20.2183L26.2006 26.3075C27.0249 27.5937 26.9117 29.2375 25.9194 30.3979Z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M6.46136 19.0715C7.62262 18.6255 8.50482 17.6897 8.94565 16.4365C9.36478 15.2439 9.33044 13.8975 8.84842 12.6451C8.36612 11.3934 7.48886 10.3717 6.37842 9.76774C5.21139 9.13356 3.92956 9.03028 2.77023 9.47715C0.437835 10.3739 -0.632508 13.2562 0.384551 15.9036C1.19699 18.0108 3.09186 19.341 5.0076 19.341C5.49676 19.341 5.9873 19.2542 6.46136 19.0715ZM2.35385 15.1456C1.75455 13.5855 2.28107 11.926 3.52829 11.4465C3.75351 11.3597 3.99164 11.3165 4.23471 11.3165C4.60989 11.3165 4.99744 11.419 5.37042 11.622C6.04114 11.9864 6.57699 12.6193 6.87912 13.4034C7.18097 14.1881 7.20788 15.0165 6.95465 15.7364C6.72256 16.3961 6.27844 16.8811 5.70441 17.1017L5.70331 17.1022C4.45773 17.5823 2.95508 16.7043 2.35385 15.1456Z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M14.0353 14.3006C16.9511 14.3006 19.3233 11.598 19.3233 8.276C19.3233 4.95319 16.9511 2.25 14.0353 2.25C11.1198 2.25 8.74786 4.95319 8.74786 8.276C8.74786 11.598 11.1198 14.3006 14.0353 14.3006ZM14.0353 4.3602C15.7874 4.3602 17.2131 6.11691 17.2131 8.276C17.2131 10.4343 15.7874 12.1904 14.0353 12.1904C12.2833 12.1904 10.8581 10.4343 10.8581 8.276C10.8581 6.11691 12.2833 4.3602 14.0353 4.3602Z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M23.1676 15.781H23.1678C23.6164 15.9298 24.0739 16.001 24.5296 16.001C26.656 16.001 28.7283 14.4533 29.519 12.0747C29.9744 10.7056 29.9445 9.25784 29.4347 7.99853C28.9013 6.68045 27.9128 5.72354 26.6511 5.30386C25.3893 4.88473 24.024 5.05942 22.8075 5.79605C21.6454 6.5 20.755 7.64148 20.3004 9.01065C19.3405 11.899 20.6267 14.9361 23.1676 15.781ZM22.3029 9.67614C22.5999 8.78213 23.1673 8.0455 23.9009 7.6011C24.5796 7.18994 25.3201 7.08529 25.9856 7.30639C26.6508 7.52777 27.1809 8.05456 27.4786 8.7901C27.8002 9.58496 27.814 10.515 27.5165 11.409C26.9235 13.1931 25.2712 14.2561 23.8333 13.7784C22.3966 13.3005 21.71 11.4603 22.3029 9.67614Z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M34.3038 15.0778L34.303 15.0769C32.2922 13.5916 29.285 14.2354 27.5989 16.5128C25.9144 18.7914 26.1778 21.8547 28.1855 23.3411C28.9178 23.8835 29.783 24.1428 30.6684 24.1428C32.2117 24.1428 33.8174 23.3551 34.8905 21.9066C36.575 19.628 36.3118 16.5648 34.3038 15.0778ZM33.1945 20.6511C32.1988 21.995 30.5155 22.4408 29.4413 21.6451C28.3679 20.8505 28.3025 19.1108 29.2954 17.7678C29.9554 16.8762 30.9195 16.3802 31.808 16.3802C32.2573 16.3802 32.6875 16.5071 33.0489 16.7743C34.1214 17.5697 34.1865 19.3089 33.1945 20.6511Z"
+                                                    fill="currentColor" />
+                                            </svg>
+                                            Pets allowed
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="checkBox">
+                                        <input type="checkbox">
+                                        <label class="tenant" for="">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M28.9608 15.2593C30.3092 14.3491 31.1977 12.8073 31.1977 11.0617C31.1977 8.27082 28.9271 6.00022 26.1362 6.00022C23.3453 6.00022 21.0747 8.27082 21.0747 11.0617C21.0747 12.8065 21.9623 14.3478 23.3097 15.2581C22.3281 15.5904 21.4091 16.0964 20.5931 16.7599C19.9027 16.0959 18.9761 15.7134 18.0004 15.7134C17.0247 15.7134 16.0982 16.096 15.4081 16.7599C14.5919 16.0964 13.6728 15.5904 12.691 15.258C14.0385 14.3477 14.9261 12.8064 14.9261 11.0616C14.9261 8.27069 12.6555 6.00009 9.86456 6.00009C7.07398 6.00009 4.80371 8.27069 4.80371 11.0616C4.80371 12.8071 5.69198 14.349 7.04024 15.2591C3.57447 16.4368 1.07285 19.7197 1.06538 23.577C1.06518 23.5829 1.06445 23.5885 1.06445 23.5943C1.06445 24.6139 1.64385 26.1188 4.40426 27.4975C6.3712 28.4799 9.0742 29.2184 12.2211 29.633C14.067 29.8764 16.0114 30 18.0004 30C19.9898 30 21.9345 29.8765 23.7803 29.633C26.9269 29.2184 29.6297 28.4799 31.5966 27.4975C34.3568 26.1187 34.9362 24.6139 34.9362 23.5943C34.9362 19.7295 32.4319 16.4387 28.9608 15.2593ZM22.403 11.0617C22.403 9.00323 24.0777 7.32857 26.1362 7.32857C28.1946 7.32857 29.8693 9.0033 29.8693 11.0617C29.8693 13.1199 28.1946 14.7942 26.1362 14.7942C24.0777 14.7942 22.403 13.1199 22.403 11.0617ZM16.0187 18.0793C16.47 17.4297 17.2106 17.0418 18.0003 17.0418C18.7904 17.0418 19.5314 17.4297 19.9826 18.0793C19.9825 18.0792 19.9826 18.0795 19.9826 18.0793C20.2641 18.4842 20.4131 18.9599 20.4131 19.4546C20.4131 20.785 19.3307 21.8674 18.0003 21.8674C16.6701 21.8674 15.5881 20.785 15.5881 19.4545C15.5881 18.9591 15.7367 18.484 16.0187 18.0793ZM6.13192 11.0617C6.13192 9.00323 7.80632 7.32857 9.86443 7.32857C11.9229 7.32857 13.5976 9.0033 13.5976 11.0617C13.5976 13.1199 11.9229 14.7942 9.86443 14.7942C7.80632 14.7942 6.13192 13.1199 6.13192 11.0617ZM11.644 28.2094C8.9657 27.8015 6.67936 27.149 4.99788 26.3092C3.32281 25.4726 2.39848 24.5115 2.39313 23.6022C2.39313 23.5996 2.39352 23.597 2.39352 23.5944C2.39346 19.4744 5.74497 16.1226 9.86449 16.1226C11.6171 16.1226 13.2892 16.728 14.6272 17.837C14.386 18.3384 14.2599 18.8881 14.2599 19.4547C14.2599 20.6109 14.7872 21.6461 15.6138 22.333C13.2923 23.2768 11.65 25.5544 11.644 28.2094ZM23.0293 28.3871C21.4138 28.5756 19.7254 28.6717 18.0003 28.6717C16.2757 28.6717 14.5875 28.5756 12.972 28.3871V28.2241C12.972 25.4514 15.2277 23.1958 18.0003 23.1958C20.7733 23.1958 23.0293 25.4514 23.0293 28.2241V28.3871ZM31.003 26.3091C29.3216 27.149 27.0356 27.8015 24.3575 28.2093C24.3515 25.5543 22.7091 23.2769 20.3874 22.3329C21.2142 21.6461 21.7416 20.6108 21.7416 19.4545C21.7416 18.8886 21.6155 18.3388 21.374 17.8369C22.7115 16.7279 24.3834 16.1225 26.1363 16.1225C30.2562 16.1225 33.6079 19.4744 33.6079 23.5942C33.6079 24.506 32.6828 25.4701 31.003 26.3091Z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M19.9826 18.0793C19.5314 17.4297 18.7904 17.0418 18.0003 17.0418C17.2106 17.0418 16.47 17.4297 16.0187 18.0793C15.7367 18.484 15.5881 18.9591 15.5881 19.4545C15.5881 20.785 16.6701 21.8674 18.0003 21.8674C19.3307 21.8674 20.4131 20.785 20.4131 19.4546C20.4131 18.9599 20.2641 18.4842 19.9826 18.0793ZM19.9826 18.0793C19.9826 18.0795 19.9825 18.0792 19.9826 18.0793ZM28.9608 15.2593C30.3092 14.3491 31.1977 12.8073 31.1977 11.0617C31.1977 8.27082 28.9271 6.00022 26.1362 6.00022C23.3453 6.00022 21.0747 8.27082 21.0747 11.0617C21.0747 12.8065 21.9623 14.3478 23.3097 15.2581C22.3281 15.5904 21.4091 16.0964 20.5931 16.7599C19.9027 16.0959 18.9761 15.7134 18.0004 15.7134C17.0247 15.7134 16.0982 16.096 15.4081 16.7599C14.5919 16.0964 13.6728 15.5904 12.691 15.258C14.0385 14.3477 14.9261 12.8064 14.9261 11.0616C14.9261 8.27069 12.6555 6.00009 9.86456 6.00009C7.07398 6.00009 4.80371 8.27069 4.80371 11.0616C4.80371 12.8071 5.69198 14.349 7.04024 15.2591C3.57447 16.4368 1.07285 19.7197 1.06538 23.577C1.06518 23.5829 1.06445 23.5885 1.06445 23.5943C1.06445 24.6139 1.64385 26.1188 4.40426 27.4975C6.3712 28.4799 9.0742 29.2184 12.2211 29.633C14.067 29.8764 16.0114 30 18.0004 30C19.9898 30 21.9345 29.8765 23.7803 29.633C26.9269 29.2184 29.6297 28.4799 31.5966 27.4975C34.3568 26.1187 34.9362 24.6139 34.9362 23.5943C34.9362 19.7295 32.4319 16.4387 28.9608 15.2593ZM22.403 11.0617C22.403 9.00323 24.0777 7.32857 26.1362 7.32857C28.1946 7.32857 29.8693 9.0033 29.8693 11.0617C29.8693 13.1199 28.1946 14.7942 26.1362 14.7942C24.0777 14.7942 22.403 13.1199 22.403 11.0617ZM6.13192 11.0617C6.13192 9.00323 7.80632 7.32857 9.86443 7.32857C11.9229 7.32857 13.5976 9.0033 13.5976 11.0617C13.5976 13.1199 11.9229 14.7942 9.86443 14.7942C7.80632 14.7942 6.13192 13.1199 6.13192 11.0617ZM11.644 28.2094C8.9657 27.8015 6.67936 27.149 4.99788 26.3092C3.32281 25.4726 2.39848 24.5115 2.39313 23.6022C2.39313 23.5996 2.39352 23.597 2.39352 23.5944C2.39346 19.4744 5.74497 16.1226 9.86449 16.1226C11.6171 16.1226 13.2892 16.728 14.6272 17.837C14.386 18.3384 14.2599 18.8881 14.2599 19.4547C14.2599 20.6109 14.7872 21.6461 15.6138 22.333C13.2923 23.2768 11.65 25.5544 11.644 28.2094ZM23.0293 28.3871C21.4138 28.5756 19.7254 28.6717 18.0003 28.6717C16.2757 28.6717 14.5875 28.5756 12.972 28.3871V28.2241C12.972 25.4514 15.2277 23.1958 18.0003 23.1958C20.7733 23.1958 23.0293 25.4514 23.0293 28.2241V28.3871ZM31.003 26.3091C29.3216 27.149 27.0356 27.8015 24.3575 28.2093C24.3515 25.5543 22.7091 23.2769 20.3874 22.3329C21.2142 21.6461 21.7416 20.6108 21.7416 19.4545C21.7416 18.8886 21.6155 18.3388 21.374 17.8369C22.7115 16.7279 24.3834 16.1225 26.1363 16.1225C30.2562 16.1225 33.6079 19.4744 33.6079 23.5942C33.6079 24.506 32.6828 25.4701 31.003 26.3091Z"
+                                                    stroke="currentColor" stroke-width="0.211698" />
+                                            </svg>
+
+                                            Families Allowed
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="checkBox">
+                                        <input type="checkbox">
+                                        <label class="tenant" for="">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M33.8906 25.6529V11.0822L35.3143 10.5506C35.7266 10.3965 36 10.0027 36 9.5625C36 9.12234 35.7266 8.72845 35.3143 8.57447L18.369 2.24634C18.1311 2.15747 17.869 2.15747 17.6311 2.24634L0.685758 8.57447C0.273375 8.72845 0 9.12234 0 9.5625C0 10.0027 0.273375 10.3965 0.685688 10.5505L7.70766 13.1728C6.04526 17.8635 6.46467 20.3309 6.39844 21.1641C6.39844 21.514 6.57204 21.8412 6.8618 22.0374C7.15162 22.2337 7.51978 22.2732 7.84477 22.1433C7.8693 22.1335 10.3208 21.1641 12.7266 21.1641C14.952 21.1641 17.3188 23.0246 17.3411 23.0423C17.7263 23.3504 18.2737 23.3504 18.6588 23.0423C19.3119 22.5199 21.414 21.1641 23.2734 21.1641C25.6659 21.1641 28.1315 22.1339 28.1552 22.1433C28.4801 22.2732 28.8484 22.2336 29.1381 22.0374C29.428 21.8412 29.6016 21.514 29.6016 21.1641C29.5403 20.3941 29.946 17.8388 28.2923 13.1728L31.7812 11.8699V25.6529C31.239 25.9459 30.766 26.4715 30.401 27.2014C29.9308 28.1419 29.6719 29.3688 29.6719 30.6562V32.7656C29.6719 33.3481 30.1441 33.8203 30.7266 33.8203H34.9453C35.5278 33.8203 36 33.3481 36 32.7656V30.6562C36 29.3688 35.741 28.1419 35.2709 27.2014C34.9059 26.4715 34.4329 25.9459 33.8906 25.6529ZM18 4.36022L31.9306 9.5625C30.4935 10.0992 19.3908 14.2455 18 14.7648C16.6092 14.2455 5.50652 10.0992 4.06941 9.5625L18 4.36022ZM27.4835 19.7032C26.4019 19.3956 24.8479 19.0547 23.2734 19.0547C21.116 19.0547 19.0285 20.2371 18 20.9222C16.9715 20.2371 14.8839 19.0547 12.7266 19.0547C11.1521 19.0547 9.59808 19.3956 8.51646 19.7032C8.57714 17.5589 8.95795 15.9619 9.68386 13.9108L17.6311 16.8787C17.8689 16.9675 18.1311 16.9675 18.369 16.8787L26.3162 13.9108C27.042 15.9619 27.4228 17.559 27.4835 19.7032ZM33.8906 31.7109H31.7812V30.6562C31.7812 29.7039 31.9659 28.7885 32.2877 28.1448C32.5573 27.6057 32.7994 27.4922 32.8359 27.4922C32.8725 27.4922 33.1146 27.6057 33.3842 28.1448C33.706 28.7885 33.8906 29.7039 33.8906 30.6562V31.7109Z"
+                                                    fill="currentColor" />
+                                            </svg>
+                                            Student Friendly
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="checkBox">
+                                        <input type="checkbox">
+                                        <label class="tenant" for="">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M32.3541 13.3222L35.3954 16.0933C35.9634 16.6109 36.151 17.4082 35.8736 18.1247C35.596 18.8411 34.9203 19.304 34.152 19.304H31.5718V34.05C31.5718 34.6347 31.0978 35.1087 30.5132 35.1087H21.6602C21.0755 35.1087 20.6016 34.6347 20.6016 34.05V25.0966H15.3984V34.0499C15.3984 34.6347 14.9243 35.1086 14.3397 35.1086H5.4864C4.90168 35.1086 4.42771 34.6346 4.42771 34.0499V19.3039H1.84801C1.07971 19.3039 0.404005 18.8411 0.126481 18.1247C-0.150972 17.4082 0.0366924 16.6109 0.604536 16.0934L3.49048 13.4637C4.03691 13.9549 4.67401 14.3472 5.37362 14.6124L2.54847 17.1866H5.48633C6.07105 17.1866 6.54503 17.6607 6.54503 18.2453V32.9913H13.281V24.0379C13.281 23.4532 13.755 22.9792 14.3397 22.9792H21.6603C22.245 22.9792 22.719 23.4533 22.719 24.0379V32.9913H29.4545V18.2453C29.4545 17.6606 29.9285 17.1866 30.5132 17.1866H33.4515L30.5826 14.5724C30.3623 14.3717 30.2369 14.0877 30.2369 13.7898V5.1923H25.0336V7.11935C25.0336 7.53855 24.7862 7.91838 24.4027 8.08783C24.0193 8.25708 23.5719 8.1843 23.262 7.90193L18.0001 3.10725L13.2852 7.40337C13.0856 6.67857 12.7535 6.00871 12.3165 5.4215L16.7566 1.37566C17.4653 0.729702 18.5344 0.729631 19.2433 1.37573L22.9162 4.7224V4.1336C22.9162 3.54888 23.3902 3.0749 23.9749 3.0749H31.2955C31.8802 3.0749 32.3541 3.54895 32.3541 4.1336V13.3222Z"
+                                                    fill="currentColor" />
+                                                <circle cx="7.5" cy="9" r="6" stroke="currentColor"
+                                                    stroke-width="0.9" />
+                                                <path
+                                                    d="M5.25 8.86508C5.25 8.76043 5.28387 8.67117 5.35161 8.5973C5.41935 8.52035 5.51935 8.48187 5.65161 8.48187H6.17419V7.39227C6.17419 7.10294 6.21935 6.829 6.30968 6.57045C6.4 6.30882 6.5371 6.08105 6.72097 5.88714C6.90484 5.69015 7.13548 5.53471 7.4129 5.42083C7.69032 5.30694 8.01613 5.25 8.39032 5.25C8.64839 5.25 8.87903 5.28232 9.08226 5.34696C9.28871 5.40852 9.47097 5.49316 9.62903 5.60089C9.79032 5.70862 9.92903 5.83635 10.0452 5.9841C10.1645 6.12876 10.2661 6.28574 10.35 6.45503L9.87097 6.7459C9.76774 6.79514 9.67581 6.81977 9.59516 6.81977C9.47581 6.81977 9.36935 6.76898 9.27581 6.66741C9.21452 6.59969 9.15323 6.53813 9.09194 6.48273C9.03387 6.42425 8.96935 6.375 8.89839 6.33499C8.83065 6.29497 8.75484 6.26419 8.67097 6.24265C8.59032 6.2211 8.49677 6.21033 8.39032 6.21033C8.05806 6.21033 7.80968 6.31498 7.64516 6.52428C7.48065 6.73051 7.39839 7.0183 7.39839 7.38765V8.48187H9.37742V8.93434C9.37742 9.00821 9.34516 9.07592 9.28064 9.13748C9.21935 9.19904 9.13871 9.22982 9.03871 9.22982H7.39839V10.1255C7.39839 10.3287 7.35806 10.5103 7.27742 10.6703C7.2 10.8273 7.09194 10.9735 6.95323 11.1089C7.19194 11.0566 7.42903 11.0304 7.66452 11.0304H10.5V11.5106C10.5 11.566 10.4871 11.6229 10.4613 11.6814C10.4387 11.7399 10.4048 11.7938 10.3597 11.843C10.3145 11.8892 10.2597 11.9277 10.1952 11.9584C10.1339 11.9861 10.0645 12 9.9871 12H5.34677V11.2844C5.45645 11.2597 5.56129 11.2259 5.66129 11.1828C5.76129 11.1366 5.84839 11.0797 5.92258 11.012C6 10.9412 6.06129 10.8596 6.10645 10.7673C6.15161 10.6719 6.17419 10.561 6.17419 10.4348V9.22982H5.25V8.86508Z"
+                                                    fill="currentColor" />
+                                                <defs>
+                                                    <clipPath id="clip0">
+                                                        <rect width="36" height="36" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            Housing Benefits <br> Claimants Allowed
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="checkBox">
+                                        <input type="checkbox">
+                                        <label class="tenant" for="">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M29.6719 20.1094C29.6719 20.6918 30.1441 21.1641 30.7266 21.1641C31.309 21.1641 31.7812 20.6918 31.7812 20.1094C31.7812 15.3633 29.3158 13.5142 27.1406 11.8828C25.1033 10.3548 23.3438 9.03516 23.3438 5.34375C23.3438 4.76128 22.8715 4.28906 22.2891 4.28906C21.7066 4.28906 21.2344 4.76128 21.2344 5.34375C21.2344 10.0898 23.6998 11.9389 25.875 13.5703C27.9124 15.0983 29.6719 16.418 29.6719 20.1094Z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M31.7812 5.34375C31.7812 4.76128 31.309 4.28906 30.7266 4.28906C30.1441 4.28906 29.6719 4.76128 29.6719 5.34375C29.6719 9.88186 30.8866 11.704 31.9584 13.3116C32.952 14.8021 33.8906 16.21 33.8906 20.1094C33.8906 20.6918 34.3628 21.1641 34.9453 21.1641C35.5278 21.1641 36 20.6918 36 20.1094C36 15.5713 34.7853 13.7491 33.7135 12.1416C32.7199 10.651 31.7812 9.24314 31.7812 5.34375Z"
+                                                    fill="currentColor" />
+                                                <path
+                                                    d="M34.9453 23.2734H1.05469C0.472219 23.2734 0 23.7457 0 24.3281V30.6562C0 31.2387 0.472219 31.7109 1.05469 31.7109H34.9453C35.5278 31.7109 36 31.2387 36 30.6562V24.3281C36 23.7457 35.5278 23.2734 34.9453 23.2734ZM29.6719 25.3828V29.6016H14.8359V25.3828H29.6719ZM2.10938 25.3828H12.7266V29.6016H2.10938V25.3828ZM33.8906 29.6016H31.7812V25.3828H33.8906V29.6016Z"
+                                                    fill="currentColor" />
+
+                                                <defs>
+                                                    <clipPath id="clip0">
+                                                        <rect width="36" height="36" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                            Smokers Allowed
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listingForm__tab-body-content-row">
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="select__outer">
+                                        <label>Maximum Number Of Tenant</label>
+                                        <div class="custom-select">
+                                            <select>
+                                                <option value="1">-</option>
+                                                <option value="2">1</option>
+                                                <option value="3">2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="listingForm__tab-body-content">
+                            <h6 class="bold">
+                                Rent And Bill
+                            </h6>
+                            <div class="listingForm__tab-body-content-row">
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="input__outer">
+                                        <label>Add Property Headline</label>
+                                        <input type="text" placeholder="Headline">
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="select__outer">
+                                        <label>Rent Basist</label>
+                                        <div class="custom-select">
+                                            <select>
+                                                <option value="1">Monthly</option>
+                                                <option value="2">Weekly</option>
+                                                <option value="3">Yearly</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="select__outer">
+                                        <label>Deposit Ammount</label>
+                                        <div class="custom-select">
+                                            <select>
+                                                <option value="1">Custom</option>
+                                                <option value="2">Custom</option>
+                                                <option value="3">Custom</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="checkBox centerIt">
+                                        <input type="checkbox">
+                                        <label for="">Bills Included in Rent</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-body-content">
+                            <h6 class="bold">
+                                Add Image
+                            </h6>
+                            <div class="gallery">
+                                <div class="gallery__inner">
+                                    <div class="gallery__inner-header">
+                                        Drag or open foto maximum 20mb
+                                    </div>
+                                    <div class="gallery__inner-row">
+                                        <div class="gallery__inner-column insertBefore" id="">
+                                            <input type="file" class="files" name="files[]" multiple />
+                                            <label for="">
+                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 16.5002V28.5002C6 29.2959 6.31607 30.059 6.87868 30.6216C7.44129 31.1842 8.20435 31.5002 9 31.5002H27C27.7956 31.5002 28.5587 31.1842 29.1213 30.6216C29.6839 30.059 30 29.2959 30 28.5002V16.5002"
+                                                        stroke="currentColor" stroke-width="2.90802"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M24 10.5002L18 4.50024L12 10.5002" stroke="currentColor"
+                                                        stroke-width="2.90802" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M18 4.50024V24.0002" stroke="currentColor"
+                                                        stroke-width="2.90802" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                Add another photo
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="gallery__inner-footer">
+                                        <div class="gallery__inner-footer-row">
+                                            <img src="assets/images/listing/icons/Alert-circle.svg" alt="">
+                                            <div class="gallery__inner-footer-column">
+                                                <div class="gallery__inner-footer-column-title">
+                                                    Don’t have photos to display on your listing?
+                                                </div>
+                                                <div class="gallery__inner-footer-column-para">
+                                                    ByTheHomeOwner can send a photographer to your property and have
+                                                    professional photos taken and automatically added to you advrt in a
+                                                    matter of days
+                                                </div>
+                                            </div>
+                                            <a href="#" class="gallery__inner-footer-btn">
+                                                Learn More
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-body-content">
+                            <h6 class="bold">
+                                Add Floorplans
+                            </h6>
+                            <div class="gallery">
+                                <div class="gallery__inner">
+                                    <div class="gallery__inner-header">
+                                        Drag or open foto maximum 20mb
+                                    </div>
+                                    <div class="gallery__inner-row">
+                                        <div class="gallery__inner-column insertBefore" id="">
+                                            <input type="file" class="files" name="files[]" multiple />
+                                            <label for="">
+                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M6 16.5002V28.5002C6 29.2959 6.31607 30.059 6.87868 30.6216C7.44129 31.1842 8.20435 31.5002 9 31.5002H27C27.7956 31.5002 28.5587 31.1842 29.1213 30.6216C29.6839 30.059 30 29.2959 30 28.5002V16.5002"
+                                                        stroke="currentColor" stroke-width="2.90802"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M24 10.5002L18 4.50024L12 10.5002" stroke="currentColor"
+                                                        stroke-width="2.90802" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M18 4.50024V24.0002" stroke="currentColor"
+                                                        stroke-width="2.90802" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                Add Floorplans photo
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="gallery__inner-footer secondary">
+                                        <div class="gallery__inner-footer-row">
+                                            <img src="assets/images/listing/icons/Alert-circle.svg" alt="">
+                                            <div class="gallery__inner-footer-column">
+                                                <div class="gallery__inner-footer-column-title">
+                                                    Don’t have Floorplan
+                                                </div>
+                                                <div class="gallery__inner-footer-column-para">
+                                                    You can add floor plan later throught your member area
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-body-content">
+                            <h6 class="bold">
+                                Advert
+                            </h6>
+                            <div class="advert">
+                                <div class="advert__inner">
+                                    <div class="advert__inner-header">
+                                        <div class="advert__inner-header-title">
+                                            <img src="assets/images/listing/icons/Check.svg" alt="">
+                                            Need More Exposure?
+                                        </div>
+                                        <div class="advert__inner-header-para">
+                                            Make your listing stand out by upgrading your FREE standart ad to either our
+                                            PREMIUM OR PLATINUM Packages to and get more Visibility and response
+                                        </div>
+                                    </div>
+                                    <div class="advert__inner-body">
+                                        <div class="advert__inner-body-box premium">
+                                            <div class="advert__inner-body-box-content">
+                                                <div class="advert__inner-body-box-content-package">
+                                                    PREMIUM
+                                                </div>
+                                                <div class="advert__inner-body-box-content-body">
+                                                    <div class="advert__inner-body-box-content-body-para">
+                                                        Bigger and Better Looking and at top of the <br> page
+                                                    </div>
+                                                    <div class="radioBox">
+                                                        <input type="radio" name="package">
+                                                        <label for="">
+                                                            £ 6 Until Property Rented
+                                                        </label>
+                                                    </div>
+                                                    <div class="radioBox">
+                                                        <input type="radio" name="package">
+                                                        <label for="">
+                                                            £ 2/ Month
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="advert__inner-body-box-content-link">
+                                                    Preview
+                                                </a>
+                                            </div>
+                                            <a href="#" class="advert__inner-body-box-btn">
+                                                Upgrade Plan
+                                            </a>
+                                        </div>
+                                        <div class="advert__inner-body-box platinum">
+                                            <div class="advert__inner-body-box-content">
+                                                <div class="advert__inner-body-box-content-package">
+                                                    PREMIUM
+                                                </div>
+                                                <div class="advert__inner-body-box-content-body">
+                                                    <div class="advert__inner-body-box-content-body-para">
+                                                        Bigger and Better Looking and at top of the <br> page
+                                                    </div>
+                                                    <div class="radioBox">
+                                                        <input type="radio" name="package">
+                                                        <label for="">
+                                                            £ 12 for 30 Day Visibility
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="advert__inner-body-box-content-link">
+                                                    Preview
+                                                </a>
+                                            </div>
+                                            <a href="#" class="advert__inner-body-box-btn">
+                                                Upgrade Plan
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="advert__inner-footer">
+                                        <div class="advert__inner-footer-title">
+                                            No Thank’s (I am Happy With Free Listing)
+                                        </div>
+                                        <div class="advert__inner-footer-box">
+                                            <div class="radioBox">
+                                                <input type="radio" name="package">
+                                                <label for="">
+                                                    Current Listing : Free standar Listing
+                                                    <br>Ammount to Pay : £ 00,0
+                                                </label>
+                                            </div>
+                                            <a href="#" class="advert__inner-footer-box-link">
+                                                Preview
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listingForm__tab-footer">
+                        <a href="#" class="btn__primary">
+                            Prev
+                        </a>
+                        <div class="btn__secondary formBtn" data-tab="#step-2">
+                            Next
+                        </div>
+                    </div>
+                </div>
+                <div class="listingForm__tab formItem " id="step-2">
+                    <div class="listingForm__tab-header">
+                        <ul class="listingForm__tab-header-pagination">
+                            <li class="done">
+                                1 <span>Your Details</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-1">
+                                2 <span>Property Details</span>
+                            </li>
+                            <li class="blue">
+                                3 <span>Agent Assists</span>
+                            </li>
+                            <li>
+                                4 <span>SEO Information</span>
+                            </li>
+                            <li>
+                                5 <span>Payment</span>
+                            </li>
+                            <li>
+                                6 <span>Ownership Confirmation</span>
+                            </li>
+                            <li>
+                                7 <span>Authority to Market</span>
+                            </li>
+                        </ul>
+                        <div class="listingForm__tab-header">
+                            <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                                Agent Assist
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="listingGeneral">
+                        <div class="listingGeneral__row centerIt">
+                            <div class="listingGeneral__column">
+                                <div class="listingGeneral__column-image">
+                                    <img src="assets/images/listing/agentAsist.png" alt="">
+                                </div>
+                            </div>
+                            <div class="listingGeneral__column">
+                                <h6 class="bold">
+                                    Agents Market
+                                </h6>
+                                <p>
+                                    Would you like agents to promote your property on <a href="">ByTheHomeOwner.com</a>
+                                    and
+                                    their own networks for more exposure with the agreement that agency
+                                    commission at market rate is applicable if an agent finds you a buyer /
+                                    renter?
+                                </p>
+                                <div class="listingGeneral__column-radios">
+                                    <div class="listingGeneral__column-radio">
+                                        <input class="agreeInput" type="radio" name="agentMarket" value="agentMarket">
+                                        <label for="">Yes</label>
+                                    </div>
+                                    <div class="listingGeneral__column-radio">
+                                        <input class="agreeInput" type="radio" name="agentMarket">
+                                        <label for=""> No</label>
+                                    </div>
+                                </div>
+                                <div class="agree agentMarket">
+                                    <img src="assets/images/listing/icons/Alert-circle.svg" alt="">
+                                    I agree that agency commissions at market rate is applicable if agents finds me a
+                                    buyer/tenant
+                                    <br> Market rate: 1/2 month rent per year of lease signed by Tenant / 1.5% of
+                                    property
+                                    purchase price paid by buyer
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listingForm__tab-footer">
+                        <div class="btn__primary formBtn" data-tab="#step-1">
+                            Prev
+                        </div>
+                        <div class="btn__secondary formBtn" data-tab="#step-3">
+                            Next
+                        </div>
+                    </div>
+
+                </div>
+                <div class="listingForm__tab formItem " id="step-3">
+                    <div class="listingForm__tab-header">
+                        <ul class="listingForm__tab-header-pagination">
+                            <li class="done">
+                                1 <span>Your Details</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-1">
+                                2 <span>Property Details</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-2">
+                                3 <span>Agent Assists</span>
+                            </li>
+                            <li class="blue">
+                                4 <span>SEO Information</span>
+                            </li>
+                            <li>
+                                5 <span>Payment</span>
+                            </li>
+                            <li>
+                                6 <span>Ownership Confirmation</span>
+                            </li>
+                            <li>
+                                7 <span>Authority to Market</span>
+                            </li>
+                        </ul>
+                        <div class="listingForm__tab-header">
+                            <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                                SEO Information
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="listingGeneral">
+                        <div class="listingGeneral__header">
+                            <div class="listingGeneral__header-address">
+                                <a href="#" class="btn__secondary">
+                                    For rent
+                                </a>
+                                1 calderwood street, London, UK
+                            </div>
+                        </div>
+                        <div class="listingGeneral__row">
+                            <div class="listingGeneral__column">
+                                <div class="input__outer">
+                                    <label>Meta Title</label>
+                                    <input type="text" placeholder="Meta Tittle">
+                                </div>
+                                <div class="textarea__outer m-t-10">
+                                    <label>Meta Keywords</label>
+                                    <textarea name="" id="" cols="30" rows="6" placeholder="Meta Keywords"></textarea>
+                                </div>
+                            </div>
+                            <div class="listingGeneral__column">
+                                <div class="textarea__outer">
+                                    <label>Meta Shortcuts</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="Meta Shortcuts"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listingForm__tab-footer">
+                        <div class="btn__primary formBtn" data-tab="#step-2">
+                            Prev
+                        </div>
+                        <div class="btn__secondary formBtn" data-tab="#step-4">
+                            Next
+                        </div>
+                    </div>
+
+                </div>
+                <div class="listingForm__tab formItem " id="step-4">
+                    <div class="listingForm__tab-header">
+                        <ul class="listingForm__tab-header-pagination">
+                            <li class="done">
+                                1 <span>Your Details</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-1">
+                                2 <span>Property Details</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-2">
+                                3 <span>Agent Assists</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-3">
+                                4 <span>SEO Information</span>
+                            </li>
+                            <li class="blue">
+                                5 <span>Payment</span>
+                            </li>
+                            <li>
+                                6 <span>Ownership Confirmation</span>
+                            </li>
+                            <li>
+                                7 <span>Authority to Market</span>
+                            </li>
+                        </ul>
+                        <div class="listingForm__tab-header">
+                            <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                                Payment
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="listingGeneral">
+                        <div class="listingGeneral__row">
+                            <div class="listingGeneral__column">
+                                <div class="advertPayment">
+                                    <div class="advertPayment__inner">
+                                        <div class="advertPayment__inner-box top">
+                                            <div class="radioBox">
+                                                <input type="radio" name="package">
+                                                <label for="">
+                                                    Current Listing : Free standar Listing
+                                                    <br>Ammount to Pay : £ 00,0
+                                                </label>
+                                            </div>
+                                            <a href="#" class="advertPayment__inner-box-link">
+                                                Preview
+                                            </a>
+                                        </div>
+                                        <div class="advertPayment__inner-title">
+                                            Would you like to add any additional service to your property listing?
+                                        </div>
+
+                                        <div class="advertPayment__inner-box premium">
+                                            <div class="advertPayment__inner-box-package">
+                                                PREMIUM
+                                            </div>
+                                            <div class="advertPayment__inner-box-body">
+                                                <div class="advertPayment__inner-box-body-title">
+                                                    Upgrade to Premium Package
+                                                </div>
+                                                <div class="advertPayment__inner-box-body-para">
+                                                    Appear towward the very top of search results. Attract 10x more
+                                                    leads than a standart listing.
+                                                </div>
+                                                <div class="radioBox">
+                                                    <input type="radio" name="package">
+                                                    <label for="">
+                                                        £ 6 Until Property Rented
+                                                    </label>
+                                                </div>
+                                                <div class="radioBox">
+                                                    <input type="radio" name="package">
+                                                    <label for="">
+                                                        £ 2/ Month
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="advertPayment__inner-box-link">
+                                                Preview
+                                            </a>
+
+                                        </div>
+                                        <div class="advertPayment__inner-box platinum">
+                                            <div class="advertPayment__inner-box-package">
+                                                PLATINUM
+                                            </div>
+                                            <div class="advertPayment__inner-box-body">
+                                                <div class="advertPayment__inner-box-body-title">
+                                                    Upgrade to Platinum Package
+                                                </div>
+                                                <div class="advertPayment__inner-box-body-para">
+                                                    Bigger and better looking and at the top of search result and above
+                                                    premium listing
+                                                </div>
+                                                <div class="radioBox">
+                                                    <input type="radio" name="package">
+                                                    <label for="">
+                                                        £ 12/ 30 Day Visibility
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="advertPayment__inner-box-link">
+                                                Preview
+                                            </a>
+                                        </div>
+                                        <div class="advertPayment__inner-box verify">
+                                            <div class="advertPayment__inner-box-package">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0 8.5C0 4.08172 3.58172 0.5 8 0.5V0.5C12.4183 0.5 16 4.08172 16 8.5V8.5C16 12.9183 12.4183 16.5 8 16.5V16.5C3.58172 16.5 0 12.9183 0 8.5V8.5Z"
+                                                        fill="white" />
+                                                    <path d="M13.3332 4.5L5.99984 11.8333L2.6665 8.5" stroke="#34C0E3"
+                                                        stroke-width="1.46237" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                Verify
+                                            </div>
+                                            <div class="advertPayment__inner-box-body">
+                                                <div class="advertPayment__inner-box-body-title">
+                                                    Verify your listing
+                                                </div>
+                                                <div class="advertPayment__inner-box-body-para">
+                                                    Increase trust by confirming your ownership and/ authority to market
+                                                    the property that you are listing. Verified listings rank higher and
+                                                    recieves more qnuiries.
+                                                </div>
+                                                <div class="radioBox">
+                                                    <input type="radio" name="package">
+                                                    <label for="">
+                                                        £ 20 Per Listing
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="advertPayment__inner-box-link">
+                                                Learn More about Verify listing
+                                            </a>
+                                        </div>
+                                        <div class="advertPayment__inner-box verify">
+                                            <div class="advertPayment__inner-box-body">
+                                                <div class="advertPayment__inner-box-body-title">
+                                                    Order ByTheHomeOwner For Sale / To Let Sign Board
+                                                </div>
+                                                <div class="advertPayment__inner-box-body-para">
+                                                    Buyers and renters start looking for properties often tour the area
+                                                    looking for rental/sale boards. They then contact agent / Homeowner
+                                                    about the boards they see.
+                                                </div>
+                                                <div class="radioBox">
+                                                    <input type="radio" name="package">
+                                                    <label for="">
+                                                        £ 25 Per Board
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="advertPayment__inner-box-link">
+                                                Learn about verified listing
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listingGeneral__column">
+                                <form class="paymentOption">
+                                    <div class="paymentOption__inner">
+                                        <div class="paymentOption__inner-header">
+                                            <div class="paymentOption__inner-header-title">
+                                                Select Payment Option:
+                                            </div>
+                                            <div class="paymentOption__inner-header-row">
+                                                <div class="paymentBox">
+                                                    <input class="paymentInput" type="radio" name="payment"
+                                                        value="masterCard">
+                                                    <label for="">
+                                                        <img src="assets/images/listing/payment/1 (1).png" alt="">
+                                                    </label>
+                                                </div>
+                                                <div class="paymentBox">
+                                                    <input class="paymentInput" type="radio" name="payment"
+                                                        value="visa">
+                                                    <label for="">
+                                                        <img src="assets/images/listing/payment/1 (2).png" alt="">
+                                                    </label>
+                                                </div>
+                                                <div class="paymentBox">
+                                                    <input class="paymentInput" type="radio" name="payment"
+                                                        value="paypal">
+                                                    <label for="">
+                                                        <img src="assets/images/listing/payment/1 (4).png" alt="">
+                                                    </label>
+                                                </div>
+                                                <div class="paymentBox">
+                                                    <input class="paymentInput" type="radio" name="payment"
+                                                        value="discover">
+                                                    <label for="">
+                                                        <img src="assets/images/listing/payment/1 (3).png" alt="">
+                                                    </label>
+                                                </div>
+                                                <div class="paymentBox">
+                                                    <input class="paymentInput" type="radio" name="payment"
+                                                        value="express">
+                                                    <label for="">
+                                                        <img src="assets/images/listing/payment/1 (5).png" alt="">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="paymentOption__inner-body">
+                                            <div class="paymentOption__inner-body-table">
+                                                <div class="paymentOption__inner-body-table-title">
+                                                    30 Day PLATINUM Package
+                                                </div>
+                                                <div class="paymentOption__inner-body-table-price">
+                                                    £ 12,00
+                                                </div>
+                                                <div class="paymentOption__inner-body-table-title">
+                                                    Verified Listing Service
+                                                </div>
+                                                <div class="paymentOption__inner-body-table-price">
+                                                    £ 20,00
+                                                </div>
+                                                <div class="paymentOption__inner-body-table-title">
+                                                    Additional TAX
+                                                </div>
+                                                <div class="paymentOption__inner-body-table-price">
+                                                    £ 3,00
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="paymentOption__inner-body-table">
+                                                <div class="paymentOption__inner-body-table-title">
+                                                    Total ammount:
+                                                </div>
+                                                <div class="paymentOption__inner-body-table-price">
+                                                    £ 35,00
+                                                </div>
+                                                <div class="paymentOption__inner-body-table-payment">
+                                                    <img class="payment masterCard"
+                                                        src="assets/images/listing/payment/1 (1).png" alt="">
+                                                    <img class="payment visa"
+                                                        src="assets/images/listing/payment/1 (2).png" alt="">
+                                                    <img class="payment paypal"
+                                                        src="assets/images/listing/payment/1 (4).png" alt="">
+                                                    <img class="payment discover"
+                                                        src="assets/images/listing/payment/1 (3).png" alt="">
+                                                    <img class="payment express"
+                                                        src="assets/images/listing/payment/1 (5).png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="checkBox">
+                                                <input type="checkbox">
+                                                <label for="">I Agree to the <a href=""> terms of service</a> </label>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn__secondary">
+                                            Procced Payment
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listingForm__tab-footer">
+                        <div class="btn__primary formBtn" data-tab="#step-3">
+                            Prev
+                        </div>
+                        <div class="btn__secondary formBtn" data-tab="#step-5">
+                            Next
+                        </div>
+                    </div>
+                </div>
+                <div class="listingForm__tab formItem " id="step-5">
+                    <div class="listingForm__tab-header">
+                        <ul class="listingForm__tab-header-pagination">
+                            <li class="done">
+                                1 <span>Your Details</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-1">
+                                2 <span>Property Details</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-2">
+                                3 <span>Agent Assists</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-3">
+                                4 <span>SEO Information</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-4">
+                                5 <span>Payment</span>
+                            </li>
+                            <li class="blue">
+                                6 <span>Ownership Confirmation</span>
+                            </li>
+                            <li>
+                                7 <span>Authority to Market</span>
+                            </li>
+                        </ul>
+                        <div class="listingForm__tab-header">
+                            <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                                Payment
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="listingGeneral">
+                        <div class="listingGeneral__row-secondary">
+                            <div class="listingGeneral__column-secondary">
+                                <h6 class="bold">
+                                    Hi Suman
+                                </h6>
+                                <div class="listingGeneral__column-links">
+                                    <a href="#" class="listingGeneral__column-link">
+                                        My Properties
+                                    </a>
+                                    <a href="#" class="listingGeneral__column-link">
+                                        My Account
+                                    </a>
+                                    <a href="#" class="listingGeneral__column-link">
+                                        Logout
+                                    </a>
+                                </div>
+                                <div class="subtitle-2 semi-bold">
+                                    Thank you very much for your payment!
+                                </div>
+                                <p>
+                                    Mauris sem id lorem auctor enim. Odio pulvinar cursus diam sit. Quis aenean ac
+                                    pretium massa quam. Aliquet id quam vestibulum urna ultricies. Nulla aliquet quis
+                                    faucibus integer dignissim mi pretium amet ultrices. Interdum eros scelerisque
+                                    consequat purus aenean est. Et sed habitant nulla sapien suspendisse platea ornare
+                                    in at.
+                                </p>
+                                <div class="agreeNote">
+                                    <img src="assets/images/listing/icons/Alert-circle.svg" alt="">
+                                    <strong>*Please note</strong>
+                                    <br>Maximum file size is 2MB. if you are experiencing difficuly in loading, these
+                                    documents, Please feel free to <a href="#">continue now</a> email directly to
+                                    support@byhomeowner.co.uk
+                                </div>
+                            </div>
+                            <div class="listingGeneral__column-secondary">
+                                <div class="uploadSecondary__outer">
+                                    <div class="uploadSecondary">
+                                        <div class="uploadSecondary__title">
+                                            Rates Notice
+                                        </div>
+                                        <div class="uploadSecondary__input">
+                                            <input class="" type="file" onchange="readURL(this);">
+                                            <label for="">
+                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M4.6665 12.8335V22.1668C4.6665 22.7857 4.91234 23.3792 5.34992 23.8167C5.78751 24.2543 6.381 24.5002 6.99984 24.5002H20.9998C21.6187 24.5002 22.2122 24.2543 22.6498 23.8167C23.0873 23.3792 23.3332 22.7857 23.3332 22.1668V12.8335"
+                                                        stroke="currentColor" stroke-width="2.26179"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M18.6668 8.16691L14.0002 3.50024L9.3335 8.16691"
+                                                        stroke="currentColor" stroke-width="2.26179"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M14 3.50024V18.6669" stroke="currentColor"
+                                                        stroke-width="2.26179" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                Choose File
+                                            </label>
+                                            <img id="blah" src="" alt="" />
+                                        </div>
+                                        <div class="uploadSecondary__footer">
+                                            Accepted all types .jpg, .Png, .Jpeg, .Gif, .Pdf
+                                        </div>
+                                    </div>
+                                    <div class="uploadSecondary">
+                                        <div class="uploadSecondary__title">
+                                            Photo ID
+                                        </div>
+                                        <div class="uploadSecondary__input">
+                                            <input class="" type="file" onchange="readURL2(this);">
+                                            <label for="">
+                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M4.6665 12.8335V22.1668C4.6665 22.7857 4.91234 23.3792 5.34992 23.8167C5.78751 24.2543 6.381 24.5002 6.99984 24.5002H20.9998C21.6187 24.5002 22.2122 24.2543 22.6498 23.8167C23.0873 23.3792 23.3332 22.7857 23.3332 22.1668V12.8335"
+                                                        stroke="currentColor" stroke-width="2.26179"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M18.6668 8.16691L14.0002 3.50024L9.3335 8.16691"
+                                                        stroke="currentColor" stroke-width="2.26179"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M14 3.50024V18.6669" stroke="currentColor"
+                                                        stroke-width="2.26179" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                Choose File
+                                            </label>
+                                            <img id="blah-2" src="" alt="" />
+                                        </div>
+                                        <div class="uploadSecondary__footer">
+                                            Accepted all types .jpg, .Png, .Jpeg, .Gif, .Pdf
+                                        </div>
+                                    </div>
+                                    <button class="btn__primary">
+                                        Upload File
+                                    </button>
+                                </div>
+                                <!-- show this message when the files donnloaded  with adding show class-->
+                                <div class="uploadSecondary__thanks">
+                                    <h6 class="bold">
+                                        Thank you
+                                    </h6>
+                                    <p>
+                                        Your files have been uploaded successfully.
+                                        Please click the button bellow to continue.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listingForm__tab-footer">
+                        <div class="btn__primary formBtn" data-tab="#step-4">
+                            Prev
+                        </div>
+                        <div class="btn__secondary formBtn" data-tab="#step-6">
+                            Next
+                        </div>
+                    </div>
+
+                </div>
+                <div class="listingForm__tab formItem " id="step-6">
+                    <div class="listingForm__tab-header">
+                        <ul class="listingForm__tab-header-pagination">
+                            <li class="done">
+                                1 <span>Your Details</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-1">
+                                2 <span>Property Details</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-2">
+                                3 <span>Agent Assists</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-3">
+                                4 <span>SEO Information</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-4">
+                                5 <span>Payment</span>
+                            </li>
+                            <li class="done formBtn" data-tab="#step-4">
+                                6 <span>Ownership Confirmation</span>
+                            </li>
+                            <li class="blue">
+                                7 <span>Authority to Market</span>
+                            </li>
+                        </ul>
+                        <div class="listingForm__tab-header">
+                            <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                                Authority to Market
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="listingGeneral">
+                        <div class="listingGeneral__row-third">
+                            <div class="listingGeneral__column-third">
+                                <h6 class="bold">
+                                    Hi Suman
+                                </h6>
+                                <div class="listingGeneral__column-links">
+                                    <a href="#" class="listingGeneral__column-link">
+                                        My Properties
+                                    </a>
+                                    <a href="#" class="listingGeneral__column-link">
+                                        My Account
+                                    </a>
+                                    <a href="#" class="listingGeneral__column-link">
+                                        Logout
+                                    </a>
+                                </div>
+                                <p>
+                                    This is agreement between the agent and the property owner (“The Agreement”)
+                                    authorising the agent to offer the property for sale or lease for the following
+                                    <strong>terms and conditions :</strong>
+                                </p>
+                                <ul>
+                                    <li>
+                                        <img src="assets/images/listing/icons/greenCheck.svg" alt="">
+                                        Non-exclusive basis until the listing is cancelled in accordance with the
+                                        HomeOwner.co.uk cancellation policy (“The authority period”)
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/listing/icons/greenCheck.svg" alt="">
+                                        Fees charged by real estate by real estate agents are not fixed by law abd are
+                                        to be agreed between an owner and agent. the following fees are agreed :
+                                        RealPrivate.com.au will charge NO SELLING OR LEASING SUCCESS FEES OR COMMISSIONS
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/listing/icons/greenCheck.svg" alt="">
+                                        The owner agrees to pay the agent separate marketing expenses. *(i) The ownwer
+                                        agrees to pay the relevant fees for their selected listing package. A schedule
+                                        of fees are available onour website.
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/listing/icons/greenCheck.svg" alt="">
+                                        You agree with all the “term and conditions” on RealPrivate.co.au unless amended
+                                        by the terms and conditions on a website owned and affiliated by
+                                        RealPrivate.com.au. Those terms and conditions from parts of this authority and
+                                        must be read together.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="listingGeneral__column-third">
+                                <form class="paymentOption finished">
+                                    <div class="paymentOption__inner">
+                                        <div class="paymentOption__inner-box">
+                                            <div class="paymentOption__inner-box-title">
+                                                Your Detail
+                                            </div>
+                                            <div class="paymentOption__inner-box-info">
+                                                Name : Suman Saha
+                                            </div>
+                                            <div class="paymentOption__inner-box-info">
+                                                Email : Suman.openweb@gmail.com
+                                            </div>
+                                            <div class="paymentOption__inner-box-info">
+                                                Phone : 12123432
+                                            </div>
+                                        </div>
+                                        <div class="paymentOption__inner-box">
+                                            <div class="paymentOption__inner-box-title">
+                                                Your Home Address
+                                            </div>
+                                            <div class="paymentOption__inner-box-info">
+                                                2118 Thornridge Cir. Syracuse, Connecticut 35624
+                                            </div>
+                                        </div>
+                                        <div class="paymentOption__inner-box">
+                                            <div class="paymentOption__inner-box-title">
+                                                Address of property being advertised
+                                            </div>
+                                            <div class="paymentOption__inner-box-info">
+                                                2972 Westheimer Rd. Santa Ana, Illinois 85486
+                                            </div>
+                                        </div>
+                                        <div class="paymentOption__inner-box">
+                                            <div class="paymentOption__inner-box-title">
+                                                Asking Price
+                                            </div>
+                                            <div class="paymentOption__inner-box-info">
+                                                £385
+                                            </div>
+                                        </div>
+                                        <div class="paymentOption__inner-signature">
+                                            <div class="paymentOption__inner-box-title">
+                                                Signature
+                                            </div>
+                                            <div class="textarea__outer">
+                                                <textarea name="" id="" cols="30" rows="8"></textarea>
+                                            </div>
+
+                                        </div>
+                                        <div class="paymentOption__inner-footer">
+                                            <button type="submit" class="btn__primary">
+                                                Clear
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listingForm__tab-footer single">
+                        <div class="btn__secondary">
+                            Submit Listing
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- listingForm start
+    =========================================== -->
+    <!-- footer start
+    =========================================== -->
+    <footer class="footer">
+        <div class="auto__container">
+            <div class="footer__inner">
+                <div class="footer__inner-logo">
+                    <img src="assets/images/logo.svg" alt="">
+                </div>
+                <div class="footer__inner-row">
+                    <div class="footer__inner-column">
+                        <div class="footer__inner-column-title">
+                            Company
+                        </div>
+                        <a href="#" class="footer__inner-column-link">
+                            Company
+                        </a>
+                        <a href="#" class="footer__inner-column-link">
+                            Customer Stories
+                        </a>
+                        <a href="#" class="footer__inner-column-link">
+                            Profile Company
+                        </a>
+                        <a href="#" class="footer__inner-column-link">
+                            We are Hiring
+                        </a>
+                        <a href="#" class="footer__inner-column-link">
+                            History
+                        </a>
+                    </div>
+                    <div class="footer__inner-column">
+                        <div class="footer__inner-column-title">
+                            Service
+                        </div>
+                        <a href="#" class="footer__inner-column-link">
+                            Listing
+                        </a>
+                        <a href="#" class="footer__inner-column-link">
+                            Sell Property
+                        </a>
+                        <a href="#" class="footer__inner-column-link">
+                            Buy Property
+                        </a>
+                        <a href="#" class="footer__inner-column-link">
+                            Real Estate
+                        </a>
+                    </div>
+                    <div class="footer__inner-column">
+                        <div class="footer__inner-column-title">
+                            Contact
+                        </div>
+                        <a href="#" class="footer__inner-column-link">
+                            Santa Ana, Illinois
+                        </a>
+                        <a href="#" class="footer__inner-column-link">
+                            (808) 555-0111
+                        </a>
+                        <a href="#" class="footer__inner-column-link">
+                            BTHO@Mail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.1169 0H0.883111C0.648896 0 0.424273 0.0930418 0.258657 0.258657C0.0930418 0.424273 0 0.648896 0 0.883111V15.1171C5.89273e-05 15.3513 0.0931268 15.5759 0.258736 15.7414C0.424345 15.907 0.648934 16 0.883111 16H8.546V9.804H6.46089V7.38933H8.546V5.60844C8.546 3.54178 9.80822 2.41667 11.6518 2.41667C12.5349 2.41667 13.2938 2.48222 13.5151 2.51178V4.67156L12.2364 4.67222C11.2338 4.67222 11.0398 5.14867 11.0398 5.84778V7.38956H13.4309L13.1196 9.80422H11.0398V16H15.1171C15.3513 15.9999 15.5759 15.9069 15.7414 15.7413C15.907 15.5757 16 15.3511 16 15.1169V0.883111C16 0.648896 15.907 0.424273 15.7413 0.258657C15.5757 0.0930418 15.3511 0 15.1169 0Z"
+                            fill="" />
+                    </svg>
+                </a>
+                <a href="#" class="footer__social-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7.99785 5.3322C6.52888 5.3322 5.3301 6.53101 5.3301 8C5.3301 9.46899 6.52888 10.6678 7.99785 10.6678C9.46681 10.6678 10.6656 9.46899 10.6656 8C10.6656 6.53101 9.46681 5.3322 7.99785 5.3322ZM15.9991 8C15.9991 6.89525 16.0091 5.80051 15.9471 4.69777C15.885 3.4169 15.5928 2.28014 14.6562 1.3435C13.7176 0.404868 12.5829 0.114672 11.302 0.0526304C10.1973 -0.0094115 9.10258 0.000595291 7.99985 0.000595291C6.89512 0.000595291 5.80041 -0.0094115 4.69768 0.0526304C3.41684 0.114672 2.28009 0.40687 1.34348 1.3435C0.404861 2.28214 0.11467 3.4169 0.0526294 4.69777C-0.00941132 5.80252 0.000595279 6.89725 0.000595279 8C0.000595279 9.10275 -0.00941132 10.1995 0.0526294 11.3022C0.11467 12.5831 0.406862 13.7199 1.34348 14.6565C2.28209 15.5951 3.41684 15.8853 4.69768 15.9474C5.80241 16.0094 6.89713 15.9994 7.99985 15.9994C9.10458 15.9994 10.1993 16.0094 11.302 15.9474C12.5829 15.8853 13.7196 15.5931 14.6562 14.6565C15.5948 13.7179 15.885 12.5831 15.9471 11.3022C16.0111 10.1995 15.9991 9.10475 15.9991 8ZM7.99785 12.1048C5.72636 12.1048 3.89315 10.2715 3.89315 8C3.89315 5.72847 5.72636 3.89523 7.99785 3.89523C10.2693 3.89523 12.1025 5.72847 12.1025 8C12.1025 10.2715 10.2693 12.1048 7.99785 12.1048ZM12.2707 4.68576C11.7403 4.68576 11.312 4.25747 11.312 3.72711C11.312 3.19675 11.7403 2.76847 12.2707 2.76847C12.801 2.76847 13.2293 3.19675 13.2293 3.72711C13.2294 3.85305 13.2048 3.97778 13.1566 4.09416C13.1085 4.21054 13.0379 4.31628 12.9489 4.40533C12.8598 4.49438 12.7541 4.56499 12.6377 4.61311C12.5213 4.66123 12.3966 4.68592 12.2707 4.68576Z"
+                            fill="" />
+                    </svg>
+                </a>
+                <a href="#" class="footer__social-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.3337 3.42061C14.7845 3.66555 14.202 3.82624 13.6055 3.89734C14.2338 3.51887 14.7039 2.92332 14.9283 2.22168C14.3378 2.57464 13.6916 2.82318 13.0178 2.95653C12.7362 2.6542 12.396 2.4133 12.0182 2.24876C11.6404 2.08422 11.2331 1.99955 10.8215 2C9.15981 2 7.81243 3.35618 7.81243 5.02953C7.81243 5.26675 7.8391 5.49821 7.89052 5.72008C5.38967 5.59371 3.17261 4.3875 1.68848 2.5544C1.42088 3.01676 1.28027 3.54247 1.28106 4.0776C1.28067 4.57639 1.40266 5.06755 1.63618 5.50745C1.86971 5.94734 2.20755 6.32235 2.61968 6.59914C2.14193 6.58386 1.6747 6.45395 1.25687 6.22021C1.25649 6.23287 1.25649 6.24533 1.25649 6.25837C1.25649 7.72577 2.2936 8.9502 3.66992 9.22884C3.22675 9.34963 2.76209 9.36734 2.31112 9.28062C2.69396 10.484 3.80516 11.3601 5.12187 11.3847C4.05599 12.2268 2.73977 12.6836 1.38487 12.6816C1.14202 12.6816 0.902602 12.6674 0.666992 12.6392C2.04281 13.5292 3.64405 14.0016 5.27939 14C10.814 14 13.8406 9.38398 13.8406 5.38104C13.8406 5.24987 13.8375 5.1189 13.8318 4.98869C14.4212 4.56026 14.9298 4.02922 15.3337 3.42061Z"
+                            fill="" />
+                    </svg>
+                </a>
+                <a href="#" class="footer__social-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.6745 3.78186C15.5835 3.44005 15.4055 3.12833 15.1584 2.87772C14.9112 2.62712 14.6035 2.44637 14.2659 2.35346C13.014 2.00567 8.00554 2.00001 8.00554 2.00001C8.00554 2.00001 2.99788 1.99434 1.74517 2.32677C1.40775 2.42395 1.10068 2.60726 0.85345 2.85909C0.60622 3.11093 0.427127 3.42284 0.333365 3.76487C0.00319905 5.0315 1.17129e-06 7.65858 1.17129e-06 7.65858C1.17129e-06 7.65858 -0.00319655 10.2986 0.324572 11.5523C0.508442 12.2455 1.04806 12.793 1.73397 12.9799C2.99868 13.3277 7.99355 13.3333 7.99355 13.3333C7.99355 13.3333 13.002 13.339 14.2539 13.0074C14.5917 12.9146 14.8997 12.7343 15.1474 12.4842C15.3952 12.2341 15.5741 11.9229 15.6665 11.5814C15.9975 10.3156 15.9999 7.68931 15.9999 7.68931C15.9999 7.68931 16.0159 5.04849 15.6745 3.78186ZM6.40347 10.0923L6.40747 5.23937L10.5701 7.6699L6.40347 10.0923Z"
+                            fill="" />
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__copy">
+                ©2020 ByTheHomeOwner Company
+            </div>
+        </div>
+    </footer>
+
+    <div id="result-2"></div>
+    <!-- footer end
+    =========================================== -->
+    <!-- modal start
+    =========================================== -->
+    <div class="modal aminities mod" id="aminities">
+        <form action="#" class="modal__inner">
+            <div class="modal__inner-title t-l">
+                Other Features and Aminities
+            </div>
+            <div class="modal__inner-para t-l">
+                Please Select Features and aminities
+            </div>
+            <div class="modal__inner-close modClose" data-mod="aminities">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.0208 6L6 18.0208M18.0208 18.0208L6 6" stroke="#898989" stroke-width="2.52632"
+                        stroke-linecap="square" />
+                </svg>
+            </div>
+            <div class="modal__inner-amenities">
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Wifi.svg" alt="">
+                        Wifi
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Car Port.svg" alt="">
+                        Garage
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Outdoor.svg" alt="">
+                        Outdoor Entertaiment area
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Security.svg" alt="">
+                        Security
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/SecurePark.svg" alt="">
+                        Secure Parking
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Garden.svg" alt="">
+                        Garden
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Dishwasher.svg" alt="">
+                        Dishwasher
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/CommunalPark.svg" alt="">
+                        Communal Car Park
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Balcony.svg" alt="">
+                        Terrace and Balcony
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/WashingMachine.svg" alt="">
+                        Washing Machine
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/GatedPark.svg" alt="">
+                        Gated Car Park
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Jacuzzi.svg" alt="">
+                        Jaccuzi
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/HeatingGas.svg" alt="">
+                        Central Heating Gas
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/DrivewayPark.svg" alt="">
+                        Driveway Parking
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Pool.svg" alt="">
+                        Pool
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/HeatingGas.svg" alt="">
+                        Central Heating Oil
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/StreetPark.svg" alt="">
+                        On Street Parking Area
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Gym.svg" alt="">
+                        Gym
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Elevator.svg" alt="">
+                        Elevator
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/OffStreetPark.svg" alt="">
+                        Off Street Parking Area
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/TennisCourt.svg" alt="">
+                        Tennis Court
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/LevelAcces.svg" alt="">
+                        Level Acess
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/PermitPark.svg" alt="">
+                        Permit Parking
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Pavilion.svg" alt="">
+                        Spa Pavilion
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Concierge.svg" alt="">
+                        Concierge
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/WideDoorways.svg" alt="">
+                        Wide Doorways
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/Outdoor.svg" alt="">
+                        Outdoor Spa
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/RampAccess.svg" alt="">
+                        Ramp Access
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/DoubleGlazin.svg" alt="">
+                        Double Glazing
+                    </label>
+                </div>
+                <div class="amenitiBox">
+                    <input type="checkbox" name="amanitiesChecks">
+                    <label for="">
+                        <img src="assets/images/listing/icons/SolarPanel.svg" alt="">
+                        Solar Panel
+                    </label>
+                </div>
+
+            </div>
+            <div class="modal__inner-footer">
+                <div class="uncheck" id="btnUncheckAll">
+                    Unmark All
+                </div>
+                <button type="submit" class="btn__secondary">
+                    Done
+                </button>
+            </div>
+        </form>
+    </div>
+    <!-- modal end
+    =========================================== -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/uploadGallery.js"></script>
+    <script src="assets/js/lightpick.js"></script>
+    <script src="assets/js/formTab.js"></script>
+    <script src="assets/js/customSelect.js"></script>
+    <script src="assets/js/revealRadio.js"></script>
+    <script src="assets/js/modalClose.js"></script>
+
+    <script>
+        var picker = new Lightpick({
+            field: document.getElementById('demo-2'),
+            onSelect: function (date) {
+                document.getElementById('result-2').innerHTML = date.format('Do MMMM YYYY');
+            }
+        });
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $("#blah").attr("src", e.target.result);
+                    $("#blah").addClass("show");
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        function readURL2(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $("#blah-2").attr("src", e.target.result);
+                    $("#blah-2").addClass("show");
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $(document).ready(function () {
+            $('#btnUncheckAll').click(function () {
+                $('input[type=checkbox]').each(
+                    function (index, checkbox) {
+                        if (index != 0) {
+                            checkbox.checked = false;
+                        }
+                    });
+            });
+        });
+        // document.getElementById('select').onchange = function () {
+        //     var checkboxes = document.getElementsByName('amanitiesChecks');
+        //     for (var checkbox of checkboxes) {
+        //         checkbox.checked = false;
+        //     }
+        // }
+    </script>
+</body>
+
+</html>
