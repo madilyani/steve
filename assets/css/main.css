@@ -7224,6 +7224,9 @@ input[type=file] {
   object-fit: cover;
   -o-object-fit: cover;
 }
+.hero__image-slider-item {
+  height: 520px !important;
+}
 .hero__image::before {
   position: absolute;
   content: "";

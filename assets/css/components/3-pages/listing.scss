@@ -12,6 +12,11 @@
     img {
       @include fullImage;
     }
+    &-slider {
+      &-item {
+        height: 520px !important;
+      }
+    }
     &::before {
       position: absolute;
       content: "";

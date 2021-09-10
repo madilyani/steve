@@ -78,7 +78,29 @@
     =========================================== -->
     <section class="hero">
         <div class="hero__image">
-            <img src="assets/images/listing/hero.png" alt="">
+            <div class="hero__image-slider">
+                <div class="hero__image-slider-item">
+                    <img src="assets/images/listing/sliderBg/1 (1).png" alt="">
+                </div>
+                <div class="hero__image-slider-item">
+                    <img src="assets/images/listing/sliderBg/1 (2).png" alt="">
+                </div>
+                <div class="hero__image-slider-item">
+                    <img src="assets/images/listing/sliderBg/1 (3).png" alt="">
+                </div>
+                <div class="hero__image-slider-item">
+                    <img src="assets/images/listing/sliderBg/1 (4).png" alt="">
+                </div>
+                <div class="hero__image-slider-item">
+                    <img src="assets/images/listing/sliderBg/1 (5).png" alt="">
+                </div>
+                <div class="hero__image-slider-item">
+                    <img src="assets/images/listing/sliderBg/1 (1).png" alt="">
+                </div>
+                <div class="hero__image-slider-item">
+                    <img src="assets/images/listing/sliderBg/1 (2).png" alt="">
+                </div>
+            </div>
         </div>
         <div class="auto__container">
             <div class="hero__inner">
@@ -1731,15 +1753,24 @@
     <script src="assets/js/login.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
+        $('.hero__image-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.listingPage__slider'
+        });
         $('.listingPage__slider').slick({
             dots: false,
-            infinite: false,
-            speed: 300,
             infinite: true,
+            speed: 300,
+            asNavFor: '.hero__image-slider',
             slidesToShow: 6,
             prevArrow: $(".listingPagePrev"),
             nextArrow: $(".listingPageNext"),
             slidesToScroll: 1,
+            centerMode: true,
+            focusOnSelect: true,
             responsive: [
                 {
                     breakpoint: 1340,
