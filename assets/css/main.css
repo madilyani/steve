@@ -7207,7 +7207,7 @@ input[type=file] {
 
 .hero {
   position: relative;
-  height: 520px;
+  height: 570px;
   margin-top: 110px;
 }
 .hero__image {
@@ -7225,7 +7225,7 @@ input[type=file] {
   -o-object-fit: cover;
 }
 .hero__image-slider-item {
-  height: 520px !important;
+  height: 570px !important;
 }
 .hero__image::before {
   position: absolute;
@@ -10593,6 +10593,9 @@ input[type=file] {
   .hero {
     height: 200px;
     margin-bottom: 65px;
+  }
+  .hero__image-slider-item {
+    height: 200px !important;
   }
   .hero__inner {
     padding: 9px;

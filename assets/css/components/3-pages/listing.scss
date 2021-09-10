@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 520px;
+  height: 570px;
   margin-top: 110px;
   &__image {
     position: absolute;
@@ -14,7 +14,7 @@
     }
     &-slider {
       &-item {
-        height: 520px !important;
+        height: 570px !important;
       }
     }
     &::before {

@@ -2261,6 +2261,13 @@
   .hero {
     height: 200px;
     margin-bottom: 65px;
+    &__image {
+      &-slider {
+        &-item {
+          height: 200px !important;
+        }
+      }
+    }
     &__inner {
       padding: 9px;
       &-info {
