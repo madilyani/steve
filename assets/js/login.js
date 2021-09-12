@@ -3,6 +3,11 @@ const loginItem = document.querySelectorAll(".loginItem");
 loginBtn.forEach((e) => {
   onLoignClick(loginBtn, loginItem, e);
 });
+const registerItemBtn = document.querySelectorAll(".registerItemBtn");
+const registerItem = document.querySelectorAll(".registerItem");
+registerItemBtn.forEach((e) => {
+  onLoignClick(registerItemBtn, registerItem, e);
+});
 function onLoignClick(loginBtns, loginItems, itemLogin) {
   itemLogin.addEventListener("click", function (e) {
     let currentLoginBtn = itemLogin;

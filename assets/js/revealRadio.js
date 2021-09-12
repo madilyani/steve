@@ -35,6 +35,12 @@ $(document).ready(function () {
     $(".payment").not(targetBox).hide();
     $(targetBox).show();
   });
+  $(".availableTimeInput").click(function () {
+    var inputValue = $(this).attr("value");
+    var targetBox = $("." + inputValue);
+    $(".availableTime").not(targetBox).hide();
+    $(targetBox).show();
+  });
   $(".forSale").click(function () {
     var inputValue = $(this).attr("checked");
     if (inputValue) {

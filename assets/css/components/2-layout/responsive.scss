@@ -1,3 +1,19 @@
+@include xxxxxlg-xxxxxxlg {
+  .hero {
+    height: 570px;
+  }
+  .hero__image-slider-item {
+    height: 570px !important;
+  }
+  .valuationPage__content {
+    width: calc(55% - 60px);
+    padding: 40px 30px 15px 30px;
+    height: calc(100% - 55px);
+    .form__inner-tab-window {
+      padding: 30px 0;
+    }
+  }
+}
 @include xxxxlg-xxxxxlg {
   h1 {
     font-size: 60px;
@@ -1013,6 +1029,29 @@
     }
   }
   // lisitngResult page end
+  // valuationPage start
+  .valuationPage {
+    &__image {
+      display: none;
+    }
+    &__content {
+      width: calc(100% - 30px);
+      padding: 40px 15px 15px 15px;
+      &-footer {
+        &-btn {
+          width: calc(50% - 20px);
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &__forms {
+      width: calc(100% - 30px);
+      padding: 40px 15px 15px 15px;
+    }
+  }
+  // valuationPage end
 }
 @include lg-xlg {
   // index page start

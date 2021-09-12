@@ -1,0 +1,112 @@
+.valuationPage {
+  display: flex;
+  z-index: 1;
+  &__image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    img {
+      @include fullImage;
+      object-position: bottom;
+      border-radius: 0 40px 40px 0;
+    }
+  }
+  &__content {
+    width: calc(55% - 150px);
+    padding: 80px 70px 15px 70px;
+    height: calc(100% - 95px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    background: $main-6;
+
+    &.active {
+      display: flex;
+    }
+    &-footer {
+      max-width: 600px;
+      margin: 0 auto;
+      &-btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &-btn {
+        margin: 10px;
+      }
+      &-copyright {
+        margin-top: 30px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 140%;
+        color: $grey;
+        text-align: center;
+      }
+    }
+    .form {
+      max-width: 600px;
+      margin: 0 auto;
+      &__inner {
+        &-tab {
+          &-window {
+            box-shadow: none;
+            background: none;
+            max-width: unset;
+            padding: 60px 20px;
+            &-footer {
+              .btn__secondary {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+      h4 {
+        text-align: center;
+      }
+      p {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        color: $grey;
+        margin-top: 20px;
+      }
+    }
+  }
+  &__forms {
+    width: calc(55% - 150px);
+    padding: 80px 70px 15px 70px;
+    height: calc(100% - 95px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    display: none;
+    background: $main-6;
+    &.active {
+      display: flex;
+      justify-content: center;
+    }
+    .login {
+      max-width: 400px;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+  .loginForm p {
+    span {
+      color: $main;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}

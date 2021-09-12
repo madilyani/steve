@@ -5602,6 +5602,67 @@ input[type=file] {
   margin: 0 auto;
   text-align: center;
 }
+.login__verify-logo {
+  width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+.login__verify-logo img {
+  width: 100%;
+}
+.login__verify h6 {
+  margin: 20px 0;
+  color: #5f5f5f;
+  text-align: center;
+}
+.login__verify p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.login__verify p.blue {
+  color: #34C0E3;
+}
+.login__verify a {
+  color: #34C0E3;
+  text-align: center;
+  display: block;
+}
+.login__verify .btn__secondary {
+  margin: 10px 15px;
+  text-align: center;
+  color: #ffffff;
+}
+.login__verify-footer {
+  margin-top: 40px;
+}
+.login__verify-footer-help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  color: #5f5f5f;
+}
+.login__verify-footer-help a {
+  margin-left: 5px;
+}
 .login h4 {
   color: #5f5f5f;
   margin-bottom: 10px;
@@ -7207,7 +7268,7 @@ input[type=file] {
 
 .hero {
   position: relative;
-  height: 570px;
+  height: 750px;
   margin-top: 110px;
 }
 .hero__image {
@@ -7215,17 +7276,25 @@ input[type=file] {
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
   left: 0;
+  max-width: 1440px;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-ransform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
-.hero__image img {
+.hero__image-slider-item {
+  height: 750px !important;
+}
+.hero__image-slider-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   -o-object-fit: cover;
-}
-.hero__image-slider-item {
-  height: 570px !important;
+  -o-object-position: 100% 20%;
+     object-position: 100% 20%;
 }
 .hero__image::before {
   position: absolute;
@@ -7393,7 +7462,7 @@ input[type=file] {
 
 .listingPage__slider-outer {
   position: relative;
-  margin-top: -65px;
+  margin-top: -70px;
 }
 .listingPage__slider .slick-dots {
   display: none;
@@ -8578,6 +8647,153 @@ input[type=file] {
   margin-right: 10px;
 }
 
+.valuationPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+}
+.valuationPage__image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 100%;
+}
+.valuationPage__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  border-radius: 0 40px 40px 0;
+}
+.valuationPage__content {
+  width: calc(55% - 150px);
+  padding: 80px 70px 15px 70px;
+  height: calc(100% - 95px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: none;
+  background: #eefdff;
+}
+.valuationPage__content.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.valuationPage__content-footer {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.valuationPage__content-footer-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.valuationPage__content-footer-btn {
+  margin: 10px;
+}
+.valuationPage__content-footer-copyright {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 140%;
+  color: #868686;
+  text-align: center;
+}
+.valuationPage__content .form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.valuationPage__content .form__inner-tab-window {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+  max-width: unset;
+  padding: 60px 20px;
+}
+.valuationPage__content .form__inner-tab-window-footer .btn__secondary {
+  text-align: center;
+}
+.valuationPage__content .form h4 {
+  text-align: center;
+}
+.valuationPage__content .form p {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: #868686;
+  margin-top: 20px;
+}
+.valuationPage__forms {
+  width: calc(55% - 150px);
+  padding: 80px 70px 15px 70px;
+  height: calc(100% - 95px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow-y: scroll;
+  display: none;
+  background: #eefdff;
+}
+.valuationPage__forms.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.valuationPage__forms .login {
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+}
+.valuationPage .loginForm p span {
+  color: #34C0E3;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 1460px) {
+  .hero {
+    height: 570px;
+  }
+
+  .hero__image-slider-item {
+    height: 570px !important;
+  }
+
+  .valuationPage__content {
+    width: calc(55% - 60px);
+    padding: 40px 30px 15px 30px;
+    height: calc(100% - 55px);
+  }
+  .valuationPage__content .form__inner-tab-window {
+    padding: 30px 0;
+  }
+}
 @media (max-width: 1340px) {
   h1 {
     font-size: 60px;
@@ -9386,6 +9602,24 @@ input[type=file] {
   .result__body-inner.listingResult .row__2-column {
     width: calc(50% - 10px);
     margin: 0 5px;
+  }
+
+  .valuationPage__image {
+    display: none;
+  }
+  .valuationPage__content {
+    width: calc(100% - 30px);
+    padding: 40px 15px 15px 15px;
+  }
+  .valuationPage__content-footer-btn {
+    width: calc(50% - 20px);
+  }
+  .valuationPage__content-footer-btn img {
+    width: 100%;
+  }
+  .valuationPage__forms {
+    width: calc(100% - 30px);
+    padding: 40px 15px 15px 15px;
   }
 }
 @media (max-width: 767px) {
