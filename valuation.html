@@ -20,6 +20,9 @@
     <section class="valuationPage">
         <div class="valuationPage__image">
             <img src="assets/images/valuation/bg.png" alt="">
+            <div class="valuationPage__image-logo">
+                <img src="assets/images/valuation/logo.svg" alt="">
+            </div>
         </div>
         <div class="valuationPage__content formOuterItem active" id="valuationContent">
             <form class="form" action="">
@@ -65,15 +68,54 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="form__inner-tab formItem " id="step-3">
+                        <div class="form__inner-tab-window">
+                            <div class="form__inner-tab-window-title">
+                                Address of property to be valued
+                            </div>
+                            <ul class="form__inner-tab-window-header">
+                                <li class="done formBtn" data-tab="#step-2">1</li>
+                                <li class="blue">2</li>
+                                <li >3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                                <li>7</li>
+                            </ul>
+                            <div class="form__inner-tab-window-body">
+                                <div class="input__outer icon__right">
+                                    <span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.33333 13.1667C10.2789 13.1667 12.6667 10.7789 12.6667 7.83333C12.6667 4.88781 10.2789 2.5 7.33333 2.5C4.38781 2.5 2 4.88781 2 7.83333C2 10.7789 4.38781 13.1667 7.33333 13.1667Z"
+                                                stroke="#868686" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M14 14.4996L11.1 11.5996" stroke="#868686" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <label>Find Your Property Address</label>
+                                    <input type="text" placeholder="Enter Poscode">
+                                </div>
+                            </div>
+                            <div class="form__inner-tab-window-footer">
+                                <div class="btn__secondary formBtn " data-tab="#step-4">
+                                    Next
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__inner-tab formItem " id="step-4">
                         <div class="form__inner-tab-window">
                             <div class="form__inner-tab-window-title">
                                 Property Details
                             </div>
                             <ul class="form__inner-tab-window-header">
                                 <li class="done formBtn" data-tab="#step-2">1</li>
-                                <li class="blue">2</li>
-                                <li>3</li>
+                                <li class="done formBtn" data-tab="#step-2">2</li>
+                                <li class="blue">3</li>
                                 <li>4</li>
                                 <li>5</li>
                                 <li>6</li>
@@ -188,44 +230,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="form__inner-tab-window-footer">
-                                <div class="btn__secondary formBtn " data-tab="#step-4">
-                                    Next
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form__inner-tab formItem " id="step-4">
-                        <div class="form__inner-tab-window">
-                            <div class="form__inner-tab-window-title">
-                                Address of property to be valued
-                            </div>
-                            <ul class="form__inner-tab-window-header">
-                                <li class="done formBtn" data-tab="#step-2">1</li>
-                                <li class="done formBtn" data-tab="#step-3">2</li>
-                                <li class="blue">3</li>
-                                <li>4</li>
-                                <li>5</li>
-                                <li>6</li>
-                                <li>7</li>
-                            </ul>
-                            <div class="form__inner-tab-window-body">
-                                <div class="input__outer icon__right">
-                                    <span>
-                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M7.33333 13.1667C10.2789 13.1667 12.6667 10.7789 12.6667 7.83333C12.6667 4.88781 10.2789 2.5 7.33333 2.5C4.38781 2.5 2 4.88781 2 7.83333C2 10.7789 4.38781 13.1667 7.33333 13.1667Z"
-                                                stroke="#868686" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M14 14.4996L11.1 11.5996" stroke="#868686" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-                                    <label>Find Your Property Address</label>
-                                    <input type="text" placeholder="Enter Poscode">
                                 </div>
                             </div>
                             <div class="form__inner-tab-window-footer">
@@ -818,7 +822,7 @@
                 <div class="valuationPage__content-footer-btns">
                     <button class="valuationPage__content-footer-btn">
                         <img src="assets/images/appBtns/google.svg" alt="">
-                    </button >
+                    </button>
                     <button class="valuationPage__content-footer-btn">
                         <img src="assets/images/appBtns/apple.svg" alt="">
                     </button>

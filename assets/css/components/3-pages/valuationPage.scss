@@ -12,6 +12,19 @@
       object-position: bottom;
       border-radius: 0 40px 40px 0;
     }
+    &-logo {
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+      width: 210px; 
+      position: absolute;
+      top: 40%;
+      @include transform;
+      left: 50%;
+      img {
+        width: 100%;
+      }
+    }
   }
   &__content {
     width: calc(55% - 150px);
