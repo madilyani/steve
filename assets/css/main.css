@@ -8393,13 +8393,6 @@ input[type=file] {
 }
 .listingForm__tab .inputCustom {
   display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: calc(100% - 30px);
-}
-.listingForm__tab .inputCustom input {
-  border-right: none;
 }
 .listingForm__tab .inputCustom.revealSelectedInput-show {
   display: block;
@@ -11095,10 +11088,32 @@ input[type=file] {
     padding-bottom: 60px;
   }
   .listingForm__tab-header-pagination {
-    overflow-y: auto;
+    margin: 0 -12px;
+    overflow-x: scroll;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: calc(100% + 24px);
+    /* Hide scrollbar for IE, Edge and Firefox */
+  }
+  .listingForm__tab-header-pagination li {
+    min-width: 36px;
+    margin: 0 35px;
+  }
+  .listingForm__tab-header-pagination::-webkit-scrollbar {
+    display: none;
+  }
+  .listingForm__tab-header-pagination {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
   }
   .listingForm__tab-body-content-row {
     margin: 0;
+  }
+  .listingForm__tab-body-content-row.energy {
+    margin: 0 -10px;
   }
   .listingForm__tab-body-content-row.energy::before {
     display: none;
@@ -11106,6 +11121,11 @@ input[type=file] {
   .listingForm__tab-body-content-column-2 {
     width: 100%;
     margin: 10px 0;
+  }
+  .listingForm__tab-body-content-column-2.notWrap {
+    width: 50%;
+    margin: 10px;
+    width: calc(50% - 20px);
   }
   .listingForm__tab-body-content-column-4 {
     width: calc(50% - 24px);

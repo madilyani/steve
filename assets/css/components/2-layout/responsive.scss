@@ -2559,7 +2559,23 @@
       padding-bottom: 60px;
       &-header {
         &-pagination {
-          overflow-y: auto;
+          margin: 0 -12px;
+          overflow-x: scroll;
+          justify-content: space-between;
+          width: calc(100% + 24px);
+          li {
+            min-width: 36px;
+            margin: 0 35px;
+          }
+          &::-webkit-scrollbar {
+            display: none;
+          }
+
+          /* Hide scrollbar for IE, Edge and Firefox */
+          & {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+          }
         }
       }
       &-body {
@@ -2567,6 +2583,7 @@
           &-row {
             margin: 0;
             &.energy {
+              margin: 0 -10px;
               &::before {
                 display: none;
               }
@@ -2576,6 +2593,11 @@
             &-2 {
               width: 100%;
               margin: 10px 0;
+              &.notWrap {
+                width: 50%;
+                margin: 10px;
+                width: calc(50% - 20px);
+              }
             }
             &-4 {
               width: calc(50% - 24px);
