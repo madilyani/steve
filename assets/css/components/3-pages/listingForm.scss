@@ -184,7 +184,14 @@
         &-column {
           &-2 {
             width: calc(50% - 32px);
+            position: relative;
             margin: 0 16px 20px 16px;
+            &.entireProperty-hide {
+              display: none;
+            }
+            &.roomOnly-hide {
+              display: none;
+            }
             .radioBox {
               margin-top: 25px;
             }
@@ -276,6 +283,19 @@
             color: $grey;
           }
         }
+      }
+    }
+    .inputCustom {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: calc(100% - 30px);
+      input {
+        border-right: none;
+      }
+      &.revealSelectedInput-show {
+        display: block;
       }
     }
   }

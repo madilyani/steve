@@ -8265,7 +8265,14 @@ input[type=file] {
 }
 .listingForm__tab-body-content-column-2 {
   width: calc(50% - 32px);
+  position: relative;
   margin: 0 16px 20px 16px;
+}
+.listingForm__tab-body-content-column-2.entireProperty-hide {
+  display: none;
+}
+.listingForm__tab-body-content-column-2.roomOnly-hide {
+  display: none;
 }
 .listingForm__tab-body-content-column-2 .radioBox {
   margin-top: 25px;
@@ -8383,6 +8390,19 @@ input[type=file] {
 }
 .listingForm__tab-body-content-map-footer svg {
   margin-right: 10px;
+}
+.listingForm__tab .inputCustom {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 30px);
+}
+.listingForm__tab .inputCustom input {
+  border-right: none;
+}
+.listingForm__tab .inputCustom.revealSelectedInput-show {
+  display: block;
 }
 
 .forSaleRemove.forSaleRemove-hide {

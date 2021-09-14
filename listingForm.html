@@ -130,12 +130,12 @@
                                 <div class="listingForm__tab-body-content-column-2">
                                     <div class="select__outer">
                                         <label>Rental Type</label>
-                                        <div class="custom-select">
+                                        <div onCustomSelect="revealSelected" class="custom-select">
                                             <select>
-                                                <option value="0">Select Rental Type</option>
-                                                <option value="1">Room Only</option>
-                                                <option value="2">Entire Property</option>
+                                                <option value="0">Entire Property</option>
+                                                <option value="1">Entire Property</option>
                                                 <option value="2">Studio Flat</option>
+                                                <option value="3">Room Only</option>
                                             </select>
                                         </div>
                                     </div>
@@ -153,32 +153,21 @@
                                         <div class="custom-select">
                                             <select>
                                                 <option value="1">Units/Apartments</option>
-                                                <option value="2">Units</option>
-                                                <option value="3">Appartment</option>
+                                                <option value="2">House, Flat</option>
+                                                <option value="3">Bungalow</option>
+                                                <option value="3">Units/Apartments</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="listingForm__tab-body-content-column-2 roomOnly">
+                                <div class="listingForm__tab-body-content-column-2 roomOnly roomOnly-hide">
                                     <div class="select__outer">
                                         <label>Select Property Type</label>
                                         <div class="custom-select">
                                             <select>
                                                 <option value="1">Please Select</option>
-                                                <option value="2">Units</option>
-                                                <option value="3">Appartment</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="listingForm__tab-body-content-column-2">
-                                    <div class="select__outer">
-                                        <label>Select Property Type</label>
-                                        <div class="custom-select">
-                                            <select>
-                                                <option value="1">Please Select</option>
-                                                <option value="2">Room in A Shared Flat</option>
-                                                <option value="3">Room in A Shared House</option>
+                                                <option value="2">Room in a Flat </option>
+                                                <option value="3">Room a House</option>
                                             </select>
                                         </div>
                                     </div>
@@ -768,8 +757,8 @@
                                 <div class="listingForm__tab-body-content-column-2">
                                     <div class="select__outer">
                                         <label>Rental Basis</label>
-                                        <div class="custom-select">
-                                            <select>
+                                        <div onCustomSelect="revealSelected" class="custom-select">
+                                            <select class="">
                                                 <option value="0">Daily</option>
                                                 <option value="1">Daily</option>
                                                 <option value="2">Weekly</option>
@@ -782,9 +771,9 @@
                                 <div class="listingForm__tab-body-content-column-2">
                                     <div class="select__outer">
                                         <label>Deposit Ammount</label>
-                                        <div class="custom-select">
+                                        <div onCustomSelect="revealSelectedInput" class="custom-select">
                                             <select>
-                                                <option value="0">Custom</option>
+                                                <option value="0">--</option>
                                                 <option value="1">No Deposit</option>
                                                 <option value="2">2 Weeks' rent</option>
                                                 <option value="3">3 Weeks' rent</option>
@@ -793,6 +782,9 @@
                                                 <option value="6">Custom</option>
                                             </select>
                                         </div>
+                                    </div>
+                                    <div class="input__outer inputCustom">
+                                        <input type="text" placeholder="Custom">
                                     </div>
                                 </div>
                                 <div class="listingForm__tab-body-content-column-2">

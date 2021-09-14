@@ -52,3 +52,23 @@ $(document).ready(function () {
     }
   });
 });
+
+function revealSelected(e) {
+  var inputValue = e;
+  if (inputValue == 3) {
+    $(".entireProperty").addClass("entireProperty-hide");
+    $(".roomOnly").removeClass("roomOnly-hide");
+  } else {
+    $(".entireProperty").removeClass("entireProperty-hide");
+    $(".roomOnly").addClass("roomOnly-hide");
+  }
+}
+function revealSelectedInput(e) {
+  var inputValue = e;
+  console.log(e);
+  if (inputValue == 6) {
+    $(".inputCustom").addClass("revealSelectedInput-show");
+  } else {
+    $(".inputCustom").removeClass("revealSelectedInput-hide");
+  }
+}

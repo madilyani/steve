@@ -4,10 +4,13 @@ x = document.getElementsByClassName("custom-select");
 l = x.length;
 for (i = 0; i < l; i++) {
   selElmnt = x[i].getElementsByTagName("select")[0];
+  var onSelectFunc = x[i].getAttribute('onCustomSelect')
+
   ll = selElmnt.length;
   /* For each element, create a new DIV that will act as the selected item: */
   a = document.createElement("DIV");
   a.setAttribute("class", "select-selected");
+  a.setAttribute('onCustomSelect', onSelectFunc);
   a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
   x[i].appendChild(a);
   /* For each element, create a new DIV that will contain the option list: */
@@ -48,6 +51,10 @@ for (i = 0; i < l; i++) {
     /* When the select box is clicked, close any other select boxes,
     and open/close the current select box: */
     e.stopPropagation();
+    if(!this.nextSibling.classList.contains('select-hide') && this.getAttribute('onCustomSelect') != 'null'  )
+    {
+      window[this.getAttribute('onCustomSelect')](this.parentNode.parentNode.getElementsByTagName("select")[0].value); 
+    }
     closeAllSelect(this);
     this.nextSibling.classList.toggle("select-hide");
     this.classList.toggle("select-arrow-active");
@@ -77,6 +84,7 @@ function closeAllSelect(elmnt) {
   for (i = 0; i < xl; i++) {
     if (arrNo.indexOf(i)) {
       x[i].classList.add("select-hide");
+     
     }
   }
 }
