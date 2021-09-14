@@ -10607,6 +10607,10 @@ input[type=file] {
     margin-bottom: 5px;
   }
 
+  .checkBox.centerIt {
+    margin-top: 0;
+  }
+
   .interested__footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
