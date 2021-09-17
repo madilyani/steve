@@ -51,11 +51,17 @@
           }
           &.blue {
             background: $main;
+            span {
+              color: $main;
+            }
           }
           &.done {
             background: #fe53c4;
             &::after {
               border-top: #fe53c4 1px dashed;
+            }
+            span {
+              color: #fe53c4;
             }
           }
           span {
@@ -101,7 +107,7 @@
           opacity: 0;
           cursor: pointer;
           &:checked + label {
-            background: $main-1;
+            background: #2ba7c6;
           }
         }
         label {
@@ -197,6 +203,31 @@
             }
             .m-t-20 {
               margin-top: 20px;
+            }
+            &.withBtn {
+              display: flex;
+              align-items: flex-end;
+              .select__outer {
+                width: calc(100% - 57px);
+              }
+              .plusBtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 20px;
+                width: 37px;
+                height: 37px;
+                background: #ffffff;
+                border: 1px solid #2ba7c6;
+                border-radius: 4px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 120%;
+                svg {
+                  fill: #2ba7c6;
+                }
+              }
             }
           }
           &-4 {

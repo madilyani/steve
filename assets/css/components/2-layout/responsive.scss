@@ -2183,7 +2183,6 @@
       }
     }
   }
-
   // agentRegistrationForm page end
   // realEstate page start
   .realEstate {
@@ -2566,9 +2565,14 @@
           overflow-x: scroll;
           justify-content: space-between;
           width: calc(100% + 24px);
+          padding: 20px 0 40px 0;
           li {
             min-width: 36px;
-            margin: 0 35px;
+            margin: 0 36px;
+            span {
+              width: 120px;
+              font-weight: 500;
+            }
           }
           &::-webkit-scrollbar {
             display: none;
@@ -2588,7 +2592,9 @@
             &.energy {
               margin: 0 -10px;
               &::before {
-                display: none;
+                height: 70%;
+                top: 50%;
+                @include transformY;
               }
             }
           }

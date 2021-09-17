@@ -8101,11 +8101,17 @@ input[type=file] {
 .listingForm__tab-header-pagination li.blue {
   background: #34C0E3;
 }
+.listingForm__tab-header-pagination li.blue span {
+  color: #34C0E3;
+}
 .listingForm__tab-header-pagination li.done {
   background: #fe53c4;
 }
 .listingForm__tab-header-pagination li.done::after {
   border-top: #fe53c4 1px dashed;
+}
+.listingForm__tab-header-pagination li.done span {
+  color: #fe53c4;
 }
 .listingForm__tab-header-pagination li span {
   position: absolute;
@@ -8160,7 +8166,7 @@ input[type=file] {
   cursor: pointer;
 }
 .listingForm__tab-header-btn input:checked + label {
-  background: #268CA6;
+  background: #2ba7c6;
 }
 .listingForm__tab-header-btn label {
   background: #e0e0e0;
@@ -8279,6 +8285,41 @@ input[type=file] {
 }
 .listingForm__tab-body-content-column-2 .m-t-20 {
   margin-top: 20px;
+}
+.listingForm__tab-body-content-column-2.withBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.listingForm__tab-body-content-column-2.withBtn .select__outer {
+  width: calc(100% - 57px);
+}
+.listingForm__tab-body-content-column-2.withBtn .plusBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 20px;
+  width: 37px;
+  height: 37px;
+  background: #ffffff;
+  border: 1px solid #2ba7c6;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 120%;
+}
+.listingForm__tab-body-content-column-2.withBtn .plusBtn svg {
+  fill: #2ba7c6;
 }
 .listingForm__tab-body-content-column-4 {
   margin: 0 12px;
@@ -11098,11 +11139,16 @@ input[type=file] {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: calc(100% + 24px);
+    padding: 20px 0 40px 0;
     /* Hide scrollbar for IE, Edge and Firefox */
   }
   .listingForm__tab-header-pagination li {
     min-width: 36px;
-    margin: 0 35px;
+    margin: 0 36px;
+  }
+  .listingForm__tab-header-pagination li span {
+    width: 120px;
+    font-weight: 500;
   }
   .listingForm__tab-header-pagination::-webkit-scrollbar {
     display: none;
@@ -11120,7 +11166,13 @@ input[type=file] {
     margin: 0 -10px;
   }
   .listingForm__tab-body-content-row.energy::before {
-    display: none;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-ransform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
   }
   .listingForm__tab-body-content-column-2 {
     width: 100%;
