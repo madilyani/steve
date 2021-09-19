@@ -215,15 +215,15 @@
                 width: 37px;
                 height: 37px;
                 background: #ffffff;
-                border: 1px solid #2ba7c6;
+                border: 1px solid $primary;
                 border-radius: 4px;
                 @include transition;
                 cursor: pointer;
                 &:hover {
-                  background: $main-6;
+                  background: $primary-6;
                 }
                 svg {
-                  stroke: #2ba7c6;
+                  stroke: $primary;
                   width: 10px;
                   height: 10px;
                 }
