@@ -7,6 +7,21 @@
     color: $grey;
     margin-bottom: 3px;
   }
+  &.filter {
+    .select-selected {
+      &:after {
+        transform: translateY(-50%) rotate(0);
+        background: url(../images/icons/filter-1.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 16px;
+        height: 16px;
+        border: none;
+        z-index: 1;
+      }
+    }
+  }
 }
 .custom-select select {
   display: none;

@@ -63,12 +63,13 @@ function revealSelected(e) {
     $(".roomOnly").addClass("roomOnly-hide");
   }
 }
-function revealSelectedInput(e) {
-  var inputValue = e;
-  console.log(e);
+function revealSelectedInput(val,el) {
+  var inputValue = val;
+  console.log(val);
+  console.log(el);
   if (inputValue == 6) {
-    $(".inputCustom").addClass("revealSelectedInput-show");
+    $("#"+el.getAttribute('linkedElement')).addClass("revealSelectedInput-show");
   } else {
-    $(".inputCustom").removeClass("revealSelectedInput-hide");
+    $("#"+el.getAttribute('linkedElement')).removeClass("revealSelectedInput-hide");
   }
 }

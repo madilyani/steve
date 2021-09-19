@@ -207,6 +207,27 @@
             &.withBtn {
               display: flex;
               align-items: flex-end;
+              .remove__review {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 20px;
+                width: 37px;
+                height: 37px;
+                background: #ffffff;
+                border: 1px solid #2ba7c6;
+                border-radius: 4px;
+                @include transition;
+                cursor: pointer;
+                &:hover {
+                  background: $main-6;
+                }
+                svg {
+                  stroke: #2ba7c6;
+                  width: 10px;
+                  height: 10px;
+                }
+              }
               .select__outer {
                 width: calc(100% - 57px);
               }
@@ -220,12 +241,15 @@
                 background: #ffffff;
                 border: 1px solid #2ba7c6;
                 border-radius: 4px;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 120%;
+                @include transition;
+                cursor: pointer;
+                &:hover {
+                  background: $main-6;
+                }
                 svg {
                   fill: #2ba7c6;
+                  width: 18px;
+                  height: 18px;
                 }
               }
             }

@@ -8,7 +8,11 @@ const formOuterItem = document.querySelectorAll(".formOuterItem");
 formOuterBtn.forEach((e) => {
   onTabClick(formOuterBtn, formOuterItem, e);
 });
-
+const heroBtn = document.querySelectorAll(".heroBtn");
+const heroItem = document.querySelectorAll(".heroItem");
+heroBtn.forEach((e) => {
+  onTabClick(heroBtn, heroItem, e);
+});
 function onTabClick(formBtns, formItems, itemForm) {
   itemForm.addEventListener("click", function (e) {
     let currentformBtn = itemForm;
@@ -24,5 +28,6 @@ function onTabClick(formBtns, formItems, itemForm) {
       currentformBtn.classList.add("active");
       currentformItem.classList.add("active");
     }
+    $(".listingPage__slider").slick("setPosition");
   });
 }

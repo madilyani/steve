@@ -792,6 +792,7 @@ li {
 }
 .input__outer.search input {
   padding: 10px 40px 10px 10px;
+  background: #fcfcfc;
 }
 .input__outer.search svg {
   position: absolute;
@@ -872,6 +873,18 @@ li {
   line-height: 140%;
   color: #868686;
   margin-bottom: 3px;
+}
+.select__outer.filter .select-selected:after {
+  -webkit-transform: translateY(-50%) rotate(0);
+          transform: translateY(-50%) rotate(0);
+  background: url(../images/icons/filter-1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 16px;
+  height: 16px;
+  border: none;
+  z-index: 1;
 }
 
 .custom-select select {
@@ -5308,22 +5321,22 @@ input[type=file] {
   margin: 0 10px;
 }
 .result__header-column:last-child {
-  width: calc(50% - 20px);
-  margin: 0 10px;
+  width: calc(50% - 10px);
+  margin: 0 0 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 .result__header-column .select__outer {
-  width: calc(28% - 10px);
+  width: 28%;
   margin: 0 5px;
 }
 .result__header-column .select__outer:last-child {
-  width: calc(16% - 10px);
-  margin: 0 5px;
+  width: 16%;
+  margin: 0 0 0 5px;
 }
 .result__body {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .result__body-inner {
   display: -webkit-box;
@@ -7268,8 +7281,43 @@ input[type=file] {
 
 .hero {
   position: relative;
-  height: 750px;
   margin-top: 110px;
+}
+.hero.heroItem {
+  display: none;
+}
+.hero.heroItem.active {
+  display: block;
+}
+.hero__map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 750px;
+  width: 100%;
+  position: relative;
+}
+.hero__map img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  max-width: 1440px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 50%;
+  transform: translateX(-50%);
+  -moz-ransform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 .hero__image {
   position: absolute;
@@ -7278,6 +7326,7 @@ input[type=file] {
   height: 100%;
   left: 0;
   max-width: 1440px;
+  height: 750px;
   left: 50%;
   transform: translateX(-50%);
   -moz-ransform: translateX(-50%);
@@ -7307,6 +7356,9 @@ input[type=file] {
 }
 .hero__inner {
   padding: 40px 0;
+  height: 750px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8294,6 +8346,35 @@ input[type=file] {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+.listingForm__tab-body-content-column-2.withBtn .remove__review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 20px;
+  width: 37px;
+  height: 37px;
+  background: #ffffff;
+  border: 1px solid #2ba7c6;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  cursor: pointer;
+}
+.listingForm__tab-body-content-column-2.withBtn .remove__review:hover {
+  background: #eefdff;
+}
+.listingForm__tab-body-content-column-2.withBtn .remove__review svg {
+  stroke: #2ba7c6;
+  width: 10px;
+  height: 10px;
+}
 .listingForm__tab-body-content-column-2.withBtn .select__outer {
   width: calc(100% - 57px);
 }
@@ -8313,13 +8394,18 @@ input[type=file] {
   background: #ffffff;
   border: 1px solid #2ba7c6;
   border-radius: 4px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 120%;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  cursor: pointer;
+}
+.listingForm__tab-body-content-column-2.withBtn .plusBtn:hover {
+  background: #eefdff;
 }
 .listingForm__tab-body-content-column-2.withBtn .plusBtn svg {
   fill: #2ba7c6;
+  width: 18px;
+  height: 18px;
 }
 .listingForm__tab-body-content-column-4 {
   margin: 0 12px;
@@ -8854,7 +8940,13 @@ input[type=file] {
 }
 
 @media (max-width: 1460px) {
-  .hero {
+  .hero__inner {
+    height: 570px;
+  }
+  .hero__map {
+    height: 570px;
+  }
+  .hero__image {
     height: 570px;
   }
 
@@ -8869,6 +8961,10 @@ input[type=file] {
   }
   .valuationPage__content .form__inner-tab-window {
     padding: 30px 0;
+  }
+
+  .listingPage__slider-outer {
+    bottom: 0;
   }
 }
 @media (max-width: 1340px) {
@@ -8940,7 +9036,7 @@ input[type=file] {
     width: calc(40% - 20px);
   }
   .result__header-column:last-child {
-    width: calc(60% - 20px);
+    width: calc(60% - 10px);
   }
   .result__body-inner-map {
     width: calc(50% - 20px);
@@ -9072,6 +9168,10 @@ input[type=file] {
 
   .paymentOption__inner-header-row .paymentBox label img {
     height: 20px;
+  }
+
+  .hero--map {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 1024px) {
@@ -10906,13 +11006,22 @@ input[type=file] {
   }
 
   .hero {
+    margin-bottom: 75px;
+  }
+  .hero--map {
+    margin-bottom: 20px;
+  }
+  .hero__map {
     height: 200px;
-    margin-bottom: 65px;
+  }
+  .hero__image {
+    height: 200px;
   }
   .hero__image-slider-item {
     height: 200px !important;
   }
   .hero__inner {
+    height: 200px;
     padding: 9px;
   }
   .hero__inner-info-tag {
@@ -11128,6 +11237,10 @@ input[type=file] {
   .listingGeneral__header-address .btn__secondary {
     white-space: nowrap;
   }
+  .listingGeneral__column-link {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
 
   .listingForm__tab {
     padding-bottom: 60px;
@@ -11139,7 +11252,7 @@ input[type=file] {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: calc(100% + 24px);
-    padding: 20px 0 40px 0;
+    padding: 20px 0 60px 0;
     /* Hide scrollbar for IE, Edge and Firefox */
   }
   .listingForm__tab-header-pagination li {
@@ -11492,6 +11605,14 @@ input[type=file] {
   .modal.revealForm .modal__inner {
     width: calc(100% - 30px);
     padding: 20px 10px;
+  }
+
+  .paymentOption__inner-box-info {
+    font-size: 14px;
+  }
+
+  .listingGeneral ul li {
+    font-size: 12px;
   }
 }
 /* Slider */

@@ -1,6 +1,14 @@
 @include xxxxxlg-xxxxxxlg {
   .hero {
-    height: 570px;
+    &__inner {
+      height: 570px;
+    }
+    &__map {
+      height: 570px;
+    }
+    &__image {
+      height: 570px;
+    }
   }
   .hero__image-slider-item {
     height: 570px !important;
@@ -12,6 +20,9 @@
     .form__inner-tab-window {
       padding: 30px 0;
     }
+  }
+  .listingPage__slider-outer {
+    bottom: 0;
   }
 }
 @include xxxxlg-xxxxxlg {
@@ -88,7 +99,7 @@
       &-column {
         width: calc(40% - 20px);
         &:last-child {
-          width: calc(60% - 20px);
+          width: calc(60% - 10px);
         }
       }
     }
@@ -289,6 +300,11 @@
     }
   }
   // listingForm page end
+  .hero {
+    &--map {
+      margin-bottom: 20px;
+    }
+  }
 }
 @include xxlg-xxxlg {
   h1 {
@@ -2300,9 +2316,15 @@
   // lisitngResult page end
   // listing page start
   .hero {
-    height: 200px;
-    margin-bottom: 65px;
+    margin-bottom: 75px;
+    &--map {
+      margin-bottom: 20px;
+    }
+    &__map {
+      height: 200px;
+    }
     &__image {
+      height: 200px;
       &-slider {
         &-item {
           height: 200px !important;
@@ -2310,6 +2332,7 @@
       }
     }
     &__inner {
+      height: 200px;
       padding: 9px;
       &-info {
         &-tag {
@@ -2555,6 +2578,12 @@
         margin-bottom: 10px;
       }
     }
+    &__column {
+      &-link {
+        padding: 6px 12px;
+        font-size: 12px;
+      }
+    }
   }
   .listingForm {
     &__tab {
@@ -2565,7 +2594,7 @@
           overflow-x: scroll;
           justify-content: space-between;
           width: calc(100% + 24px);
-          padding: 20px 0 40px 0;
+          padding: 20px 0 60px 0;
           li {
             min-width: 36px;
             margin: 0 36px;
@@ -3001,5 +3030,11 @@
         }
       }
     }
+  }
+  .paymentOption__inner-box-info {
+    font-size: 14px;
+  }
+  .listingGeneral ul li {
+    font-size: 12px;
   }
 }

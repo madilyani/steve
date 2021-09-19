@@ -123,6 +123,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="anchor" id="stickyPosition"></div>
                     </div>
                     <div class="listingForm__tab-body">
                         <div class="listingForm__tab-body-content forSaleRemove">
@@ -753,7 +754,7 @@
                             <h6 class="bold">
                                 Rent And Bill
                             </h6>
-                            <div class="listingForm__tab-body-content-row">
+                            <!-- <div class="listingForm__tab-body-content-row">
                                 <div class="listingForm__tab-body-content-column-2">
                                     <div class="input__outer icon__left">
                                         <label>Desired Rent</label>
@@ -781,15 +782,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="plusBtn">
-                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.5 3.8334V13.1667" stroke="#34C0E3" stroke-width="1.33333"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M3.83301 8.5H13.1663" stroke="#34C0E3" stroke-width="1.33333"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
+
                                 </div>
                                 <div class="listingForm__tab-body-content-column-2">
                                     <div class="select__outer">
@@ -828,130 +821,516 @@
                                         <label for="">Bills Included in Rent</label>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="listingForm__tab-body-content">
-                            <h6 class="bold">
-                                Add Image
-                            </h6>
-                            <div class="gallery">
-                                <div class="gallery__inner">
-                                    <div class="gallery__inner-header">
-                                        Drag or open foto maximum 20mb
+                            </div> -->
+                            <div class="listingForm__tab-body-content-row" id="readroot">
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="input__outer icon__left">
+                                        <label>Desired Rent</label>
+                                        <input type="number" placeholder="0.00">
+                                        <span>
+                                            <svg width="10" height="14" viewBox="0 0 10 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 7.49795C0 7.28089 0.0645161 7.09576 0.193548 6.94254C0.322581 6.78295 0.513057 6.70315 0.764977 6.70315H1.76037V4.44323C1.76037 3.84314 1.84639 3.27497 2.01843 2.73871C2.19048 2.19608 2.45161 1.72367 2.80184 1.32148C3.15207 0.912904 3.5914 0.590515 4.11982 0.354309C4.64823 0.118103 5.26882 0 5.98157 0C6.47312 0 6.91244 0.0670312 7.29954 0.201094C7.69278 0.328772 8.03994 0.504331 8.34101 0.72777C8.64823 0.951208 8.91244 1.21614 9.13364 1.52257C9.36098 1.82262 9.55453 2.1482 9.71429 2.49932L8.80184 3.1026C8.60522 3.20474 8.43011 3.25581 8.2765 3.25581C8.04916 3.25581 7.84639 3.15048 7.6682 2.93981C7.55146 2.79936 7.43472 2.67168 7.31797 2.55677C7.20737 2.43548 7.08449 2.33333 6.94931 2.25034C6.82028 2.16735 6.67588 2.10351 6.51613 2.05882C6.36252 2.01414 6.18433 1.99179 5.98157 1.99179C5.34869 1.99179 4.87558 2.20885 4.56221 2.64295C4.24885 3.07068 4.09217 3.66758 4.09217 4.43365V6.70315H7.86175V7.64159C7.86175 7.7948 7.80031 7.93525 7.67742 8.06293C7.56068 8.19061 7.40707 8.25445 7.21659 8.25445H4.09217V10.1122C4.09217 10.5335 4.01536 10.9102 3.86175 11.2421C3.71429 11.5677 3.50845 11.871 3.24424 12.1518C3.69892 12.0433 4.15054 11.9891 4.59908 11.9891H10V12.985C10 13.0999 9.97542 13.218 9.92627 13.3393C9.88326 13.4606 9.81874 13.5723 9.73272 13.6744C9.6467 13.7702 9.54224 13.85 9.41936 13.9138C9.30261 13.9713 9.17051 14 9.02304 14H0.184332V12.5157C0.393241 12.4647 0.592934 12.3944 0.78341 12.3051C0.973886 12.2093 1.13978 12.0912 1.28111 11.9508C1.42857 11.8039 1.54531 11.6347 1.63134 11.4432C1.71736 11.2453 1.76037 11.0155 1.76037 10.7538V8.25445H0V7.49795Z"
+                                                    fill="#898989" />
+                                            </svg>
+                                        </span>
                                     </div>
-                                    <div class="gallery__inner-row">
-                                        <div class="gallery__inner-column insertBefore" id="">
-                                            <input type="file" class="files" name="files[]" multiple />
-                                            <label for="">
-                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6 16.5002V28.5002C6 29.2959 6.31607 30.059 6.87868 30.6216C7.44129 31.1842 8.20435 31.5002 9 31.5002H27C27.7956 31.5002 28.5587 31.1842 29.1213 30.6216C29.6839 30.059 30 29.2959 30 28.5002V16.5002"
-                                                        stroke="currentColor" stroke-width="2.90802"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M24 10.5002L18 4.50024L12 10.5002" stroke="currentColor"
-                                                        stroke-width="2.90802" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path d="M18 4.50024V24.0002" stroke="currentColor"
-                                                        stroke-width="2.90802" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                                Add another photo
-                                            </label>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2 withBtn">
+                                    <div class="select__outer">
+                                        <label>Rental Basis</label>
+                                        <div onCustomSelect="revealSelected" class="custom-select">
+                                            <select class="">
+                                                <option value="0">Daily</option>
+                                                <option value="1">Daily</option>
+                                                <option value="2">Weekly</option>
+                                                <option value="3">Monthly</option>
+                                                <option value="4">Yearly</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="gallery__inner-footer">
-                                        <div class="gallery__inner-footer-row">
-                                            <img src="assets/images/listing/icons/Alert-circle.svg" alt="">
-                                            <div class="gallery__inner-footer-column">
-                                                <div class="gallery__inner-footer-column-title">
-                                                    Don’t have photos to display on your listing?
+                                    <div class="plusBtn" id="moreFields" onclick="moreFields()">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.5 3.8334V13.1667" stroke="#34C0E3" stroke-width="1.33333"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M3.83301 8.5H13.1663" stroke="#34C0E3" stroke-width="1.33333"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="select__outer">
+                                        <label>Deposit Ammount</label>
+                                        <div onCustomSelect="revealSelectedInput" linkedElement="inputCustom-1"
+                                            class="deposit__select custom-select">
+                                            <select>
+                                                <option value="0">--</option>
+                                                <option value="1">No Deposit</option>
+                                                <option value="2">2 Weeks' rent</option>
+                                                <option value="3">3 Weeks' rent</option>
+                                                <option value="4">1 Month's rent</option>
+                                                <option value="5">5 Weeks's rent</option>
+                                                <option value="6">Custom</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div id="inputCustom-1" class="deposit__amount input__outer inputCustom icon__left">
+                                        <label for="">Deposit Ammount</label>
+                                        <input type="number" placeholder="0.00">
+                                        <span>
+                                            <svg width="10" height="14" viewBox="0 0 10 14" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 7.49795C0 7.28089 0.0645161 7.09576 0.193548 6.94254C0.322581 6.78295 0.513057 6.70315 0.764977 6.70315H1.76037V4.44323C1.76037 3.84314 1.84639 3.27497 2.01843 2.73871C2.19048 2.19608 2.45161 1.72367 2.80184 1.32148C3.15207 0.912904 3.5914 0.590515 4.11982 0.354309C4.64823 0.118103 5.26882 0 5.98157 0C6.47312 0 6.91244 0.0670312 7.29954 0.201094C7.69278 0.328772 8.03994 0.504331 8.34101 0.72777C8.64823 0.951208 8.91244 1.21614 9.13364 1.52257C9.36098 1.82262 9.55453 2.1482 9.71429 2.49932L8.80184 3.1026C8.60522 3.20474 8.43011 3.25581 8.2765 3.25581C8.04916 3.25581 7.84639 3.15048 7.6682 2.93981C7.55146 2.79936 7.43472 2.67168 7.31797 2.55677C7.20737 2.43548 7.08449 2.33333 6.94931 2.25034C6.82028 2.16735 6.67588 2.10351 6.51613 2.05882C6.36252 2.01414 6.18433 1.99179 5.98157 1.99179C5.34869 1.99179 4.87558 2.20885 4.56221 2.64295C4.24885 3.07068 4.09217 3.66758 4.09217 4.43365V6.70315H7.86175V7.64159C7.86175 7.7948 7.80031 7.93525 7.67742 8.06293C7.56068 8.19061 7.40707 8.25445 7.21659 8.25445H4.09217V10.1122C4.09217 10.5335 4.01536 10.9102 3.86175 11.2421C3.71429 11.5677 3.50845 11.871 3.24424 12.1518C3.69892 12.0433 4.15054 11.9891 4.59908 11.9891H10V12.985C10 13.0999 9.97542 13.218 9.92627 13.3393C9.88326 13.4606 9.81874 13.5723 9.73272 13.6744C9.6467 13.7702 9.54224 13.85 9.41936 13.9138C9.30261 13.9713 9.17051 14 9.02304 14H0.184332V12.5157C0.393241 12.4647 0.592934 12.3944 0.78341 12.3051C0.973886 12.2093 1.13978 12.0912 1.28111 11.9508C1.42857 11.8039 1.54531 11.6347 1.63134 11.4432C1.71736 11.2453 1.76037 11.0155 1.76037 10.7538V8.25445H0V7.49795Z"
+                                                    fill="#898989" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="listingForm__tab-body-content-column-2">
+                                    <div class="checkBox centerIt">
+                                        <input type="checkbox">
+                                        <label for="">Bills Included in Rent</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div method="post" action="/cgi-bin/show_params.cgi">
+                                    <span id="writeroot"></span>
+                                    <button class="remove__review"
+                                        onclick="this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.0208 2L2 14.0208M14.0208 14.0208L2 2" stroke=""
+                                                stroke-width="2.52632" stroke-linecap="square" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="listingForm__tab-body-content">
+                                <h6 class="bold">
+                                    Add Image
+                                </h6>
+                                <div class="gallery">
+                                    <div class="gallery__inner">
+                                        <div class="gallery__inner-header">
+                                            Drag or open foto maximum 20mb
+                                        </div>
+                                        <div class="gallery__inner-row">
+                                            <div class="gallery__inner-column insertBefore" id="">
+                                                <input type="file" class="files" name="files[]" multiple />
+                                                <label for="">
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M6 16.5002V28.5002C6 29.2959 6.31607 30.059 6.87868 30.6216C7.44129 31.1842 8.20435 31.5002 9 31.5002H27C27.7956 31.5002 28.5587 31.1842 29.1213 30.6216C29.6839 30.059 30 29.2959 30 28.5002V16.5002"
+                                                            stroke="currentColor" stroke-width="2.90802"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M24 10.5002L18 4.50024L12 10.5002"
+                                                            stroke="currentColor" stroke-width="2.90802"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M18 4.50024V24.0002" stroke="currentColor"
+                                                            stroke-width="2.90802" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    Add another photo
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="gallery__inner-footer">
+                                            <div class="gallery__inner-footer-row">
+                                                <img src="assets/images/listing/icons/Alert-circle.svg" alt="">
+                                                <div class="gallery__inner-footer-column">
+                                                    <div class="gallery__inner-footer-column-title">
+                                                        Don’t have photos to display on your listing?
+                                                    </div>
+                                                    <div class="gallery__inner-footer-column-para">
+                                                        ByTheHomeOwner can send a photographer to your property and have
+                                                        professional photos taken and automatically added to you advrt
+                                                        in a
+                                                        matter of days
+                                                    </div>
                                                 </div>
-                                                <div class="gallery__inner-footer-column-para">
-                                                    ByTheHomeOwner can send a photographer to your property and have
-                                                    professional photos taken and automatically added to you advrt in a
-                                                    matter of days
+                                                <a href="#" class="gallery__inner-footer-btn">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listingForm__tab-body-content">
+                                <h6 class="bold">
+                                    Add Floorplans
+                                </h6>
+                                <div class="gallery">
+                                    <div class="gallery__inner">
+                                        <div class="gallery__inner-header">
+                                            Drag or open foto maximum 20mb
+                                        </div>
+                                        <div class="gallery__inner-row">
+                                            <div class="gallery__inner-column insertBefore" id="">
+                                                <input type="file" class="files" name="files[]" multiple />
+                                                <label for="">
+                                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M6 16.5002V28.5002C6 29.2959 6.31607 30.059 6.87868 30.6216C7.44129 31.1842 8.20435 31.5002 9 31.5002H27C27.7956 31.5002 28.5587 31.1842 29.1213 30.6216C29.6839 30.059 30 29.2959 30 28.5002V16.5002"
+                                                            stroke="currentColor" stroke-width="2.90802"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M24 10.5002L18 4.50024L12 10.5002"
+                                                            stroke="currentColor" stroke-width="2.90802"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M18 4.50024V24.0002" stroke="currentColor"
+                                                            stroke-width="2.90802" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    Add Floorplans photo
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="gallery__inner-footer secondary">
+                                            <div class="gallery__inner-footer-row">
+                                                <img src="assets/images/listing/icons/Alert-circle.svg" alt="">
+                                                <div class="gallery__inner-footer-column">
+                                                    <div class="gallery__inner-footer-column-title">
+                                                        Don’t have Floorplan
+                                                    </div>
+                                                    <div class="gallery__inner-footer-column-para">
+                                                        You can add floor plan later throught your member area
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <a href="#" class="gallery__inner-footer-btn">
-                                                Learn More
-                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="listingForm__tab-body-content">
+                                <h6 class="bold">
+                                    Advert
+                                </h6>
+                                <div class="advert">
+                                    <div class="advert__inner">
+                                        <div class="advert__inner-header">
+                                            <div class="advert__inner-header-title">
+                                                <img src="assets/images/listing/icons/Check.svg" alt="">
+                                                Need More Exposure?
+                                            </div>
+                                            <div class="advert__inner-header-para">
+                                                Make your listing stand out by upgrading your FREE standart ad to either
+                                                our
+                                                PREMIUM OR PLATINUM Packages to and get more Visibility and response
+                                            </div>
+                                        </div>
+                                        <div class="advert__inner-body">
+                                            <div class="advert__inner-body-box premium">
+                                                <div class="advert__inner-body-box-content">
+                                                    <div class="advert__inner-body-box-content-package">
+                                                        PREMIUM
+                                                    </div>
+                                                    <div class="advert__inner-body-box-content-body">
+                                                        <div class="advert__inner-body-box-content-body-para">
+                                                            Bigger and Better Looking and at top of the <br> page
+                                                        </div>
+                                                        <div class="radioBox">
+                                                            <input type="radio" name="package">
+                                                            <label for="">
+                                                                £ 6 Until Property Rented
+                                                            </label>
+                                                        </div>
+                                                        <div class="radioBox">
+                                                            <input type="radio" name="package">
+                                                            <label for="">
+                                                                £ 2/ Month
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="advert__inner-body-box-content-link">
+                                                        Preview
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="advert__inner-body-box-btn">
+                                                    Upgrade Plan
+                                                </a>
+                                            </div>
+                                            <div class="advert__inner-body-box platinum">
+                                                <div class="advert__inner-body-box-content">
+                                                    <div class="advert__inner-body-box-content-package">
+                                                        PREMIUM
+                                                    </div>
+                                                    <div class="advert__inner-body-box-content-body">
+                                                        <div class="advert__inner-body-box-content-body-para">
+                                                            Bigger and Better Looking and at top of the <br> page
+                                                        </div>
+                                                        <div class="radioBox">
+                                                            <input type="radio" name="package">
+                                                            <label for="">
+                                                                £ 12 for 30 Day Visibility
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="advert__inner-body-box-content-link">
+                                                        Preview
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="advert__inner-body-box-btn">
+                                                    Upgrade Plan
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="advert__inner-footer">
+                                            <div class="advert__inner-footer-title">
+                                                No Thank’s (I am Happy With Free Listing)
+                                            </div>
+                                            <div class="advert__inner-footer-box">
+                                                <div class="radioBox">
+                                                    <input type="radio" name="package">
+                                                    <label for="">
+                                                        Current Listing : Free standar Listing
+                                                        <br>Ammount to Pay : £ 00,0
+                                                    </label>
+                                                </div>
+                                                <a href="#" class="advert__inner-footer-box-link">
+                                                    Preview
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="listingForm__tab-body-content">
-                            <h6 class="bold">
-                                Add Floorplans
-                            </h6>
-                            <div class="gallery">
-                                <div class="gallery__inner">
-                                    <div class="gallery__inner-header">
-                                        Drag or open foto maximum 20mb
+                        <div class="listingForm__tab-footer">
+                            <a href="#" class="btn__primary">
+                                Prev
+                            </a>
+                            <div class="btn__secondary formBtn" data-tab="#step-2">
+                                Next
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listingForm__tab formItem " id="step-2">
+                        <div class="listingForm__tab-header">
+                            <ul class="listingForm__tab-header-pagination">
+                                <li class="done">
+                                    1 <span>Your Details</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-1">
+                                    2 <span>Property Details</span>
+                                </li>
+                                <li class="blue">
+                                    3 <span>Agent Assists</span>
+                                </li>
+                                <li>
+                                    4 <span>SEO Information</span>
+                                </li>
+                                <li>
+                                    5 <span>Payment</span>
+                                </li>
+                                <li>
+                                    6 <span>Ownership Confirmation</span>
+                                </li>
+                                <li>
+                                    7 <span>Authority to Market</span>
+                                </li>
+                            </ul>
+                            <div class="listingForm__tab-header">
+                                <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                                    Agent Assist
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="listingGeneral">
+                            <div class="listingGeneral__row centerIt">
+                                <div class="listingGeneral__column">
+                                    <div class="listingGeneral__column-image">
+                                        <img src="assets/images/listing/agentAsist.png" alt="">
                                     </div>
-                                    <div class="gallery__inner-row">
-                                        <div class="gallery__inner-column insertBefore" id="">
-                                            <input type="file" class="files" name="files[]" multiple />
-                                            <label for="">
-                                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6 16.5002V28.5002C6 29.2959 6.31607 30.059 6.87868 30.6216C7.44129 31.1842 8.20435 31.5002 9 31.5002H27C27.7956 31.5002 28.5587 31.1842 29.1213 30.6216C29.6839 30.059 30 29.2959 30 28.5002V16.5002"
-                                                        stroke="currentColor" stroke-width="2.90802"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M24 10.5002L18 4.50024L12 10.5002" stroke="currentColor"
-                                                        stroke-width="2.90802" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path d="M18 4.50024V24.0002" stroke="currentColor"
-                                                        stroke-width="2.90802" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                                Add Floorplans photo
-                                            </label>
+                                </div>
+                                <div class="listingGeneral__column">
+                                    <h6 class="bold">
+                                        Agents Market
+                                    </h6>
+                                    <p>
+                                        Would you like agents to promote your property on <a
+                                            href="">ByTheHomeOwner.com</a>
+                                        and
+                                        their own networks for more exposure with the agreement that agency
+                                        commission at market rate is applicable if an agent finds you a buyer /
+                                        renter?
+                                    </p>
+                                    <div class="listingGeneral__column-radios">
+                                        <div class="listingGeneral__column-radio">
+                                            <input class="agreeInput" type="radio" name="agentMarket"
+                                                value="agentMarket">
+                                            <label for="">Yes</label>
+                                        </div>
+                                        <div class="listingGeneral__column-radio">
+                                            <input class="agreeInput" type="radio" name="agentMarket">
+                                            <label for=""> No</label>
                                         </div>
                                     </div>
-                                    <div class="gallery__inner-footer secondary">
-                                        <div class="gallery__inner-footer-row">
-                                            <img src="assets/images/listing/icons/Alert-circle.svg" alt="">
-                                            <div class="gallery__inner-footer-column">
-                                                <div class="gallery__inner-footer-column-title">
-                                                    Don’t have Floorplan
-                                                </div>
-                                                <div class="gallery__inner-footer-column-para">
-                                                    You can add floor plan later throught your member area
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div class="agree agentMarket">
+                                        <img src="assets/images/listing/icons/Alert-circle.svg" alt="">
+                                        I agree that agency commissions at market rate is applicable if agents finds me
+                                        a
+                                        buyer/tenant
+                                        <br> Market rate: 1/2 month rent per year of lease signed by Tenant / 1.5% of
+                                        property
+                                        purchase price paid by buyer
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="listingForm__tab-body-content">
-                            <h6 class="bold">
-                                Advert
-                            </h6>
-                            <div class="advert">
-                                <div class="advert__inner">
-                                    <div class="advert__inner-header">
-                                        <div class="advert__inner-header-title">
-                                            <img src="assets/images/listing/icons/Check.svg" alt="">
-                                            Need More Exposure?
-                                        </div>
-                                        <div class="advert__inner-header-para">
-                                            Make your listing stand out by upgrading your FREE standart ad to either our
-                                            PREMIUM OR PLATINUM Packages to and get more Visibility and response
-                                        </div>
+                        <div class="listingForm__tab-footer">
+                            <div class="btn__primary formBtn" data-tab="#step-1">
+                                Prev
+                            </div>
+                            <div class="btn__secondary formBtn" data-tab="#step-3">
+                                Next
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="listingForm__tab formItem " id="step-3">
+                        <div class="listingForm__tab-header">
+                            <ul class="listingForm__tab-header-pagination">
+                                <li class="done">
+                                    1 <span>Your Details</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-1">
+                                    2 <span>Property Details</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-2">
+                                    3 <span>Agent Assists</span>
+                                </li>
+                                <li class="blue">
+                                    4 <span>SEO Information</span>
+                                </li>
+                                <li>
+                                    5 <span>Payment</span>
+                                </li>
+                                <li>
+                                    6 <span>Ownership Confirmation</span>
+                                </li>
+                                <li>
+                                    7 <span>Authority to Market</span>
+                                </li>
+                            </ul>
+                            <div class="listingForm__tab-header">
+                                <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                                    SEO Information
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="listingGeneral">
+                            <div class="listingGeneral__header">
+                                <div class="listingGeneral__header-address">
+                                    <a href="#" class="btn__secondary">
+                                        For rent
+                                    </a>
+                                    1 calderwood street, London, UK
+                                </div>
+                            </div>
+                            <div class="listingGeneral__row">
+                                <div class="listingGeneral__column">
+                                    <div class="input__outer">
+                                        <label>Meta Title</label>
+                                        <input type="text" placeholder="Meta Tittle">
                                     </div>
-                                    <div class="advert__inner-body">
-                                        <div class="advert__inner-body-box premium">
-                                            <div class="advert__inner-body-box-content">
-                                                <div class="advert__inner-body-box-content-package">
+                                    <div class="textarea__outer m-t-10">
+                                        <label>Meta Keywords</label>
+                                        <textarea name="" id="" cols="30" rows="6"
+                                            placeholder="Meta Keywords"></textarea>
+                                    </div>
+                                </div>
+                                <div class="listingGeneral__column">
+                                    <div class="textarea__outer">
+                                        <label>Meta Shortcuts</label>
+                                        <textarea name="" id="" cols="30" rows="10"
+                                            placeholder="Meta Shortcuts"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-footer">
+                            <div class="btn__primary formBtn" data-tab="#step-2">
+                                Prev
+                            </div>
+                            <div class="btn__secondary formBtn" data-tab="#step-4">
+                                Next
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="listingForm__tab formItem " id="step-4">
+                        <div class="listingForm__tab-header">
+                            <ul class="listingForm__tab-header-pagination">
+                                <li class="done">
+                                    1 <span>Your Details</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-1">
+                                    2 <span>Property Details</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-2">
+                                    3 <span>Agent Assists</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-3">
+                                    4 <span>SEO Information</span>
+                                </li>
+                                <li class="blue">
+                                    5 <span>Payment</span>
+                                </li>
+                                <li>
+                                    6 <span>Ownership Confirmation</span>
+                                </li>
+                                <li>
+                                    7 <span>Authority to Market</span>
+                                </li>
+                            </ul>
+                            <div class="listingForm__tab-header">
+                                <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                                    Payment
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="listingGeneral">
+                            <div class="listingGeneral__row">
+                                <div class="listingGeneral__column">
+                                    <div class="advertPayment">
+                                        <div class="advertPayment__inner">
+                                            <div class="advertPayment__inner-box top">
+                                                <div class="radioBox">
+                                                    <input type="radio" name="package">
+                                                    <label for="">
+                                                        Current Listing : Free standar Listing
+                                                        <br>Ammount to Pay : £ 00,0
+                                                    </label>
+                                                </div>
+                                                <a href="#" class="advertPayment__inner-box-link">
+                                                    Preview
+                                                </a>
+                                            </div>
+                                            <div class="advertPayment__inner-title">
+                                                Would you like to add any additional service to your property listing?
+                                            </div>
+
+                                            <div class="advertPayment__inner-box premium">
+                                                <div class="advertPayment__inner-box-package">
                                                     PREMIUM
                                                 </div>
-                                                <div class="advert__inner-body-box-content-body">
-                                                    <div class="advert__inner-body-box-content-body-para">
-                                                        Bigger and Better Looking and at top of the <br> page
+                                                <div class="advertPayment__inner-box-body">
+                                                    <div class="advertPayment__inner-box-body-title">
+                                                        Upgrade to Premium Package
+                                                    </div>
+                                                    <div class="advertPayment__inner-box-body-para">
+                                                        Appear towward the very top of search results. Attract 10x more
+                                                        leads than a standart listing.
                                                     </div>
                                                     <div class="radioBox">
                                                         <input type="radio" name="package">
@@ -966,1192 +1345,957 @@
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <a href="#" class="advert__inner-body-box-content-link">
+                                                <a href="#" class="advertPayment__inner-box-link">
                                                     Preview
                                                 </a>
+
                                             </div>
-                                            <a href="#" class="advert__inner-body-box-btn">
-                                                Upgrade Plan
-                                            </a>
-                                        </div>
-                                        <div class="advert__inner-body-box platinum">
-                                            <div class="advert__inner-body-box-content">
-                                                <div class="advert__inner-body-box-content-package">
-                                                    PREMIUM
+                                            <div class="advertPayment__inner-box platinum">
+                                                <div class="advertPayment__inner-box-package">
+                                                    PLATINUM
                                                 </div>
-                                                <div class="advert__inner-body-box-content-body">
-                                                    <div class="advert__inner-body-box-content-body-para">
-                                                        Bigger and Better Looking and at top of the <br> page
+                                                <div class="advertPayment__inner-box-body">
+                                                    <div class="advertPayment__inner-box-body-title">
+                                                        Upgrade to Platinum Package
+                                                    </div>
+                                                    <div class="advertPayment__inner-box-body-para">
+                                                        Bigger and better looking and at the top of search result and
+                                                        above
+                                                        premium listing
                                                     </div>
                                                     <div class="radioBox">
                                                         <input type="radio" name="package">
                                                         <label for="">
-                                                            £ 12 for 30 Day Visibility
+                                                            £ 12/ 30 Day Visibility
                                                         </label>
                                                     </div>
                                                 </div>
-                                                <a href="#" class="advert__inner-body-box-content-link">
+                                                <a href="#" class="advertPayment__inner-box-link">
                                                     Preview
                                                 </a>
                                             </div>
-                                            <a href="#" class="advert__inner-body-box-btn">
-                                                Upgrade Plan
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="advert__inner-footer">
-                                        <div class="advert__inner-footer-title">
-                                            No Thank’s (I am Happy With Free Listing)
-                                        </div>
-                                        <div class="advert__inner-footer-box">
-                                            <div class="radioBox">
-                                                <input type="radio" name="package">
-                                                <label for="">
-                                                    Current Listing : Free standar Listing
-                                                    <br>Ammount to Pay : £ 00,0
-                                                </label>
+                                            <div class="advertPayment__inner-box verify">
+                                                <div class="advertPayment__inner-box-package">
+                                                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M0 8.5C0 4.08172 3.58172 0.5 8 0.5V0.5C12.4183 0.5 16 4.08172 16 8.5V8.5C16 12.9183 12.4183 16.5 8 16.5V16.5C3.58172 16.5 0 12.9183 0 8.5V8.5Z"
+                                                            fill="white" />
+                                                        <path d="M13.3332 4.5L5.99984 11.8333L2.6665 8.5"
+                                                            stroke="#34C0E3" stroke-width="1.46237"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                    Verify
+                                                </div>
+                                                <div class="advertPayment__inner-box-body">
+                                                    <div class="advertPayment__inner-box-body-title">
+                                                        Verify your listing
+                                                    </div>
+                                                    <div class="advertPayment__inner-box-body-para">
+                                                        Increase trust by confirming your ownership and/ authority to
+                                                        market
+                                                        the property that you are listing. Verified listings rank higher
+                                                        and
+                                                        recieves more qnuiries.
+                                                    </div>
+                                                    <div class="radioBox">
+                                                        <input type="radio" name="package">
+                                                        <label for="">
+                                                            £ 20 Per Listing
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="advertPayment__inner-box-link">
+                                                    Learn More about Verify listing
+                                                </a>
                                             </div>
-                                            <a href="#" class="advert__inner-footer-box-link">
-                                                Preview
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="listingForm__tab-footer">
-                        <a href="#" class="btn__primary">
-                            Prev
-                        </a>
-                        <div class="btn__secondary formBtn" data-tab="#step-2">
-                            Next
-                        </div>
-                    </div>
-                </div>
-                <div class="listingForm__tab formItem " id="step-2">
-                    <div class="listingForm__tab-header">
-                        <ul class="listingForm__tab-header-pagination">
-                            <li class="done">
-                                1 <span>Your Details</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-1">
-                                2 <span>Property Details</span>
-                            </li>
-                            <li class="blue">
-                                3 <span>Agent Assists</span>
-                            </li>
-                            <li>
-                                4 <span>SEO Information</span>
-                            </li>
-                            <li>
-                                5 <span>Payment</span>
-                            </li>
-                            <li>
-                                6 <span>Ownership Confirmation</span>
-                            </li>
-                            <li>
-                                7 <span>Authority to Market</span>
-                            </li>
-                        </ul>
-                        <div class="listingForm__tab-header">
-                            <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
-                                Agent Assist
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="listingGeneral">
-                        <div class="listingGeneral__row centerIt">
-                            <div class="listingGeneral__column">
-                                <div class="listingGeneral__column-image">
-                                    <img src="assets/images/listing/agentAsist.png" alt="">
-                                </div>
-                            </div>
-                            <div class="listingGeneral__column">
-                                <h6 class="bold">
-                                    Agents Market
-                                </h6>
-                                <p>
-                                    Would you like agents to promote your property on <a href="">ByTheHomeOwner.com</a>
-                                    and
-                                    their own networks for more exposure with the agreement that agency
-                                    commission at market rate is applicable if an agent finds you a buyer /
-                                    renter?
-                                </p>
-                                <div class="listingGeneral__column-radios">
-                                    <div class="listingGeneral__column-radio">
-                                        <input class="agreeInput" type="radio" name="agentMarket" value="agentMarket">
-                                        <label for="">Yes</label>
-                                    </div>
-                                    <div class="listingGeneral__column-radio">
-                                        <input class="agreeInput" type="radio" name="agentMarket">
-                                        <label for=""> No</label>
-                                    </div>
-                                </div>
-                                <div class="agree agentMarket">
-                                    <img src="assets/images/listing/icons/Alert-circle.svg" alt="">
-                                    I agree that agency commissions at market rate is applicable if agents finds me a
-                                    buyer/tenant
-                                    <br> Market rate: 1/2 month rent per year of lease signed by Tenant / 1.5% of
-                                    property
-                                    purchase price paid by buyer
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="listingForm__tab-footer">
-                        <div class="btn__primary formBtn" data-tab="#step-1">
-                            Prev
-                        </div>
-                        <div class="btn__secondary formBtn" data-tab="#step-3">
-                            Next
-                        </div>
-                    </div>
-
-                </div>
-                <div class="listingForm__tab formItem " id="step-3">
-                    <div class="listingForm__tab-header">
-                        <ul class="listingForm__tab-header-pagination">
-                            <li class="done">
-                                1 <span>Your Details</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-1">
-                                2 <span>Property Details</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-2">
-                                3 <span>Agent Assists</span>
-                            </li>
-                            <li class="blue">
-                                4 <span>SEO Information</span>
-                            </li>
-                            <li>
-                                5 <span>Payment</span>
-                            </li>
-                            <li>
-                                6 <span>Ownership Confirmation</span>
-                            </li>
-                            <li>
-                                7 <span>Authority to Market</span>
-                            </li>
-                        </ul>
-                        <div class="listingForm__tab-header">
-                            <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
-                                SEO Information
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="listingGeneral">
-                        <div class="listingGeneral__header">
-                            <div class="listingGeneral__header-address">
-                                <a href="#" class="btn__secondary">
-                                    For rent
-                                </a>
-                                1 calderwood street, London, UK
-                            </div>
-                        </div>
-                        <div class="listingGeneral__row">
-                            <div class="listingGeneral__column">
-                                <div class="input__outer">
-                                    <label>Meta Title</label>
-                                    <input type="text" placeholder="Meta Tittle">
-                                </div>
-                                <div class="textarea__outer m-t-10">
-                                    <label>Meta Keywords</label>
-                                    <textarea name="" id="" cols="30" rows="6" placeholder="Meta Keywords"></textarea>
-                                </div>
-                            </div>
-                            <div class="listingGeneral__column">
-                                <div class="textarea__outer">
-                                    <label>Meta Shortcuts</label>
-                                    <textarea name="" id="" cols="30" rows="10" placeholder="Meta Shortcuts"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="listingForm__tab-footer">
-                        <div class="btn__primary formBtn" data-tab="#step-2">
-                            Prev
-                        </div>
-                        <div class="btn__secondary formBtn" data-tab="#step-4">
-                            Next
-                        </div>
-                    </div>
-
-                </div>
-                <div class="listingForm__tab formItem " id="step-4">
-                    <div class="listingForm__tab-header">
-                        <ul class="listingForm__tab-header-pagination">
-                            <li class="done">
-                                1 <span>Your Details</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-1">
-                                2 <span>Property Details</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-2">
-                                3 <span>Agent Assists</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-3">
-                                4 <span>SEO Information</span>
-                            </li>
-                            <li class="blue">
-                                5 <span>Payment</span>
-                            </li>
-                            <li>
-                                6 <span>Ownership Confirmation</span>
-                            </li>
-                            <li>
-                                7 <span>Authority to Market</span>
-                            </li>
-                        </ul>
-                        <div class="listingForm__tab-header">
-                            <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
-                                Payment
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="listingGeneral">
-                        <div class="listingGeneral__row">
-                            <div class="listingGeneral__column">
-                                <div class="advertPayment">
-                                    <div class="advertPayment__inner">
-                                        <div class="advertPayment__inner-box top">
-                                            <div class="radioBox">
-                                                <input type="radio" name="package">
-                                                <label for="">
-                                                    Current Listing : Free standar Listing
-                                                    <br>Ammount to Pay : £ 00,0
-                                                </label>
+                                            <div class="advertPayment__inner-box verify">
+                                                <div class="advertPayment__inner-box-body">
+                                                    <div class="advertPayment__inner-box-body-title">
+                                                        Order ByTheHomeOwner For Sale / To Let Sign Board
+                                                    </div>
+                                                    <div class="advertPayment__inner-box-body-para">
+                                                        Buyers and renters start looking for properties often tour the
+                                                        area
+                                                        looking for rental/sale boards. They then contact agent /
+                                                        Homeowner
+                                                        about the boards they see.
+                                                    </div>
+                                                    <div class="radioBox">
+                                                        <input type="radio" name="package">
+                                                        <label for="">
+                                                            £ 25 Per Board
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="advertPayment__inner-box-link">
+                                                    Learn about verified listing
+                                                </a>
                                             </div>
-                                            <a href="#" class="advertPayment__inner-box-link">
-                                                Preview
-                                            </a>
-                                        </div>
-                                        <div class="advertPayment__inner-title">
-                                            Would you like to add any additional service to your property listing?
-                                        </div>
-
-                                        <div class="advertPayment__inner-box premium">
-                                            <div class="advertPayment__inner-box-package">
-                                                PREMIUM
-                                            </div>
-                                            <div class="advertPayment__inner-box-body">
-                                                <div class="advertPayment__inner-box-body-title">
-                                                    Upgrade to Premium Package
-                                                </div>
-                                                <div class="advertPayment__inner-box-body-para">
-                                                    Appear towward the very top of search results. Attract 10x more
-                                                    leads than a standart listing.
-                                                </div>
-                                                <div class="radioBox">
-                                                    <input type="radio" name="package">
-                                                    <label for="">
-                                                        £ 6 Until Property Rented
-                                                    </label>
-                                                </div>
-                                                <div class="radioBox">
-                                                    <input type="radio" name="package">
-                                                    <label for="">
-                                                        £ 2/ Month
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="advertPayment__inner-box-link">
-                                                Preview
-                                            </a>
-
-                                        </div>
-                                        <div class="advertPayment__inner-box platinum">
-                                            <div class="advertPayment__inner-box-package">
-                                                PLATINUM
-                                            </div>
-                                            <div class="advertPayment__inner-box-body">
-                                                <div class="advertPayment__inner-box-body-title">
-                                                    Upgrade to Platinum Package
-                                                </div>
-                                                <div class="advertPayment__inner-box-body-para">
-                                                    Bigger and better looking and at the top of search result and above
-                                                    premium listing
-                                                </div>
-                                                <div class="radioBox">
-                                                    <input type="radio" name="package">
-                                                    <label for="">
-                                                        £ 12/ 30 Day Visibility
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="advertPayment__inner-box-link">
-                                                Preview
-                                            </a>
-                                        </div>
-                                        <div class="advertPayment__inner-box verify">
-                                            <div class="advertPayment__inner-box-package">
-                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M0 8.5C0 4.08172 3.58172 0.5 8 0.5V0.5C12.4183 0.5 16 4.08172 16 8.5V8.5C16 12.9183 12.4183 16.5 8 16.5V16.5C3.58172 16.5 0 12.9183 0 8.5V8.5Z"
-                                                        fill="white" />
-                                                    <path d="M13.3332 4.5L5.99984 11.8333L2.6665 8.5" stroke="#34C0E3"
-                                                        stroke-width="1.46237" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                                Verify
-                                            </div>
-                                            <div class="advertPayment__inner-box-body">
-                                                <div class="advertPayment__inner-box-body-title">
-                                                    Verify your listing
-                                                </div>
-                                                <div class="advertPayment__inner-box-body-para">
-                                                    Increase trust by confirming your ownership and/ authority to market
-                                                    the property that you are listing. Verified listings rank higher and
-                                                    recieves more qnuiries.
-                                                </div>
-                                                <div class="radioBox">
-                                                    <input type="radio" name="package">
-                                                    <label for="">
-                                                        £ 20 Per Listing
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="advertPayment__inner-box-link">
-                                                Learn More about Verify listing
-                                            </a>
-                                        </div>
-                                        <div class="advertPayment__inner-box verify">
-                                            <div class="advertPayment__inner-box-body">
-                                                <div class="advertPayment__inner-box-body-title">
-                                                    Order ByTheHomeOwner For Sale / To Let Sign Board
-                                                </div>
-                                                <div class="advertPayment__inner-box-body-para">
-                                                    Buyers and renters start looking for properties often tour the area
-                                                    looking for rental/sale boards. They then contact agent / Homeowner
-                                                    about the boards they see.
-                                                </div>
-                                                <div class="radioBox">
-                                                    <input type="radio" name="package">
-                                                    <label for="">
-                                                        £ 25 Per Board
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="advertPayment__inner-box-link">
-                                                Learn about verified listing
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="listingGeneral__column">
-                                <form class="paymentOption">
-                                    <div class="paymentOption__inner">
-                                        <div class="paymentOption__inner-header">
-                                            <div class="paymentOption__inner-header-title">
-                                                Select Payment Option:
+                                <div class="listingGeneral__column">
+                                    <form class="paymentOption">
+                                        <div class="paymentOption__inner">
+                                            <div class="paymentOption__inner-header">
+                                                <div class="paymentOption__inner-header-title">
+                                                    Select Payment Option:
+                                                </div>
+                                                <div class="paymentOption__inner-header-row">
+                                                    <div class="paymentBox">
+                                                        <input class="paymentInput" type="radio" name="payment"
+                                                            value="masterCard">
+                                                        <label for="">
+                                                            <img src="assets/images/listing/payment/1 (1).png" alt="">
+                                                        </label>
+                                                    </div>
+                                                    <div class="paymentBox">
+                                                        <input class="paymentInput" type="radio" name="payment"
+                                                            value="visa">
+                                                        <label for="">
+                                                            <img src="assets/images/listing/payment/1 (2).png" alt="">
+                                                        </label>
+                                                    </div>
+                                                    <div class="paymentBox">
+                                                        <input class="paymentInput" type="radio" name="payment"
+                                                            value="paypal">
+                                                        <label for="">
+                                                            <img src="assets/images/listing/payment/1 (4).png" alt="">
+                                                        </label>
+                                                    </div>
+                                                    <div class="paymentBox">
+                                                        <input class="paymentInput" type="radio" name="payment"
+                                                            value="discover">
+                                                        <label for="">
+                                                            <img src="assets/images/listing/payment/1 (3).png" alt="">
+                                                        </label>
+                                                    </div>
+                                                    <div class="paymentBox">
+                                                        <input class="paymentInput" type="radio" name="payment"
+                                                            value="express">
+                                                        <label for="">
+                                                            <img src="assets/images/listing/payment/1 (5).png" alt="">
+                                                        </label>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="paymentOption__inner-header-row">
-                                                <div class="paymentBox">
-                                                    <input class="paymentInput" type="radio" name="payment"
-                                                        value="masterCard">
-                                                    <label for="">
-                                                        <img src="assets/images/listing/payment/1 (1).png" alt="">
+                                            <div class="paymentOption__inner-body">
+                                                <div class="paymentOption__inner-body-table">
+                                                    <div class="paymentOption__inner-body-table-title">
+                                                        30 Day PLATINUM Package
+                                                    </div>
+                                                    <div class="paymentOption__inner-body-table-price">
+                                                        £ 12,00
+                                                    </div>
+                                                    <div class="paymentOption__inner-body-table-title">
+                                                        Verified Listing Service
+                                                    </div>
+                                                    <div class="paymentOption__inner-body-table-price">
+                                                        £ 20,00
+                                                    </div>
+                                                    <div class="paymentOption__inner-body-table-title">
+                                                        Additional TAX
+                                                    </div>
+                                                    <div class="paymentOption__inner-body-table-price">
+                                                        £ 3,00
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="paymentOption__inner-body-table">
+                                                    <div class="paymentOption__inner-body-table-title">
+                                                        Total ammount:
+                                                    </div>
+                                                    <div class="paymentOption__inner-body-table-price">
+                                                        £ 35,00
+                                                    </div>
+                                                    <div class="paymentOption__inner-body-table-payment">
+                                                        <img class="payment masterCard"
+                                                            src="assets/images/listing/payment/1 (1).png" alt="">
+                                                        <img class="payment visa"
+                                                            src="assets/images/listing/payment/1 (2).png" alt="">
+                                                        <img class="payment paypal"
+                                                            src="assets/images/listing/payment/1 (4).png" alt="">
+                                                        <img class="payment discover"
+                                                            src="assets/images/listing/payment/1 (3).png" alt="">
+                                                        <img class="payment express"
+                                                            src="assets/images/listing/payment/1 (5).png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="checkBox">
+                                                    <input type="checkbox">
+                                                    <label for="">I Agree to the <a href=""> terms of service</a>
                                                     </label>
                                                 </div>
-                                                <div class="paymentBox">
-                                                    <input class="paymentInput" type="radio" name="payment"
-                                                        value="visa">
-                                                    <label for="">
-                                                        <img src="assets/images/listing/payment/1 (2).png" alt="">
-                                                    </label>
-                                                </div>
-                                                <div class="paymentBox">
-                                                    <input class="paymentInput" type="radio" name="payment"
-                                                        value="paypal">
-                                                    <label for="">
-                                                        <img src="assets/images/listing/payment/1 (4).png" alt="">
-                                                    </label>
-                                                </div>
-                                                <div class="paymentBox">
-                                                    <input class="paymentInput" type="radio" name="payment"
-                                                        value="discover">
-                                                    <label for="">
-                                                        <img src="assets/images/listing/payment/1 (3).png" alt="">
-                                                    </label>
-                                                </div>
-                                                <div class="paymentBox">
-                                                    <input class="paymentInput" type="radio" name="payment"
-                                                        value="express">
-                                                    <label for="">
-                                                        <img src="assets/images/listing/payment/1 (5).png" alt="">
-                                                    </label>
-                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="paymentOption__inner-body">
-                                            <div class="paymentOption__inner-body-table">
-                                                <div class="paymentOption__inner-body-table-title">
-                                                    30 Day PLATINUM Package
-                                                </div>
-                                                <div class="paymentOption__inner-body-table-price">
-                                                    £ 12,00
-                                                </div>
-                                                <div class="paymentOption__inner-body-table-title">
-                                                    Verified Listing Service
-                                                </div>
-                                                <div class="paymentOption__inner-body-table-price">
-                                                    £ 20,00
-                                                </div>
-                                                <div class="paymentOption__inner-body-table-title">
-                                                    Additional TAX
-                                                </div>
-                                                <div class="paymentOption__inner-body-table-price">
-                                                    £ 3,00
-                                                </div>
-                                            </div>
-                                            <hr>
-                                            <div class="paymentOption__inner-body-table">
-                                                <div class="paymentOption__inner-body-table-title">
-                                                    Total ammount:
-                                                </div>
-                                                <div class="paymentOption__inner-body-table-price">
-                                                    £ 35,00
-                                                </div>
-                                                <div class="paymentOption__inner-body-table-payment">
-                                                    <img class="payment masterCard"
-                                                        src="assets/images/listing/payment/1 (1).png" alt="">
-                                                    <img class="payment visa"
-                                                        src="assets/images/listing/payment/1 (2).png" alt="">
-                                                    <img class="payment paypal"
-                                                        src="assets/images/listing/payment/1 (4).png" alt="">
-                                                    <img class="payment discover"
-                                                        src="assets/images/listing/payment/1 (3).png" alt="">
-                                                    <img class="payment express"
-                                                        src="assets/images/listing/payment/1 (5).png" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="checkBox">
-                                                <input type="checkbox">
-                                                <label for="">I Agree to the <a href=""> terms of service</a> </label>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn__secondary">
-                                            Procced Payment
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="listingForm__tab-footer">
-                        <div class="btn__primary formBtn" data-tab="#step-3">
-                            Prev
-                        </div>
-                        <div class="btn__secondary formBtn" data-tab="#step-5">
-                            Next
-                        </div>
-                    </div>
-                </div>
-                <div class="listingForm__tab formItem " id="step-5">
-                    <div class="listingForm__tab-header">
-                        <ul class="listingForm__tab-header-pagination">
-                            <li class="done">
-                                1 <span>Your Details</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-1">
-                                2 <span>Property Details</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-2">
-                                3 <span>Agent Assists</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-3">
-                                4 <span>SEO Information</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-4">
-                                5 <span>Payment</span>
-                            </li>
-                            <li class="blue">
-                                6 <span>Ownership Confirmation</span>
-                            </li>
-                            <li>
-                                7 <span>Authority to Market</span>
-                            </li>
-                        </ul>
-                        <div class="listingForm__tab-header">
-                            <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
-                                Payment
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="listingGeneral">
-                        <div class="listingGeneral__row-secondary">
-                            <div class="listingGeneral__column-secondary">
-                                <h6 class="bold">
-                                    Hi Suman
-                                </h6>
-                                <div class="listingGeneral__column-links">
-                                    <a href="#" class="listingGeneral__column-link">
-                                        My Properties
-                                    </a>
-                                    <a href="#" class="listingGeneral__column-link">
-                                        My Account
-                                    </a>
-                                    <a href="#" class="listingGeneral__column-link">
-                                        Logout
-                                    </a>
-                                </div>
-                                <div class="subtitle-2 semi-bold">
-                                    Thank you very much for your payment!
-                                </div>
-                                <p>
-                                    Mauris sem id lorem auctor enim. Odio pulvinar cursus diam sit. Quis aenean ac
-                                    pretium massa quam. Aliquet id quam vestibulum urna ultricies. Nulla aliquet quis
-                                    faucibus integer dignissim mi pretium amet ultrices. Interdum eros scelerisque
-                                    consequat purus aenean est. Et sed habitant nulla sapien suspendisse platea ornare
-                                    in at.
-                                </p>
-                                <div class="agreeNote">
-                                    <img src="assets/images/listing/icons/Alert-circle.svg" alt="">
-                                    <strong>*Please note</strong>
-                                    <br>Maximum file size is 2MB. if you are experiencing difficuly in loading, these
-                                    documents, Please feel free to <a href="#">continue now</a> email directly to
-                                    support@byhomeowner.co.uk
-                                </div>
-                            </div>
-                            <div class="listingGeneral__column-secondary">
-                                <div class="uploadSecondary__outer">
-                                    <div class="uploadSecondary">
-                                        <div class="uploadSecondary__title">
-                                            Rates Notice
-                                        </div>
-                                        <div class="uploadSecondary__input">
-                                            <input class="" type="file" onchange="readURL(this);">
-                                            <label for="">
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M4.6665 12.8335V22.1668C4.6665 22.7857 4.91234 23.3792 5.34992 23.8167C5.78751 24.2543 6.381 24.5002 6.99984 24.5002H20.9998C21.6187 24.5002 22.2122 24.2543 22.6498 23.8167C23.0873 23.3792 23.3332 22.7857 23.3332 22.1668V12.8335"
-                                                        stroke="currentColor" stroke-width="2.26179"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M18.6668 8.16691L14.0002 3.50024L9.3335 8.16691"
-                                                        stroke="currentColor" stroke-width="2.26179"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M14 3.50024V18.6669" stroke="currentColor"
-                                                        stroke-width="2.26179" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                                Choose File
-                                            </label>
-                                            <img id="blah" src="" alt="" />
-                                        </div>
-                                        <div class="uploadSecondary__footer">
-                                            Accepted all types .jpg, .Png, .Jpeg, .Gif, .Pdf
-                                        </div>
-                                    </div>
-                                    <div class="uploadSecondary">
-                                        <div class="uploadSecondary__title">
-                                            Photo ID
-                                        </div>
-                                        <div class="uploadSecondary__input">
-                                            <input class="" type="file" onchange="readURL2(this);">
-                                            <label for="">
-                                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M4.6665 12.8335V22.1668C4.6665 22.7857 4.91234 23.3792 5.34992 23.8167C5.78751 24.2543 6.381 24.5002 6.99984 24.5002H20.9998C21.6187 24.5002 22.2122 24.2543 22.6498 23.8167C23.0873 23.3792 23.3332 22.7857 23.3332 22.1668V12.8335"
-                                                        stroke="currentColor" stroke-width="2.26179"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M18.6668 8.16691L14.0002 3.50024L9.3335 8.16691"
-                                                        stroke="currentColor" stroke-width="2.26179"
-                                                        stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M14 3.50024V18.6669" stroke="currentColor"
-                                                        stroke-width="2.26179" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </svg>
-                                                Choose File
-                                            </label>
-                                            <img id="blah-2" src="" alt="" />
-                                        </div>
-                                        <div class="uploadSecondary__footer">
-                                            Accepted all types .jpg, .Png, .Jpeg, .Gif, .Pdf
-                                        </div>
-                                    </div>
-                                    <button class="btn__primary">
-                                        Upload File
-                                    </button>
-                                </div>
-                                <!-- show this message when the files donnloaded  with adding show class-->
-                                <div class="uploadSecondary__thanks">
-                                    <h6 class="bold">
-                                        Thank you
-                                    </h6>
-                                    <p>
-                                        Your files have been uploaded successfully.
-                                        Please click the button bellow to continue.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="listingForm__tab-footer">
-                        <div class="btn__primary formBtn" data-tab="#step-4">
-                            Prev
-                        </div>
-                        <div class="btn__secondary formBtn" data-tab="#step-6">
-                            Next
-                        </div>
-                    </div>
-
-                </div>
-                <div class="listingForm__tab formItem " id="step-6">
-                    <div class="listingForm__tab-header">
-                        <ul class="listingForm__tab-header-pagination">
-                            <li class="done">
-                                1 <span>Your Details</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-1">
-                                2 <span>Property Details</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-2">
-                                3 <span>Agent Assists</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-3">
-                                4 <span>SEO Information</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-4">
-                                5 <span>Payment</span>
-                            </li>
-                            <li class="done formBtn" data-tab="#step-4">
-                                6 <span>Ownership Confirmation</span>
-                            </li>
-                            <li class="blue">
-                                7 <span>Authority to Market</span>
-                            </li>
-                        </ul>
-                        <div class="listingForm__tab-header">
-                            <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
-                                Authority to Market
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="listingGeneral">
-                        <div class="listingGeneral__row-third">
-                            <div class="listingGeneral__column-third">
-                                <h6 class="bold">
-                                    Hi Suman
-                                </h6>
-                                <div class="listingGeneral__column-links">
-                                    <a href="#" class="listingGeneral__column-link">
-                                        My Properties
-                                    </a>
-                                    <a href="#" class="listingGeneral__column-link">
-                                        My Account
-                                    </a>
-                                    <a href="#" class="listingGeneral__column-link">
-                                        Logout
-                                    </a>
-                                </div>
-                                <p>
-                                    This is agreement between the agent and the property owner (“The Agreement”)
-                                    authorising the agent to offer the property for sale or lease for the following
-                                    <strong>terms and conditions :</strong>
-                                </p>
-                                <ul>
-                                    <li>
-                                        <img src="assets/images/listing/icons/greenCheck.svg" alt="">
-                                        Non-exclusive basis until the listing is cancelled in accordance with the
-                                        HomeOwner.co.uk cancellation policy (“The authority period”)
-                                    </li>
-                                    <li>
-                                        <img src="assets/images/listing/icons/greenCheck.svg" alt="">
-                                        Fees charged by real estate by real estate agents are not fixed by law abd are
-                                        to be agreed between an owner and agent. the following fees are agreed :
-                                        RealPrivate.com.au will charge NO SELLING OR LEASING SUCCESS FEES OR COMMISSIONS
-                                    </li>
-                                    <li>
-                                        <img src="assets/images/listing/icons/greenCheck.svg" alt="">
-                                        The owner agrees to pay the agent separate marketing expenses. *(i) The ownwer
-                                        agrees to pay the relevant fees for their selected listing package. A schedule
-                                        of fees are available onour website.
-                                    </li>
-                                    <li>
-                                        <img src="assets/images/listing/icons/greenCheck.svg" alt="">
-                                        You agree with all the “term and conditions” on RealPrivate.co.au unless amended
-                                        by the terms and conditions on a website owned and affiliated by
-                                        RealPrivate.com.au. Those terms and conditions from parts of this authority and
-                                        must be read together.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="listingGeneral__column-third">
-                                <form class="paymentOption finished">
-                                    <div class="paymentOption__inner">
-                                        <div class="paymentOption__inner-box">
-                                            <div class="paymentOption__inner-box-title">
-                                                Your Detail
-                                            </div>
-                                            <div class="paymentOption__inner-box-info">
-                                                Name : Suman Saha
-                                            </div>
-                                            <div class="paymentOption__inner-box-info">
-                                                Email : Suman.openweb@gmail.com
-                                            </div>
-                                            <div class="paymentOption__inner-box-info">
-                                                Phone : 12123432
-                                            </div>
-                                        </div>
-                                        <div class="paymentOption__inner-box">
-                                            <div class="paymentOption__inner-box-title">
-                                                Your Home Address
-                                            </div>
-                                            <div class="paymentOption__inner-box-info">
-                                                2118 Thornridge Cir. Syracuse, Connecticut 35624
-                                            </div>
-                                        </div>
-                                        <div class="paymentOption__inner-box">
-                                            <div class="paymentOption__inner-box-title">
-                                                Address of property being advertised
-                                            </div>
-                                            <div class="paymentOption__inner-box-info">
-                                                2972 Westheimer Rd. Santa Ana, Illinois 85486
-                                            </div>
-                                        </div>
-                                        <div class="paymentOption__inner-box">
-                                            <div class="paymentOption__inner-box-title">
-                                                Asking Price
-                                            </div>
-                                            <div class="paymentOption__inner-box-info">
-                                                £385
-                                            </div>
-                                        </div>
-                                        <div class="paymentOption__inner-signature">
-                                            <div class="paymentOption__inner-box-title">
-                                                Signature
-                                            </div>
-                                            <div class="textarea__outer">
-                                                <textarea name="" id="" cols="30" rows="8"></textarea>
-                                            </div>
-
-                                        </div>
-                                        <div class="paymentOption__inner-footer">
-                                            <button type="submit" class="btn__primary">
-                                                Clear
+                                            <button type="submit" class="btn__secondary">
+                                                Procced Payment
                                             </button>
                                         </div>
-
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-footer">
+                            <div class="btn__primary formBtn" data-tab="#step-3">
+                                Prev
+                            </div>
+                            <div class="btn__secondary formBtn" data-tab="#step-5">
+                                Next
                             </div>
                         </div>
                     </div>
-                    <div class="listingForm__tab-footer single">
-                        <div class="btn__secondary">
-                            Submit Listing
+                    <div class="listingForm__tab formItem " id="step-5">
+                        <div class="listingForm__tab-header">
+                            <ul class="listingForm__tab-header-pagination">
+                                <li class="done">
+                                    1 <span>Your Details</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-1">
+                                    2 <span>Property Details</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-2">
+                                    3 <span>Agent Assists</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-3">
+                                    4 <span>SEO Information</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-4">
+                                    5 <span>Payment</span>
+                                </li>
+                                <li class="blue">
+                                    6 <span>Ownership Confirmation</span>
+                                </li>
+                                <li>
+                                    7 <span>Authority to Market</span>
+                                </li>
+                            </ul>
+                            <div class="listingForm__tab-header">
+                                <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                                    Payment
+                                </h4>
+                            </div>
                         </div>
-                    </div>
+                        <div class="listingGeneral">
+                            <div class="listingGeneral__row-secondary">
+                                <div class="listingGeneral__column-secondary">
+                                    <h6 class="bold">
+                                        Hi Suman
+                                    </h6>
+                                    <div class="listingGeneral__column-links">
+                                        <a href="#" class="listingGeneral__column-link">
+                                            My Properties
+                                        </a>
+                                        <a href="#" class="listingGeneral__column-link">
+                                            My Account
+                                        </a>
+                                        <a href="#" class="listingGeneral__column-link">
+                                            Logout
+                                        </a>
+                                    </div>
+                                    <div class="subtitle-2 semi-bold">
+                                        Thank you very much for your payment!
+                                    </div>
+                                    <p>
+                                        Mauris sem id lorem auctor enim. Odio pulvinar cursus diam sit. Quis aenean ac
+                                        pretium massa quam. Aliquet id quam vestibulum urna ultricies. Nulla aliquet
+                                        quis
+                                        faucibus integer dignissim mi pretium amet ultrices. Interdum eros scelerisque
+                                        consequat purus aenean est. Et sed habitant nulla sapien suspendisse platea
+                                        ornare
+                                        in at.
+                                    </p>
+                                    <div class="agreeNote">
+                                        <img src="assets/images/listing/icons/Alert-circle.svg" alt="">
+                                        <strong>*Please note</strong>
+                                        <br>Maximum file size is 2MB. if you are experiencing difficuly in loading,
+                                        these
+                                        documents, Please feel free to <a href="#">continue now</a> email directly to
+                                        support@byhomeowner.co.uk
+                                    </div>
+                                </div>
+                                <div class="listingGeneral__column-secondary">
+                                    <div class="uploadSecondary__outer">
+                                        <div class="uploadSecondary">
+                                            <div class="uploadSecondary__title">
+                                                Rates Notice
+                                            </div>
+                                            <div class="uploadSecondary__input">
+                                                <input class="" type="file" onchange="readURL(this);">
+                                                <label for="">
+                                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M4.6665 12.8335V22.1668C4.6665 22.7857 4.91234 23.3792 5.34992 23.8167C5.78751 24.2543 6.381 24.5002 6.99984 24.5002H20.9998C21.6187 24.5002 22.2122 24.2543 22.6498 23.8167C23.0873 23.3792 23.3332 22.7857 23.3332 22.1668V12.8335"
+                                                            stroke="currentColor" stroke-width="2.26179"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M18.6668 8.16691L14.0002 3.50024L9.3335 8.16691"
+                                                            stroke="currentColor" stroke-width="2.26179"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M14 3.50024V18.6669" stroke="currentColor"
+                                                            stroke-width="2.26179" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    Choose File
+                                                </label>
+                                                <img id="blah" src="" alt="" />
+                                            </div>
+                                            <div class="uploadSecondary__footer">
+                                                Accepted all types .jpg, .Png, .Jpeg, .Gif, .Pdf
+                                            </div>
+                                        </div>
+                                        <div class="uploadSecondary">
+                                            <div class="uploadSecondary__title">
+                                                Photo ID
+                                            </div>
+                                            <div class="uploadSecondary__input">
+                                                <input class="" type="file" onchange="readURL2(this);">
+                                                <label for="">
+                                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M4.6665 12.8335V22.1668C4.6665 22.7857 4.91234 23.3792 5.34992 23.8167C5.78751 24.2543 6.381 24.5002 6.99984 24.5002H20.9998C21.6187 24.5002 22.2122 24.2543 22.6498 23.8167C23.0873 23.3792 23.3332 22.7857 23.3332 22.1668V12.8335"
+                                                            stroke="currentColor" stroke-width="2.26179"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M18.6668 8.16691L14.0002 3.50024L9.3335 8.16691"
+                                                            stroke="currentColor" stroke-width="2.26179"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M14 3.50024V18.6669" stroke="currentColor"
+                                                            stroke-width="2.26179" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    Choose File
+                                                </label>
+                                                <img id="blah-2" src="" alt="" />
+                                            </div>
+                                            <div class="uploadSecondary__footer">
+                                                Accepted all types .jpg, .Png, .Jpeg, .Gif, .Pdf
+                                            </div>
+                                        </div>
+                                        <button class="btn__primary">
+                                            Upload File
+                                        </button>
+                                    </div>
+                                    <!-- show this message when the files donnloaded  with adding show class-->
+                                    <div class="uploadSecondary__thanks">
+                                        <h6 class="bold">
+                                            Thank you
+                                        </h6>
+                                        <p>
+                                            Your files have been uploaded successfully.
+                                            Please click the button bellow to continue.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-footer">
+                            <div class="btn__primary formBtn" data-tab="#step-4">
+                                Prev
+                            </div>
+                            <div class="btn__secondary formBtn" data-tab="#step-6">
+                                Next
+                            </div>
+                        </div>
 
+                    </div>
+                    <div class="listingForm__tab formItem " id="step-6">
+                        <div class="listingForm__tab-header">
+                            <ul class="listingForm__tab-header-pagination">
+                                <li class="done">
+                                    1 <span>Your Details</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-1">
+                                    2 <span>Property Details</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-2">
+                                    3 <span>Agent Assists</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-3">
+                                    4 <span>SEO Information</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-4">
+                                    5 <span>Payment</span>
+                                </li>
+                                <li class="done formBtn" data-tab="#step-4">
+                                    6 <span>Ownership Confirmation</span>
+                                </li>
+                                <li class="blue">
+                                    7 <span>Authority to Market</span>
+                                </li>
+                            </ul>
+                            <div class="listingForm__tab-header">
+                                <h4 class="bold wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".2s">
+                                    Authority to Market
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="listingGeneral">
+                            <div class="listingGeneral__row-third">
+                                <div class="listingGeneral__column-third">
+                                    <h6 class="bold">
+                                        Hi Suman
+                                    </h6>
+                                    <div class="listingGeneral__column-links">
+                                        <a href="#" class="listingGeneral__column-link">
+                                            My Properties
+                                        </a>
+                                        <a href="#" class="listingGeneral__column-link">
+                                            My Account
+                                        </a>
+                                        <a href="#" class="listingGeneral__column-link">
+                                            Logout
+                                        </a>
+                                    </div>
+                                    <p>
+                                        This is agreement between the agent and the property owner (“The Agreement”)
+                                        authorising the agent to offer the property for sale or lease for the following
+                                        <strong>terms and conditions :</strong>
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <img src="assets/images/listing/icons/greenCheck.svg" alt="">
+                                            Non-exclusive basis until the listing is cancelled in accordance with the
+                                            HomeOwner.co.uk cancellation policy (“The authority period”)
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/listing/icons/greenCheck.svg" alt="">
+                                            Fees charged by real estate by real estate agents are not fixed by law abd
+                                            are
+                                            to be agreed between an owner and agent. the following fees are agreed :
+                                            RealPrivate.com.au will charge NO SELLING OR LEASING SUCCESS FEES OR
+                                            COMMISSIONS
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/listing/icons/greenCheck.svg" alt="">
+                                            The owner agrees to pay the agent separate marketing expenses. *(i) The
+                                            ownwer
+                                            agrees to pay the relevant fees for their selected listing package. A
+                                            schedule
+                                            of fees are available onour website.
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/listing/icons/greenCheck.svg" alt="">
+                                            You agree with all the “term and conditions” on RealPrivate.co.au unless
+                                            amended
+                                            by the terms and conditions on a website owned and affiliated by
+                                            RealPrivate.com.au. Those terms and conditions from parts of this authority
+                                            and
+                                            must be read together.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="listingGeneral__column-third">
+                                    <form class="paymentOption finished">
+                                        <div class="paymentOption__inner">
+                                            <div class="paymentOption__inner-box">
+                                                <div class="paymentOption__inner-box-title">
+                                                    Your Detail
+                                                </div>
+                                                <div class="paymentOption__inner-box-info">
+                                                    Name : Suman Saha
+                                                </div>
+                                                <div class="paymentOption__inner-box-info">
+                                                    Email : Suman.openweb@gmail.com
+                                                </div>
+                                                <div class="paymentOption__inner-box-info">
+                                                    Phone : 12123432
+                                                </div>
+                                            </div>
+                                            <div class="paymentOption__inner-box">
+                                                <div class="paymentOption__inner-box-title">
+                                                    Your Home Address
+                                                </div>
+                                                <div class="paymentOption__inner-box-info">
+                                                    2118 Thornridge Cir. Syracuse, Connecticut 35624
+                                                </div>
+                                            </div>
+                                            <div class="paymentOption__inner-box">
+                                                <div class="paymentOption__inner-box-title">
+                                                    Address of property being advertised
+                                                </div>
+                                                <div class="paymentOption__inner-box-info">
+                                                    2972 Westheimer Rd. Santa Ana, Illinois 85486
+                                                </div>
+                                            </div>
+                                            <div class="paymentOption__inner-box">
+                                                <div class="paymentOption__inner-box-title">
+                                                    Asking Price
+                                                </div>
+                                                <div class="paymentOption__inner-box-info">
+                                                    £385
+                                                </div>
+                                            </div>
+                                            <div class="paymentOption__inner-signature">
+                                                <div class="paymentOption__inner-box-title">
+                                                    Signature
+                                                </div>
+                                                <div class="textarea__outer">
+                                                    <textarea name="" id="" cols="30" rows="8"></textarea>
+                                                </div>
+
+                                            </div>
+                                            <div class="paymentOption__inner-footer">
+                                                <button type="submit" class="btn__primary">
+                                                    Clear
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listingForm__tab-footer single">
+                            <div class="btn__secondary">
+                                Submit Listing
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- listingForm start
+        <!-- listingForm start
     =========================================== -->
-    <!-- footer start
+        <!-- footer start
     =========================================== -->
-    <footer class="footer">
-        <div class="auto__container">
-            <div class="footer__inner">
-                <div class="footer__inner-logo">
-                    <img src="assets/images/logo.svg" alt="">
+        <footer class="footer">
+            <div class="auto__container">
+                <div class="footer__inner">
+                    <div class="footer__inner-logo">
+                        <img src="assets/images/logo.svg" alt="">
+                    </div>
+                    <div class="footer__inner-row">
+                        <div class="footer__inner-column">
+                            <div class="footer__inner-column-title">
+                                Company
+                            </div>
+                            <a href="#" class="footer__inner-column-link">
+                                Company
+                            </a>
+                            <a href="#" class="footer__inner-column-link">
+                                Customer Stories
+                            </a>
+                            <a href="#" class="footer__inner-column-link">
+                                Profile Company
+                            </a>
+                            <a href="#" class="footer__inner-column-link">
+                                We are Hiring
+                            </a>
+                            <a href="#" class="footer__inner-column-link">
+                                History
+                            </a>
+                        </div>
+                        <div class="footer__inner-column">
+                            <div class="footer__inner-column-title">
+                                Service
+                            </div>
+                            <a href="#" class="footer__inner-column-link">
+                                Listing
+                            </a>
+                            <a href="#" class="footer__inner-column-link">
+                                Sell Property
+                            </a>
+                            <a href="#" class="footer__inner-column-link">
+                                Buy Property
+                            </a>
+                            <a href="#" class="footer__inner-column-link">
+                                Real Estate
+                            </a>
+                        </div>
+                        <div class="footer__inner-column">
+                            <div class="footer__inner-column-title">
+                                Contact
+                            </div>
+                            <a href="#" class="footer__inner-column-link">
+                                Santa Ana, Illinois
+                            </a>
+                            <a href="#" class="footer__inner-column-link">
+                                (808) 555-0111
+                            </a>
+                            <a href="#" class="footer__inner-column-link">
+                                BTHO@Mail.com
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer__inner-row">
-                    <div class="footer__inner-column">
-                        <div class="footer__inner-column-title">
-                            Company
-                        </div>
-                        <a href="#" class="footer__inner-column-link">
-                            Company
-                        </a>
-                        <a href="#" class="footer__inner-column-link">
-                            Customer Stories
-                        </a>
-                        <a href="#" class="footer__inner-column-link">
-                            Profile Company
-                        </a>
-                        <a href="#" class="footer__inner-column-link">
-                            We are Hiring
-                        </a>
-                        <a href="#" class="footer__inner-column-link">
-                            History
-                        </a>
-                    </div>
-                    <div class="footer__inner-column">
-                        <div class="footer__inner-column-title">
-                            Service
-                        </div>
-                        <a href="#" class="footer__inner-column-link">
-                            Listing
-                        </a>
-                        <a href="#" class="footer__inner-column-link">
-                            Sell Property
-                        </a>
-                        <a href="#" class="footer__inner-column-link">
-                            Buy Property
-                        </a>
-                        <a href="#" class="footer__inner-column-link">
-                            Real Estate
-                        </a>
-                    </div>
-                    <div class="footer__inner-column">
-                        <div class="footer__inner-column-title">
-                            Contact
-                        </div>
-                        <a href="#" class="footer__inner-column-link">
-                            Santa Ana, Illinois
-                        </a>
-                        <a href="#" class="footer__inner-column-link">
-                            (808) 555-0111
-                        </a>
-                        <a href="#" class="footer__inner-column-link">
-                            BTHO@Mail.com
-                        </a>
-                    </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.1169 0H0.883111C0.648896 0 0.424273 0.0930418 0.258657 0.258657C0.0930418 0.424273 0 0.648896 0 0.883111V15.1171C5.89273e-05 15.3513 0.0931268 15.5759 0.258736 15.7414C0.424345 15.907 0.648934 16 0.883111 16H8.546V9.804H6.46089V7.38933H8.546V5.60844C8.546 3.54178 9.80822 2.41667 11.6518 2.41667C12.5349 2.41667 13.2938 2.48222 13.5151 2.51178V4.67156L12.2364 4.67222C11.2338 4.67222 11.0398 5.14867 11.0398 5.84778V7.38956H13.4309L13.1196 9.80422H11.0398V16H15.1171C15.3513 15.9999 15.5759 15.9069 15.7414 15.7413C15.907 15.5757 16 15.3511 16 15.1169V0.883111C16 0.648896 15.907 0.424273 15.7413 0.258657C15.5757 0.0930418 15.3511 0 15.1169 0Z"
+                                fill="" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.99785 5.3322C6.52888 5.3322 5.3301 6.53101 5.3301 8C5.3301 9.46899 6.52888 10.6678 7.99785 10.6678C9.46681 10.6678 10.6656 9.46899 10.6656 8C10.6656 6.53101 9.46681 5.3322 7.99785 5.3322ZM15.9991 8C15.9991 6.89525 16.0091 5.80051 15.9471 4.69777C15.885 3.4169 15.5928 2.28014 14.6562 1.3435C13.7176 0.404868 12.5829 0.114672 11.302 0.0526304C10.1973 -0.0094115 9.10258 0.000595291 7.99985 0.000595291C6.89512 0.000595291 5.80041 -0.0094115 4.69768 0.0526304C3.41684 0.114672 2.28009 0.40687 1.34348 1.3435C0.404861 2.28214 0.11467 3.4169 0.0526294 4.69777C-0.00941132 5.80252 0.000595279 6.89725 0.000595279 8C0.000595279 9.10275 -0.00941132 10.1995 0.0526294 11.3022C0.11467 12.5831 0.406862 13.7199 1.34348 14.6565C2.28209 15.5951 3.41684 15.8853 4.69768 15.9474C5.80241 16.0094 6.89713 15.9994 7.99985 15.9994C9.10458 15.9994 10.1993 16.0094 11.302 15.9474C12.5829 15.8853 13.7196 15.5931 14.6562 14.6565C15.5948 13.7179 15.885 12.5831 15.9471 11.3022C16.0111 10.1995 15.9991 9.10475 15.9991 8ZM7.99785 12.1048C5.72636 12.1048 3.89315 10.2715 3.89315 8C3.89315 5.72847 5.72636 3.89523 7.99785 3.89523C10.2693 3.89523 12.1025 5.72847 12.1025 8C12.1025 10.2715 10.2693 12.1048 7.99785 12.1048ZM12.2707 4.68576C11.7403 4.68576 11.312 4.25747 11.312 3.72711C11.312 3.19675 11.7403 2.76847 12.2707 2.76847C12.801 2.76847 13.2293 3.19675 13.2293 3.72711C13.2294 3.85305 13.2048 3.97778 13.1566 4.09416C13.1085 4.21054 13.0379 4.31628 12.9489 4.40533C12.8598 4.49438 12.7541 4.56499 12.6377 4.61311C12.5213 4.66123 12.3966 4.68592 12.2707 4.68576Z"
+                                fill="" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.3337 3.42061C14.7845 3.66555 14.202 3.82624 13.6055 3.89734C14.2338 3.51887 14.7039 2.92332 14.9283 2.22168C14.3378 2.57464 13.6916 2.82318 13.0178 2.95653C12.7362 2.6542 12.396 2.4133 12.0182 2.24876C11.6404 2.08422 11.2331 1.99955 10.8215 2C9.15981 2 7.81243 3.35618 7.81243 5.02953C7.81243 5.26675 7.8391 5.49821 7.89052 5.72008C5.38967 5.59371 3.17261 4.3875 1.68848 2.5544C1.42088 3.01676 1.28027 3.54247 1.28106 4.0776C1.28067 4.57639 1.40266 5.06755 1.63618 5.50745C1.86971 5.94734 2.20755 6.32235 2.61968 6.59914C2.14193 6.58386 1.6747 6.45395 1.25687 6.22021C1.25649 6.23287 1.25649 6.24533 1.25649 6.25837C1.25649 7.72577 2.2936 8.9502 3.66992 9.22884C3.22675 9.34963 2.76209 9.36734 2.31112 9.28062C2.69396 10.484 3.80516 11.3601 5.12187 11.3847C4.05599 12.2268 2.73977 12.6836 1.38487 12.6816C1.14202 12.6816 0.902602 12.6674 0.666992 12.6392C2.04281 13.5292 3.64405 14.0016 5.27939 14C10.814 14 13.8406 9.38398 13.8406 5.38104C13.8406 5.24987 13.8375 5.1189 13.8318 4.98869C14.4212 4.56026 14.9298 4.02922 15.3337 3.42061Z"
+                                fill="" />
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.6745 3.78186C15.5835 3.44005 15.4055 3.12833 15.1584 2.87772C14.9112 2.62712 14.6035 2.44637 14.2659 2.35346C13.014 2.00567 8.00554 2.00001 8.00554 2.00001C8.00554 2.00001 2.99788 1.99434 1.74517 2.32677C1.40775 2.42395 1.10068 2.60726 0.85345 2.85909C0.60622 3.11093 0.427127 3.42284 0.333365 3.76487C0.00319905 5.0315 1.17129e-06 7.65858 1.17129e-06 7.65858C1.17129e-06 7.65858 -0.00319655 10.2986 0.324572 11.5523C0.508442 12.2455 1.04806 12.793 1.73397 12.9799C2.99868 13.3277 7.99355 13.3333 7.99355 13.3333C7.99355 13.3333 13.002 13.339 14.2539 13.0074C14.5917 12.9146 14.8997 12.7343 15.1474 12.4842C15.3952 12.2341 15.5741 11.9229 15.6665 11.5814C15.9975 10.3156 15.9999 7.68931 15.9999 7.68931C15.9999 7.68931 16.0159 5.04849 15.6745 3.78186ZM6.40347 10.0923L6.40747 5.23937L10.5701 7.6699L6.40347 10.0923Z"
+                                fill="" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__copy">
+                    ©2020 ByTheHomeOwner Company
                 </div>
             </div>
-            <div class="footer__social">
-                <a href="#" class="footer__social-link">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M15.1169 0H0.883111C0.648896 0 0.424273 0.0930418 0.258657 0.258657C0.0930418 0.424273 0 0.648896 0 0.883111V15.1171C5.89273e-05 15.3513 0.0931268 15.5759 0.258736 15.7414C0.424345 15.907 0.648934 16 0.883111 16H8.546V9.804H6.46089V7.38933H8.546V5.60844C8.546 3.54178 9.80822 2.41667 11.6518 2.41667C12.5349 2.41667 13.2938 2.48222 13.5151 2.51178V4.67156L12.2364 4.67222C11.2338 4.67222 11.0398 5.14867 11.0398 5.84778V7.38956H13.4309L13.1196 9.80422H11.0398V16H15.1171C15.3513 15.9999 15.5759 15.9069 15.7414 15.7413C15.907 15.5757 16 15.3511 16 15.1169V0.883111C16 0.648896 15.907 0.424273 15.7413 0.258657C15.5757 0.0930418 15.3511 0 15.1169 0Z"
-                            fill="" />
+        </footer>
+
+        <div id="result-2"></div>
+        <!-- footer end
+    =========================================== -->
+        <!-- modal start
+    =========================================== -->
+        <div class="modal aminities mod" id="aminities">
+            <form action="#" class="modal__inner">
+                <div class="modal__inner-title t-l">
+                    Other Features and Aminities
+                </div>
+                <div class="modal__inner-para t-l">
+                    Please Select Features and aminities
+                </div>
+                <div class="modal__inner-close modClose" data-mod="aminities">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.0208 6L6 18.0208M18.0208 18.0208L6 6" stroke="#898989" stroke-width="2.52632"
+                            stroke-linecap="square" />
                     </svg>
-                </a>
-                <a href="#" class="footer__social-link">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M7.99785 5.3322C6.52888 5.3322 5.3301 6.53101 5.3301 8C5.3301 9.46899 6.52888 10.6678 7.99785 10.6678C9.46681 10.6678 10.6656 9.46899 10.6656 8C10.6656 6.53101 9.46681 5.3322 7.99785 5.3322ZM15.9991 8C15.9991 6.89525 16.0091 5.80051 15.9471 4.69777C15.885 3.4169 15.5928 2.28014 14.6562 1.3435C13.7176 0.404868 12.5829 0.114672 11.302 0.0526304C10.1973 -0.0094115 9.10258 0.000595291 7.99985 0.000595291C6.89512 0.000595291 5.80041 -0.0094115 4.69768 0.0526304C3.41684 0.114672 2.28009 0.40687 1.34348 1.3435C0.404861 2.28214 0.11467 3.4169 0.0526294 4.69777C-0.00941132 5.80252 0.000595279 6.89725 0.000595279 8C0.000595279 9.10275 -0.00941132 10.1995 0.0526294 11.3022C0.11467 12.5831 0.406862 13.7199 1.34348 14.6565C2.28209 15.5951 3.41684 15.8853 4.69768 15.9474C5.80241 16.0094 6.89713 15.9994 7.99985 15.9994C9.10458 15.9994 10.1993 16.0094 11.302 15.9474C12.5829 15.8853 13.7196 15.5931 14.6562 14.6565C15.5948 13.7179 15.885 12.5831 15.9471 11.3022C16.0111 10.1995 15.9991 9.10475 15.9991 8ZM7.99785 12.1048C5.72636 12.1048 3.89315 10.2715 3.89315 8C3.89315 5.72847 5.72636 3.89523 7.99785 3.89523C10.2693 3.89523 12.1025 5.72847 12.1025 8C12.1025 10.2715 10.2693 12.1048 7.99785 12.1048ZM12.2707 4.68576C11.7403 4.68576 11.312 4.25747 11.312 3.72711C11.312 3.19675 11.7403 2.76847 12.2707 2.76847C12.801 2.76847 13.2293 3.19675 13.2293 3.72711C13.2294 3.85305 13.2048 3.97778 13.1566 4.09416C13.1085 4.21054 13.0379 4.31628 12.9489 4.40533C12.8598 4.49438 12.7541 4.56499 12.6377 4.61311C12.5213 4.66123 12.3966 4.68592 12.2707 4.68576Z"
-                            fill="" />
-                    </svg>
-                </a>
-                <a href="#" class="footer__social-link">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M15.3337 3.42061C14.7845 3.66555 14.202 3.82624 13.6055 3.89734C14.2338 3.51887 14.7039 2.92332 14.9283 2.22168C14.3378 2.57464 13.6916 2.82318 13.0178 2.95653C12.7362 2.6542 12.396 2.4133 12.0182 2.24876C11.6404 2.08422 11.2331 1.99955 10.8215 2C9.15981 2 7.81243 3.35618 7.81243 5.02953C7.81243 5.26675 7.8391 5.49821 7.89052 5.72008C5.38967 5.59371 3.17261 4.3875 1.68848 2.5544C1.42088 3.01676 1.28027 3.54247 1.28106 4.0776C1.28067 4.57639 1.40266 5.06755 1.63618 5.50745C1.86971 5.94734 2.20755 6.32235 2.61968 6.59914C2.14193 6.58386 1.6747 6.45395 1.25687 6.22021C1.25649 6.23287 1.25649 6.24533 1.25649 6.25837C1.25649 7.72577 2.2936 8.9502 3.66992 9.22884C3.22675 9.34963 2.76209 9.36734 2.31112 9.28062C2.69396 10.484 3.80516 11.3601 5.12187 11.3847C4.05599 12.2268 2.73977 12.6836 1.38487 12.6816C1.14202 12.6816 0.902602 12.6674 0.666992 12.6392C2.04281 13.5292 3.64405 14.0016 5.27939 14C10.814 14 13.8406 9.38398 13.8406 5.38104C13.8406 5.24987 13.8375 5.1189 13.8318 4.98869C14.4212 4.56026 14.9298 4.02922 15.3337 3.42061Z"
-                            fill="" />
-                    </svg>
-                </a>
-                <a href="#" class="footer__social-link">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M15.6745 3.78186C15.5835 3.44005 15.4055 3.12833 15.1584 2.87772C14.9112 2.62712 14.6035 2.44637 14.2659 2.35346C13.014 2.00567 8.00554 2.00001 8.00554 2.00001C8.00554 2.00001 2.99788 1.99434 1.74517 2.32677C1.40775 2.42395 1.10068 2.60726 0.85345 2.85909C0.60622 3.11093 0.427127 3.42284 0.333365 3.76487C0.00319905 5.0315 1.17129e-06 7.65858 1.17129e-06 7.65858C1.17129e-06 7.65858 -0.00319655 10.2986 0.324572 11.5523C0.508442 12.2455 1.04806 12.793 1.73397 12.9799C2.99868 13.3277 7.99355 13.3333 7.99355 13.3333C7.99355 13.3333 13.002 13.339 14.2539 13.0074C14.5917 12.9146 14.8997 12.7343 15.1474 12.4842C15.3952 12.2341 15.5741 11.9229 15.6665 11.5814C15.9975 10.3156 15.9999 7.68931 15.9999 7.68931C15.9999 7.68931 16.0159 5.04849 15.6745 3.78186ZM6.40347 10.0923L6.40747 5.23937L10.5701 7.6699L6.40347 10.0923Z"
-                            fill="" />
-                    </svg>
-                </a>
-            </div>
-            <div class="footer__copy">
-                ©2020 ByTheHomeOwner Company
-            </div>
+                </div>
+                <div class="modal__inner-amenities">
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Wifi.svg" alt="">
+                            Wifi
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Car Port.svg" alt="">
+                            Garage
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Outdoor.svg" alt="">
+                            Outdoor Entertaiment area
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Security.svg" alt="">
+                            Security
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/SecurePark.svg" alt="">
+                            Secure Parking
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Garden.svg" alt="">
+                            Garden
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Dishwasher.svg" alt="">
+                            Dishwasher
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/CommunalPark.svg" alt="">
+                            Communal Car Park
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Balcony.svg" alt="">
+                            Terrace and Balcony
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/WashingMachine.svg" alt="">
+                            Washing Machine
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/GatedPark.svg" alt="">
+                            Gated Car Park
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Jacuzzi.svg" alt="">
+                            Jaccuzi
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/HeatingGas.svg" alt="">
+                            Central Heating Gas
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/DrivewayPark.svg" alt="">
+                            Driveway Parking
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Pool.svg" alt="">
+                            Pool
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/HeatingGas.svg" alt="">
+                            Central Heating Oil
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/StreetPark.svg" alt="">
+                            On Street Parking Area
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Gym.svg" alt="">
+                            Gym
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Elevator.svg" alt="">
+                            Elevator
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/OffStreetPark.svg" alt="">
+                            Off Street Parking Area
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/TennisCourt.svg" alt="">
+                            Tennis Court
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/LevelAcces.svg" alt="">
+                            Level Acess
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/PermitPark.svg" alt="">
+                            Permit Parking
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Pavilion.svg" alt="">
+                            Spa Pavilion
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Concierge.svg" alt="">
+                            Concierge
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/WideDoorways.svg" alt="">
+                            Wide Doorways
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/Outdoor.svg" alt="">
+                            Outdoor Spa
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/RampAccess.svg" alt="">
+                            Ramp Access
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/DoubleGlazin.svg" alt="">
+                            Double Glazing
+                        </label>
+                    </div>
+                    <div class="amenitiBox">
+                        <input type="checkbox" name="amanitiesChecks">
+                        <label for="">
+                            <img src="assets/images/listing/icons/SolarPanel.svg" alt="">
+                            Solar Panel
+                        </label>
+                    </div>
+
+                </div>
+                <div class="modal__inner-footer">
+                    <div class="uncheck" id="btnUncheckAll">
+                        Unmark All
+                    </div>
+                    <button type="submit" class="btn__secondary">
+                        Done
+                    </button>
+                </div>
+            </form>
         </div>
-    </footer>
-
-    <div id="result-2"></div>
-    <!-- footer end
+        <!-- modal end
     =========================================== -->
-    <!-- modal start
-    =========================================== -->
-    <div class="modal aminities mod" id="aminities">
-        <form action="#" class="modal__inner">
-            <div class="modal__inner-title t-l">
-                Other Features and Aminities
-            </div>
-            <div class="modal__inner-para t-l">
-                Please Select Features and aminities
-            </div>
-            <div class="modal__inner-close modClose" data-mod="aminities">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.0208 6L6 18.0208M18.0208 18.0208L6 6" stroke="#898989" stroke-width="2.52632"
-                        stroke-linecap="square" />
-                </svg>
-            </div>
-            <div class="modal__inner-amenities">
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Wifi.svg" alt="">
-                        Wifi
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Car Port.svg" alt="">
-                        Garage
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Outdoor.svg" alt="">
-                        Outdoor Entertaiment area
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Security.svg" alt="">
-                        Security
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/SecurePark.svg" alt="">
-                        Secure Parking
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Garden.svg" alt="">
-                        Garden
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Dishwasher.svg" alt="">
-                        Dishwasher
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/CommunalPark.svg" alt="">
-                        Communal Car Park
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Balcony.svg" alt="">
-                        Terrace and Balcony
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/WashingMachine.svg" alt="">
-                        Washing Machine
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/GatedPark.svg" alt="">
-                        Gated Car Park
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Jacuzzi.svg" alt="">
-                        Jaccuzi
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/HeatingGas.svg" alt="">
-                        Central Heating Gas
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/DrivewayPark.svg" alt="">
-                        Driveway Parking
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Pool.svg" alt="">
-                        Pool
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/HeatingGas.svg" alt="">
-                        Central Heating Oil
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/StreetPark.svg" alt="">
-                        On Street Parking Area
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Gym.svg" alt="">
-                        Gym
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Elevator.svg" alt="">
-                        Elevator
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/OffStreetPark.svg" alt="">
-                        Off Street Parking Area
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/TennisCourt.svg" alt="">
-                        Tennis Court
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/LevelAcces.svg" alt="">
-                        Level Acess
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/PermitPark.svg" alt="">
-                        Permit Parking
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Pavilion.svg" alt="">
-                        Spa Pavilion
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Concierge.svg" alt="">
-                        Concierge
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/WideDoorways.svg" alt="">
-                        Wide Doorways
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/Outdoor.svg" alt="">
-                        Outdoor Spa
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/RampAccess.svg" alt="">
-                        Ramp Access
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/DoubleGlazin.svg" alt="">
-                        Double Glazing
-                    </label>
-                </div>
-                <div class="amenitiBox">
-                    <input type="checkbox" name="amanitiesChecks">
-                    <label for="">
-                        <img src="assets/images/listing/icons/SolarPanel.svg" alt="">
-                        Solar Panel
-                    </label>
-                </div>
+        <script src="assets/js/jquery.js"></script>
+        <script src="assets/js/moment.min.js"></script>
+        <script src="assets/js/wow.js"></script>
 
-            </div>
-            <div class="modal__inner-footer">
-                <div class="uncheck" id="btnUncheckAll">
-                    Unmark All
-                </div>
-                <button type="submit" class="btn__secondary">
-                    Done
-                </button>
-            </div>
-        </form>
-    </div>
-    <!-- modal end
-    =========================================== -->
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/moment.min.js"></script>
-    <script src="assets/js/uploadGallery.js"></script>
-    <script src="assets/js/lightpick.js"></script>
-    <script src="assets/js/formTab.js"></script>
-    <script src="assets/js/customSelect.js"></script>
-    <script src="assets/js/revealRadio.js"></script>
-    <script src="assets/js/modalClose.js"></script>
+        <script src="assets/js/uploadGallery.js"></script>
+        <script src="assets/js/lightpick.js"></script>
+        <script src="assets/js/formTab.js"></script>
+        <script src="assets/js/customSelect.js"></script>
+        <script src="assets/js/revealRadio.js"></script>
+        <script src="assets/js/modalClose.js"></script>
+        <script src="assets/js/main.js"></script>
 
-    <script>
-        var picker = new Lightpick({
-            field: document.getElementById('demo-2'),
-            onSelect: function (date) {
-                document.getElementById('result-2').innerHTML = date.format('Do MMMM YYYY');
-            }
-        });
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    $("#blah").attr("src", e.target.result);
-                    $("#blah").addClass("show");
-                };
-
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-        function readURL2(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = function (e) {
-                    $("#blah-2").attr("src", e.target.result);
-                    $("#blah-2").addClass("show");
-                };
-
-                reader.readAsDataURL(input.files[0]);
-            }
-        }
-        $(document).ready(function () {
-            $('#btnUncheckAll').click(function () {
-                $('input[type=checkbox]').each(
-                    function (index, checkbox) {
-                        if (index != 0) {
-                            checkbox.checked = false;
-                        }
-                    });
+        <script>
+            var picker = new Lightpick({
+                field: document.getElementById('demo-2'),
+                onSelect: function (date) {
+                    document.getElementById('result-2').innerHTML = date.format('Do MMMM YYYY');
+                }
             });
-        });
-        // document.getElementById('select').onchange = function () {
-        //     var checkboxes = document.getElementsByName('amanitiesChecks');
-        //     for (var checkbox of checkboxes) {
-        //         checkbox.checked = false;
-        //     }
-        // }
-    </script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $("#blah").attr("src", e.target.result);
+                        $("#blah").addClass("show");
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+            function readURL2(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $("#blah-2").attr("src", e.target.result);
+                        $("#blah-2").addClass("show");
+                    };
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+            $(document).ready(function () {
+                $('#btnUncheckAll').click(function () {
+                    $('input[type=checkbox]').each(
+                        function (index, checkbox) {
+                            if (index != 0) {
+                                checkbox.checked = false;
+                            }
+                        });
+                });
+            });
+            // document.getElementById('select').onchange = function () {
+            //     var checkboxes = document.getElementsByName('amanitiesChecks');
+            //     for (var checkbox of checkboxes) {
+            //         checkbox.checked = false;
+            //     }
+            // }
+            var counter = 1;
+            var newFields = document.getElementById('readroot').cloneNode(true);
+            var removeds = newFields.querySelectorAll('.select-items');
+            removeds.forEach(e => {
+                e.parentNode.removeChild(e);
+            })
+
+            removeds = newFields.querySelectorAll('.select-selected');
+            removeds.forEach(e => {
+                console.log(e)
+                e.parentNode.removeChild(e);
+            })
+            var removed = newFields.querySelector('.plusBtn');
+            var parent = removed.parentNode;
+            parent.removeChild(removed);
+            parent.appendChild(document.querySelector('.remove__review'));
+
+
+            function moreFields() {
+                counter++;
+
+                newFields.querySelector('.deposit__amount').id = 'customInput-' + counter
+                newFields.querySelector('.deposit__select').setAttribute('linkedelement', 'customInput-' + counter);
+                newFields.id = '';
+                newFields.style.display = 'flex';
+                var newField = newFields.childNodes;
+                for (var i = 0; i < newField.length; i++) {
+                    var theName = newField[i].name
+                    if (theName)
+                        newField[i].name = theName + counter;
+                }
+                var insertHere = document.getElementById('writeroot');
+                insertHere.parentNode.insertBefore(newFields.cloneNode(true), insertHere);
+                initializeCustomSelect();
+            }
+
+        </script>
 </body>
 
 </html>

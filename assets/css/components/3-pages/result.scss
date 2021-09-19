@@ -14,22 +14,22 @@
       width: calc(50% - 20px);
       margin: 0 10px;
       &:last-child {
-        width: calc(50% - 20px);
-        margin: 0 10px;
+        width: calc(50% - 10px);
+        margin: 0 0 0 10px;
         display: flex;
       }
       .select__outer {
-        width: calc(28% - 10px);
+        width: 28%;
         margin: 0 5px;
         &:last-child {
-          width: calc(16% - 10px);
-          margin: 0 5px;
+          width: 16%;
+          margin: 0 0 0 5px;
         }
       }
     }
   }
   &__body {
-    margin-top: 20px;
+    margin-top: 40px;
     &-inner {
       display: flex;
       align-items: flex-start;
